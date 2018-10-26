@@ -35,22 +35,29 @@
         float: right;
     }
 
+    .nav-top {
+      height: 50px;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
     .nav-top ul {
-        padding: 1rem;
-        text-align: left;
+      padding-left: 1rem;
+      text-align: left;
     }
     .nav-top ul li {
-        display: inline-block;
-        *display: inline;                                       /* IE7 */
-            *zoom: 1;
-        font-size: 1.5rem;
-        padding-left: 3rem;
+      display: inline-block;
+      *display: inline;                                       /* IE7 */
+      *zoom: 1;
+      font-size: 1.4rem;
+      padding-left: 3rem;
     }
     .nav-top ul li:first-child {
-        padding-left: 0; /*Removes for first bullet so it aligns nicely at top of page*/
+      padding-left: 0; /*Removes for first bullet so it aligns nicely at top of page*/
     }
     .nav-top ul li:last-child {
-        padding-right: 3rem; /*Counterbalances the padding-left so last element in list isn't hugging right side of page - actually pushes whole list 3rem to the left*/
+      padding-right: 3rem; /*Counterbalances the padding-left so last element in list isn't hugging right side of page - actually pushes whole list 3rem to the left*/
     }
     .nav-main ul li {
         display: inline-block;
@@ -88,7 +95,14 @@
 /* Larger than phablet (also point when grid in Skeleton becomes active) */
 @media (min-width: 550px) {
     header {
-        background: url(../img/bg-banner.jpg) 0% 0%/100%;
+        background: red;
+        margin: 50px 0 0 0;
+        padding: 0;
+        position: absolute;
+            left: 0;
+            top: 0;
+        transform: rotate(-8deg);
+        width: 120%;
     }
     
     ol {
@@ -119,6 +133,25 @@
         font-size: 1.5rem;
         font-weight: bold;
         text-align: center;
+    }
+    
+    .address {
+        height: 500px;
+        position: absolute;
+            right: -1750px;
+            top: -350px;
+        transform: rotate(-40deg); /*For some reason this stopped doing anything*/
+        transform: skew(-15deg,-3deg);
+        width: 2000px;
+    }
+    
+    .logo {
+        height: 361px; 
+        position: relative;
+            left: 5%;
+            top: 10%;
+        transform: rotate(8deg); /*Negates header rotation as it's not needed*/
+        width: 361px;
     }
     
     .nav-main ul {

@@ -27,7 +27,7 @@
 		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
-		"oAP": "\/Applications\/MAMP\/htdocs\/template\/index.php",
+		"oAP": "\/Applications\/MAMP\/htdocs\/39club\/index.php",
 		"oF": 6
 		}
 	},
@@ -37,7 +37,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 546860621,
-	"displayValue": "template-kit",
+	"displayValue": "39club-kit",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-lotr"
 	},

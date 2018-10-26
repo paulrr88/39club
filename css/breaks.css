@@ -52,7 +52,6 @@
     .nav-top ul li:last-child {
         padding-right: 3rem; /*Counterbalances the padding-left so last element in list isn't hugging right side of page - actually pushes whole list 3rem to the left*/
     }
-    
     .nav-main ul li {
         display: inline-block;
         *display: inline;                                       /* IE7 */
@@ -120,6 +119,10 @@
         font-size: 1.5rem;
         font-weight: bold;
         text-align: center;
+    }
+    
+    .nav-main ul {
+        text-align: left;
     }
     
     .textbig7 {

@@ -196,6 +196,12 @@ ul {
     clear: both;
 }
 
+.corner { /*Covers up gap above slanted header area*/
+  background: red;
+  height: 200px;
+  width: 100%;
+}
+
 .container {
     margin: 0 auto;
     width: 100%;
@@ -269,6 +275,14 @@ ul {
 }
 .margin-none p {
     margin: 0; /*Added p to this so if a paragraph, which I can't edit, is created by Perch, and is within a parent with these as a class, it removes margin and padding from that p child element*/
+}
+
+.overflow-killer {
+  background: yellow;
+  overflow: hidden;
+  position: relative;
+  height: 500px;
+  width: 100%;
 }
 
 .padding-1-body { /*Respects 1.5rem left padding on paragraph text so everything aligns properly*/

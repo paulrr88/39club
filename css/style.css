@@ -222,6 +222,10 @@ ul {
 .header-skew {
     transform: rotate(-20deg);
 }
+.header-title {
+    border-bottom: 5px solid black;
+    position: relative;
+}
 
 .left {
     float: none;                                            /* just because floating doesn't work on mobile,

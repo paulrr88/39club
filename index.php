@@ -39,7 +39,7 @@
     
     <div class="container" style="background: purple;">
         
-        <nav class="nav-top z-1" role="navigation" style="background: white;"><!--Start of top information area-->
+        <nav class="nav-top z-1" role="navigation" style="background: none;"><!--Start of top information area-->
             <ul>
                 <li><a href="sitemap/">Sitemap</a></li>
                 <li><img src="" style="width: 25px; height: 25px; vertical-align: middle;" /><a href="https://www.facebook.com/39clubbognorregis/">@39ClubBognorRegis</a></li>
@@ -48,12 +48,23 @@
         
         <div class="overflow-killer"><!--Needed to stop absolutely positioned elements from exploding outside of the container area-->
             <div class="corner"></div><!--Covers up any gaps above the slanted header area-->
-            <header class="z-0" role="banner"><!--Start of header area containing website title, graphics and navigation etc-->
+            
+            <section class="address z-1" role="complementary" style="background: cyan;">
+                <p class="address-p">
+                    Church Path,<br />
+                    Glamis Street,<br />
+                    Bognor Regis PO21 1DB<br />
+                    TEL:  01243 864124<br />
+                    <span style="font-size: 0.9rem;">Registered Charity No. #########</span>
+                </p>
+            </section>
+            
+            <header role="banner"><!--Start of header area containing website title, graphics and navigation etc-->
                 <img class="fluid-half left logo" src="img/logo.png" />
 
-                <!--<h1 class="textbig7 smallcaps"><em>39 Youth Club</em></h1>
+                <h1 style="background: pink;" class="header-title textbig7 smallcaps"><em>39 Youth Club</em></h1>
 
-                <nav class="nav-main" role="navigation"><!--Main navigation start--><!--
+                <nav class="nav-main" role="navigation"><!--Main navigation start-->
                   <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">About Us</a></li>
@@ -66,15 +77,7 @@
                 </nav><!--Main navigation ends-->
             </header><!--Header area ends-->
 
-            <section class="address z-1" role="complementary" style="background: cyan;">
-                <p class="address-p">
-                    Church Path,<br />
-                    Glamis Street,<br />
-                    Bognor Regis PO21 1DB<br />
-                    TEL:  01243 864124<br />
-                    <span style="font-size: 0.9rem;">Registered Charity No. #########</span>
-                </p>
-            </section>
+            
         </div>
 
 

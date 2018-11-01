@@ -235,6 +235,10 @@ ul {
     float: none;
 }
 
+.logo {
+    transform: rotate(8deg); /*Negates header rotation as it's not needed*/
+}
+
 .margin-1 {
     margin: 1rem;
 }

@@ -50,17 +50,17 @@
             <div class="corner"></div><!--Covers up any gaps above the slanted header area-->
             
             <section class="address z-1" role="complementary" style="background: cyan;">
-                <p class="address-p">
+                <p class="address-p"><?/*php perch_content('Address');*/ ?>
                     Church Path,<br />
                     Glamis Street,<br />
                     Bognor Regis PO21 1DB<br />
                     TEL:  01243 864124<br />
-                    <span style="font-size: 0.9rem;">Registered Charity No. #########</span>
+                    <span style="font-size: 1.3rem;">Registered Charity No. #########</span>
                 </p>
             </section>
             
             <header role="banner"><!--Start of header area containing website title, graphics and navigation etc-->
-                <img class="fluid-half left logo" src="img/logo.png" />
+                <img class="left logo" src="img/logo.png" />
 
                 <h1 style="background: pink;" class="header-title textbig7 smallcaps"><em>39 Youth Club</em></h1>
 

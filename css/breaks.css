@@ -59,16 +59,6 @@
     .nav-top ul li:last-child {
       padding-right: 3rem; /*Counterbalances the padding-left so last element in list isn't hugging right side of page - actually pushes whole list 3rem to the left*/
     }
-    .nav-main ul li {
-        display: inline-block;
-        *display: inline;                                       /* IE7 */
-            *zoom: 1;
-        font-size: 3rem;
-        padding-left: 3rem;
-    }
-    .nav-main ul li:last-child {
-        padding-right: 3rem; /*Counterbalances the padding-left so last element in list isn't hugging right side of page - actually pushes whole list 3rem to the left*/
-    }
     
     .small {
         font-size: 1.5rem;
@@ -96,7 +86,7 @@
 @media (min-width: 550px) {
     header { /*Special slanted header design for desktop/tablet)*/
         background: red;
-        height: 300px;
+        height: 150px;
         position: absolute;
             left: -35px;
             top: 0;
@@ -134,26 +124,33 @@
         text-align: center;
     }
     
-    .address {
-        height: 150px;
-        position: absolute;
-            right: -20px;
-            top: -10px;
-        transform: rotate(-40deg); /*For some reason this stopped doing anything*/
-        transform: skew(-15deg,-3deg);
-        width: 300px;
+    .corner {
+        height: 40px;
     }
-    .address-p {
-        
+    
+    .list-contents { /*Centred list of links for pages with subpages that I want to list*/
+        background: #fff;
+        border-top: 5px solid #ffa726;
+        box-shadow: 20px 15px 40px #444;
+        font-size: 2.5rem;
+        list-style: none;
+        margin: 2rem;
+        padding: 1.5rem 0 1.5rem 0;
+        text-align: center;
+    }
+    .list-contents li {
+        display: inline-block;
+        margin: 0;
+        padding: 0 2rem 0 0;
     }
     
     .logo {
-        height: 361px; 
+        max-height: 301px;
+        max-width: 301px;
         position: relative;
             left: 50px;
             top: 5px;
         transform: rotate(8deg); /*Negates header rotation as it's not needed*/
-        width: 361px;
     }
     
     .nav-main ul {
@@ -185,22 +182,6 @@
         text-shadow: 4px 4px 9px #000;
     }
     
-    .list-contents { /*Centred list of links for pages with subpages that I want to list*/
-        background: #fff;
-        border-top: 5px solid #ffa726;
-        box-shadow: 20px 15px 40px #444;
-        font-size: 2.5rem;
-        list-style: none;
-        margin: 2rem;
-        padding: 1.5rem 0 1.5rem 0;
-        text-align: center;
-    }
-    .list-contents li {
-        display: inline-block;
-        margin: 0;
-        padding: 0 2rem 0 0;
-    }
-    
     .width-50 {
         width: 50%;
     }
@@ -216,14 +197,25 @@
 
 /* Larger than tablet */
 @media (min-width: 750px) {
-    .header-title {
-        margin: 80px 0 0 450px;
-        padding: 0 0 0 30px;
-        width: 350px;
+    header {
+        height: 280px;
     }
+    .corner {
+        height: 80px;
+    }
+    .header-title {
+        font-size: 5rem;
+        margin: 80px 0 0 380px;
+        padding: 0 0 0 30px;
+        width: 460px;
+    }
+    
 }
 
 @media (min-width: 900px) {
+    header {
+        height: 300px;
+    }
     .header-title {
         margin: 80px 0 0 450px;
         padding: 0 0 0 30px;
@@ -233,28 +225,110 @@
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
+    
     .header-title {
-        margin: 80px 0 0 450px;
+        font-size: 5rem;
+        margin: 80px 0 0 430px;
+        transform: rotate(-2deg);
         padding: 0 0 0 30px;
-        width: 350px;
+        width: 440px;
     }
 }
 
 @media (min-width: 1150px) {
+    header {
+        height: 250px;
+    }
+    .address { /*Second biggest version, makes more room for header-title*/
+        height: 120px;
+        position: absolute;
+            right: -16px;
+            top: -10px;
+        transform: rotate(-40deg);
+        transform: skew(-15deg,-3deg);
+        width: 200px;
+    }
+    .address-p {
+        font-size: 1.4rem;
+    }
     .header-title {
-        font-size: 5rem;
-        margin: 80px 0 0 450px;
+        font-size: 6rem;
+        margin: 80px 0 0 390px;
         padding: 0 0 0 30px;
-        width: 450px;
+        width: 550px;
+    }
+    .logo {
+        max-height: 321px;
+        max-width: 321px;
+        position: relative;
+            left: 50px;
+            top: 5px;
+    }
+    .nav-main {
+        margin: 20px 0 0 341px;
+        position: absolute;
+            bottom: 0;
+        width: 300px;
+    }
+    .nav-main ul {
+        background: yellow;
+        text-align: left;
+        width: 800px;
+    }
+    .nav-main ul li {
+        display: inline-block;
+        *display: inline;                                       /* IE7 */
+            *zoom: 1;
+        font-size: 2.1rem;
+        padding-left: 2rem;
+    }
+    .nav-main ul li:last-child {
+        padding-right: 3rem; /*Counterbalances the padding-left so last element in list isn't hugging right side of page - actually pushes whole list 3rem to the left*/
     }
 }
 
 /* Larger than Desktop HD */
 @media (min-width: 1300px) {
+    header {
+        height: 300px;
+    }
+    .address {
+        height: 150px;
+        position: absolute;
+            right: -20px;
+            top: -10px;
+        transform: rotate(-40deg); /*For some reason this stopped doing anything*/
+        transform: skew(-15deg,-3deg);
+        width: 300px;
+    }
+    .address-p {
+        font-size: 1.8rem;
+    }
+    .corner {
+        height: 100px;
+    }
     .header-title {
         font-size: 7rem;
-        margin: 80px 0 0 450px;
-        padding: 0 0 0 30px;
+        margin: 120px 0 0 420px;
+        padding: 0 0 0 40px;
         width: 650px;
+    }
+    .logo {
+        max-height: 361px;
+        max-width: 361px;
+    }
+    .nav-main {
+        margin: 20px 0 0 391px;
+        width: 300px;
+    }
+    .nav-main ul {
+        width: 1000px;
+    }
+    .nav-main ul li {
+        font-size: 2.5rem;
+        padding-left: 3rem;
+    }
+    .nav-main ul li:last-child {
+        padding-right: 3rem; /*Counterbalances the padding-left so last element in list isn't hugging right side of page - actually pushes whole list 3rem to the left*/
     }
 }

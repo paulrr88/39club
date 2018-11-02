@@ -62,7 +62,7 @@
             <header role="banner"><!--Start of header area containing website title, graphics and navigation etc-->
                 <img class="left logo" src="img/logo.png" />
 
-                <h1 style="background: pink;" class="header-title textbig7 smallcaps"><em>39 Youth Club</em></h1>
+                <h1 style="background: pink;" class="header-title smallcaps"><em>39 Youth Club</em></h1>
 
                 <nav class="nav-main" role="navigation"><!--Main navigation start-->
                   <ul>

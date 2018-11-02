@@ -1,5 +1,108 @@
 /*N.B. THIS IS MOBILE FIRST so all selectors etc in this should be mobile-friendly, anything else is in breaks.css*/
 
+
+header { /*Special slanted header design for desktop/tablet)*/
+    background: red;
+    height: 430px;
+    position: absolute;
+        left: -35px;
+        top: 0;
+    transform: rotate(-5deg);
+    width: 120%;
+}
+
+.address { /*Less wide taller version to make room for the top area and still have enough room for text!*/
+    height: 70px;
+    margin-top: 0;
+    position: absolute;
+        right: 0;
+        top: 0;
+    transform: rotate(0deg);
+    transform: skew(0deg,0deg);
+    width: 100%;
+}
+.address-p {
+    font-size: 1.2rem;
+    transform: rotate(0deg);
+}
+.address-charity {
+    font-size: 1.1rem;
+}
+.corner { /*Covers up gap above slanted header area*/
+  background: red;
+  height: 40px;
+  width: 100%;
+}
+.header-title {
+    border-bottom: 5px solid black;
+    font-size: 3.5rem;
+    height: 50px;
+    margin: 0 0 0 40px;
+    padding: 0 50px 0 30px;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 100%;
+}
+.logo {
+    margin: 70px 0 0 60px;
+    max-height: 201px;
+    max-width: 100%;
+    opacity: 0.5;
+    position: static;
+    transform: rotate(8deg); /*Negates header rotation as it's not needed*/
+}
+.nav-main {
+    margin: 0 0 0 30px;
+    position: absolute;
+        bottom: 0;
+    width: 300px;
+}
+.nav-main ul {
+    background: yellow;
+    line-height: 3rem;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+.nav-main ul li {
+    display: block;
+    *display: block;                                       /* IE7 */
+        *zoom: 1;
+    font-size: 1.9rem;
+    padding-left: 0;
+}
+.nav-main ul li:last-child {
+    padding-right: 0; /*Gets rid of this, not needed for mobile*/
+}
+.overflow-killer {
+    background: yellow;
+    overflow: hidden;
+    position: relative;
+    height: 500px;
+    width: 100%;
+}
+
+.nav-top {
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: 900;
+}
+.nav-top ul li {
+    display: block;
+    *display: block;                                       /* IE7 */
+    padding-left: 0;
+}
+.nav-top ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+
 /* Element Selectors */
 
 a {
@@ -89,10 +192,6 @@ footer ul li {
     padding: 0 0 0 0;
 }
 
-header {
-    
-}
-
 img {
     margin: 0;
     padding: 0;
@@ -100,10 +199,6 @@ img {
 
 main {
     
-}
-
-nav {
-    background: #fff;
 }
 
 /*Padding on bottom has to be reduced to prevent over-padding between paragraphs. last-child and last-of-type combined take care of all cases where you'll want it to have a full bottom padding (at the end of a series of paragraphs for instance).*/
@@ -196,12 +291,6 @@ ul {
     clear: both;
 }
 
-.corner { /*Covers up gap above slanted header area*/
-  background: red;
-  height: 200px;
-  width: 100%;
-}
-
 .container {
     margin: 0 auto;
     width: 100%;
@@ -222,10 +311,6 @@ ul {
 .header-skew {
     transform: rotate(-20deg);
 }
-.header-title {
-    border-bottom: 5px solid black;
-    position: relative;
-}
 
 .left {
     float: none;                                            /* just because floating doesn't work on mobile,
@@ -233,10 +318,6 @@ ul {
 }
 .right {
     float: none;
-}
-
-.logo {
-    transform: rotate(8deg); /*Negates header rotation as it's not needed*/
 }
 
 .margin-1 {
@@ -285,14 +366,6 @@ ul {
     margin: 0; /*Added p to this so if a paragraph, which I can't edit, is created by Perch, and is within a parent with these as a class, it removes margin and padding from that p child element*/
 }
 
-.overflow-killer {
-  background: yellow;
-  overflow: hidden;
-  position: relative;
-  height: 500px;
-  width: 100%;
-}
-
 .padding-1-body { /*Respects 1.5rem left padding on paragraph text so everything aligns properly*/
     padding: 1rem 1rem 1rem 1.5rem;
 }
@@ -329,30 +402,6 @@ ul {
 
 .smallcaps {
     font-variant: small-caps;
-}
-
-.nav-main ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    text-align: center;
-    width: 100%;
-}
-
-.nav-top {
-    font-style: italic;
-    font-variant: small-caps;
-    font-weight: 900;
-}
-.nav-top ul li {
-    display: block;
-    *display: block;                                       /* IE7 */
-    padding-left: 0;
-}
-.nav-top ul {
-    margin: 0;
-    padding: 0;
-    text-align: center;
 }
 
 .spacer {  /* works with Skeleton to allow white space between vertically stacked divs */

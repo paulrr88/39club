@@ -85,8 +85,63 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 
-    <main class="container clear" role="main" style="background: blue; color: white;"><!--Container for ALL content, everything inside this-->
-      <p>Container begins</p>
+    <div style="
+                background: brown;
+                height: 250px;
+                margin: 300px 0 0 0;
+                position: absolute;
+                    right: 120px;
+                    top: 70px;
+                width: 250px;
+                z-index: 1;
+                ">
+            
+    </div>
+
+    <main class="container clear overflow-hidden" role="main" style="background: blue; color: white;"><!--Container for ALL content, everything inside this-->
+        <p>Container begins</p>
+        
+        <article style="
+                        background: pink;
+                        height: 400px;/*delete this, allow for flexible height?*/
+                        position: relative;
+                            left: -20px;
+                            top: 0;
+                        transform: rotate(-5deg);
+                        width: 110%;
+                        ">
+            <section style="
+                            background: coral;
+                            float: left;
+                            height: 300px;
+                            width: 60%;
+                            ">
+            </section>
+            <div style="
+                            background: cyan;
+                            float: left;
+                            height: 300px;
+                            transform: rotate(-20deg);/*Have to rotate at this level, won't work on the image*/
+                            width: 40%;
+                            ">
+                <img src="" style="
+                                background: cyan;
+                                margin-left: 10%;
+                                height: 250px;
+                                transform: skew(15deg,15deg);
+                                width: 60%;
+                                   " />
+            </div>
+            <section style="
+                            background: purple;
+                            height: 100px;
+                            position: absolute;
+                                left: 0;
+                                bottom: 0;
+                            width: 100%;
+                            ">
+            </section>
+        </article>
 
       <div class="">
         <article role="article" style="background: orange;">

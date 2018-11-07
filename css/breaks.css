@@ -1,71 +1,5 @@
 /* Larger than mobile */
 @media (min-width: 400px) {
-
-    header { /*Special slanted header design for desktop/tablet)*/
-        background: red;
-        height: 400px;
-        position: absolute;
-            left: -35px;
-            top: 0;
-        transform: rotate(-5deg);
-        width: 120%;
-    }
-    
-    .address { /*Less wide taller version to make room for the top area and still have enough room for text!*/
-        margin-top: 30px;
-    }
-    
-    .header-title {
-        font-size: 3.5rem;
-        height: 100px;
-        margin: 100px 0 0 20px;
-        padding: 0 50px 0 0px;
-        position: static;
-        top: 0;
-        left: 0;
-        width: 100%;
-    }
-    
-    .logo {
-        margin: 90px 0 0 30px;
-        max-height: 201px;
-        max-width: 201px;
-        opacity: 1.0;
-        position: static;
-        transform: rotate(8deg); /*Negates header rotation as it's not needed*/
-    }
-    
-    .nav-main {
-        margin: 0 0 0 51px;
-        position: absolute;
-            bottom: 0;
-        width: 300px;
-    }
-    .nav-main ul {
-        line-height: 3rem;
-        margin: 0;
-        text-align: left;
-        width: 300px;
-    }
-    .nav-main ul li {
-        display: inline-block;
-        *display: inline;                                       /* IE7 */
-            *zoom: 1;
-        font-size: 1.9rem;
-        padding-left: 1.5rem;
-    }
-    .nav-main ul li:last-child {
-        padding-right: 3rem; /*Counterbalances the padding-left so last element in list isn't hugging right side of page - actually pushes whole list 3rem to the left*/
-    }
-    .overflow-killer {
-        height: 450px;
-    }
-    
-    
-    
-    
-    
-    
     footer {
         font-size: 1.6rem;
         line-height: 200%; /*Adds much needed height to links especially when it goes into two lines as it will on some sites*/
@@ -87,21 +21,54 @@
         border-right: 0;
         padding-right: 0;
     }
+    header { /*Special slanted header design for desktop/tablet)*/
+        height: 400px;
+    }
     
-    
+    .address { /*Less wide taller version to make room for the top area and still have enough room for text!*/
+        margin-top: 30px;
+    }
     .fluid-images-3 img {     /*figure area containing 3 images side by side*/
         float: left; /*Lets them stack but breaks when a link is added*/
         max-width: 30.33%; /*-3% due to padding-left %*/
         padding-left: 4.5%; /*Would be 3% but the fact that the first one has no padding-left means we add 1.5% (half of the padding that would have been on the first image)*/
     }
-    
+    .header-title {
+        height: 100px;
+        margin: 100px 0 0 20px;
+        padding: 0 50px 0 0px;
+        position: static;
+        top: 0;
+        left: 0;
+    }
     .left {
         float: left;                                            /* restores floating for higher resolutions, same below */
     }
     .right {
         float: right;
     }
-
+    .logo {
+        margin: 90px 0 0 30px;
+        max-width: 201px;
+        opacity: 1.0;
+    }
+    .nav-main {
+        margin: 0 0 0 51px;
+    }
+    .nav-main ul {
+        margin: 0;
+        text-align: left;
+        width: 300px;
+    }
+    .nav-main ul li {
+        display: inline-block;
+        *display: inline;                                       /* IE7 */
+            *zoom: 1;
+        padding-left: 1.5rem;
+    }
+    .nav-main ul li:last-child {
+        padding-right: 3rem; /*Counterbalances the padding-left so last element in list isn't hugging right side of page - actually pushes whole list 3rem to the left*/
+    }
     .nav-top {
       height: 30px;
       position: absolute;
@@ -126,27 +93,27 @@
     .nav-top ul li:last-child {
       padding-right: 3rem; /*Counterbalances the padding-left so last element in list isn't hugging right side of page - actually pushes whole list 3rem to the left*/
     }
-    
+    .overflow-killer {
+        height: 450px;
+    }
     .small {
         font-size: 1.5rem;
     }
-    
     /*YouTube embed responsive solution from https://coolestguidesontheplanet.com/videodrome/youtube/*/
-
-    .video-container {
-        position:relative;
-        padding-bottom:56.25%;
-        padding-top:30px;
-        height:0;
-        overflow:hidden;
-    }
-    .video-container iframe, .video-container object, .video-container embed {
-        position:absolute;
-        top:0;
-        left:0;
-        width:100%;
-        height:100%;
-    }
+        .video-container {
+            position:relative;
+            padding-bottom:56.25%;
+            padding-top:30px;
+            height:0;
+            overflow:hidden;
+        }
+        .video-container iframe, .video-container object, .video-container embed {
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+        }
 }
 
 /* Larger than phablet (also point when grid in Skeleton becomes active) */
@@ -213,11 +180,7 @@
     }
     
     .header-title {
-        font-size: 3.5rem;
         height: 50px;
-        margin: 100px 0 0 20px;
-        padding: 0 50px 0 0px;
-        position: static;
         width: 100%;
     }
     
@@ -251,22 +214,6 @@
             bottom: 0;
         width: 300px;
     }
-    .nav-main ul {
-        background: yellow;
-        line-height: 3rem;
-        text-align: left;
-        width: 300px;
-    }
-    .nav-main ul li {
-        display: inline-block;
-        *display: inline;                                       /* IE7 */
-            *zoom: 1;
-        font-size: 1.9rem;
-        padding-left: 1.5rem;
-    }
-    .nav-main ul li:last-child {
-        padding-right: 3rem; /*Counterbalances the padding-left so last element in list isn't hugging right side of page - actually pushes whole list 3rem to the left*/
-    }
     .overflow-killer {
         height: 300px;
     }
@@ -282,11 +229,6 @@
     
     .address { /*Little version, makes more room for header-title*/
         height: 60px;
-        position: absolute;
-            right: -16px;
-            top: -10px;
-        transform: rotate(-40deg);
-        transform: skew(-15deg,-3deg);
         width: 350px;
     }
     .corner {
@@ -308,10 +250,6 @@
             left: 50px;
             top: 5px;
     }
-    .nav-main {
-        margin: 30px 0 0 281px;
-        width: 300px;
-    }
     .nav-main ul {
         text-align: center;
         width: 500px;
@@ -322,9 +260,6 @@
             *zoom: 1;
         font-size: 1.9rem;
         padding-left: 1.5rem;
-    }
-    .overflow-killer {
-        height: 300px;
     }
     
     .textbig7 {
@@ -380,15 +315,11 @@
         font-size: 5rem;
         margin: 80px 0 0 340px;
         transform: rotate(-2deg);
-        padding: 0 0 0 30px;
         width: 460px;
     }
     .logo {
         max-height: 271px;
         max-width: 271px;
-        position: relative;
-            left: 50px;
-            top: 5px;
     }
     .nav-main {
         margin: 20px 0 0 341px;
@@ -397,16 +328,6 @@
         line-height: 2rem;
         text-align: left;
         width: 800px;
-    }
-    .nav-main ul li {
-        display: inline-block;
-        *display: inline;                                       /* IE7 */
-            *zoom: 1;
-        font-size: 1.9rem;
-        padding-left: 1.5rem;
-    }
-    .nav-main ul li:last-child {
-        padding-right: 3rem; /*Counterbalances the padding-left so last element in list isn't hugging right side of page - actually pushes whole list 3rem to the left*/
     }
     .overflow-killer {
         height: 350px;
@@ -417,13 +338,9 @@
     header {
         height: 250px;
     }
-    .address-p {
-        font-size: 1.4rem;
-    }
     .header-title {
         font-size: 6rem;
         margin: 80px 0 0 390px;
-        padding: 0 0 0 30px;
         width: 550px;
     }
     .nav-main ul li {

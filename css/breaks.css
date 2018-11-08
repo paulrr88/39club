@@ -354,6 +354,34 @@
 
 /* Larger than Desktop HD */
 @media (min-width: 1300px) {
+    .image-container {
+      background: cyan;
+      float: left;
+      height: 300px;
+      transform: rotate(-20deg);/*Have to rotate at this level, won't work on the image*/
+      width: 40%;
+    }
+    .image-parent {
+      border: 8px solid #fff;
+      margin-left: 10%;
+      height: 80%;
+      overflow: hidden;
+      transform: skew(15deg,15deg);
+      width: 50%;
+    }
+    .image-parent > * {
+      transform: rotate(22deg) skew(-10deg,-10deg); 
+    }
+    .image-child {
+      background: left 30% / 60% 90% url(../img/photo-home.jpg) no-repeat;
+      height: 960px;
+      position: absolute;
+        left: -60px;
+        top: -340px;
+      width: 720px;
+    }
+    
+    
     header {
         height: 300px;
     }

@@ -86,13 +86,13 @@
 
 
     <div style="
-                background: brown;
-                height: 250px;
+                background: url(img/quote.png) no-repeat;
+                height: 272px;
                 margin: 300px 0 0 0;
                 position: absolute;
                     right: 120px;
                     top: 70px;
-                width: 250px;
+                width: 264px;
                 z-index: 1;
                 ">
             
@@ -104,6 +104,7 @@
         <article style="
                         background: pink;
                         height: 400px;/*delete this, allow for flexible height?*/
+                        overflow: hidden;
                         position: relative;
                             left: -20px;
                             top: 0;
@@ -117,20 +118,12 @@
                             width: 60%;
                             ">
             </section>
-            <div style="
-                            background: cyan;
-                            float: left;
-                            height: 300px;
-                            transform: rotate(-20deg);/*Have to rotate at this level, won't work on the image*/
-                            width: 40%;
-                            ">
-                <img src="" style="
-                                background: cyan;
-                                margin-left: 10%;
-                                height: 250px;
-                                transform: skew(15deg,15deg);
-                                width: 60%;
-                                   " />
+            <div class="image-container">
+              <div class="image-parent">
+                <div class="image-child">
+
+                </div>
+              </div>
             </div>
             <section style="
                             background: purple;

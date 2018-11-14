@@ -85,54 +85,28 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 
-    <div style="
-                background: url(img/quote.png) no-repeat;
-                height: 272px;
-                margin: 300px 0 0 0;
-                position: absolute;
-                    right: 120px;
-                    top: 70px;
-                width: 264px;
-                z-index: 1;
-                ">
-            
+    <div class="quote-circle">
+        <p class="quote-text">"I love the activities and playing with my friends" <span class="quote-name">- Tia</span></p>
     </div>
 
     <main class="container clear overflow-hidden" role="main" style="background: blue; color: white;"><!--Container for ALL content, everything inside this-->
         <p>Container begins</p>
         
-        <article style="
-                        background: pink;
-                        height: 400px;/*delete this, allow for flexible height?*/
-                        overflow: hidden;
-                        position: relative;
-                            left: -20px;
-                            top: 0;
-                        transform: rotate(-5deg);
-                        width: 110%;
-                        ">
-            <section style="
-                            background: coral;
-                            float: left;
-                            height: 300px;
-                            width: 60%;
-                            ">
+        <article class="home-splash italics smallcaps" style="background: pink;">
+            <section class="home-splash-left">
+                <h1 class="italics margin-4-bottom smallcaps">Fun<span>!</span> Games<span>!</span> Activities<span>!</span></h1>
+                
+                <p class="textmid2 margin-none padding-none">A short blurb would go here about important aspects of the club. We’d have about this much space to do it in and I’m just going to keep typing to fill the space that I’d be thinking of using like this just going to keep going we should have about six lines when all’s said and done so let’s just keep typing and see how much space we have yes we’ll keep going from here. And some more text at the bottom here to finish off!	<span class="right">Learn more >></span></p>
             </section>
-            <div class="image-container">
-              <div class="image-parent">
-                <div class="image-child">
-
-                </div>
+            <div class="home-splash-right" style="background: coral;"></div>
+            <div class="home-splash-image-container" style="background: cyan;">
+              <div class="home-splash-image-parent" style="background: yellow;">
+                <div class="home-splash-image-child"></div>
               </div>
             </div>
-            <section style="
-                            background: purple;
-                            height: 100px;
-                            position: absolute;
-                                left: 0;
-                                bottom: 0;
-                            width: 100%;
-                            ">
+            <section class="home-splash-bottom" style="background: purple;">
+                <h3 class="margin-20-right-per padding-none right">Tuesdays 4pm to 6pm (term time only)</h3>
+                <h2 class="clear margin-22-right-per right">£1 entry <span class="padding-3-left">For 11-14 year olds</span></h2>
             </section>
         </article>
 

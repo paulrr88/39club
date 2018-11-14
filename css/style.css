@@ -220,6 +220,10 @@ ul {
     transform: rotate(-20deg);
 }
 
+.italics {
+    font-style: italic;
+}
+
 .left {
     float: none;                                            /* just because floating doesn't work on mobile,
                                                             same below */
@@ -256,8 +260,17 @@ ul {
 .margin-2-top {
     margin-top: 2rem;
 }
+.margin-20-right-per {
+    margin-right: 20%;
+}
+.margin-22-right-per {
+    margin-right: 22%;
+}
 .margin-3-left {
     margin-left: 3rem;
+}
+.margin-4-bottom {
+    margin-bottom: 4rem;
 }
 .margin-4-top {
     margin-top: 4rem;
@@ -267,6 +280,9 @@ ul {
 }
 .margin-10-top {
     margin-top: 10rem;
+}
+.margin-10-right-per {
+    margin-right: 10%;
 }
 .margin-4 {
     margin: 4rem;

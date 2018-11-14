@@ -335,6 +335,83 @@
 }
 
 @media (min-width: 1200px) {
+    .home-splash {
+        height: 400px; /*needed due to absolutely positioned elements not affecting size of box*/
+        overflow: hidden; /*hides my cheating with the rotated elements, especially the image and its containing boxes!*/
+        margin-top: 50px;
+        position: relative;
+            left: -20px;
+            top: 0;
+        transform: rotate(-5deg);
+        width: 110%;
+    }
+    .home-splash-bottom {
+        height: 100px;
+        position: absolute;
+            left: 0;
+            bottom: 0;
+        width: 100%;
+    }
+    .home-splash-image-container {
+      float: left;
+      height: 300px;
+      transform: rotate(-20deg);/*Have to rotate at this level, won't work on the image*/
+      width: 40%;
+    }
+    .home-splash-image-parent {
+      border: 8px solid #fff;
+      margin-left: 10%;
+      height: 80%;
+      overflow: hidden;
+      transform: skew(15deg,15deg);
+      width: 50%;
+    }
+    .home-splash-image-parent > * {
+      transform: rotate(22deg) skew(-10deg,-10deg); 
+    }
+    .home-splash-image-child {
+      background: left 30% / 90% 135% url(../img/photo-home.jpg) no-repeat;
+      height: 960px;
+      position: absolute;
+        left: -70px;
+        top: -340px;
+      width: 720px;
+    }
+    .home-splash-left {
+        float: left;
+        height: 300px;
+        position: absolute; /*Basically allows it not to affect the right-hand side image area which I set up before this bit*/
+            top: 0;
+            left: 5%;
+        width: 50%;
+    }
+    .home-splash-right {
+        /*Right now this is horribly hacked and this part actually takes up the whole box and the image container and stuff sort of sticks to the right side... yes I don't know how it works guilty as charged*/
+        float: left;
+        height: 300px;
+        width: 60%;
+    }
+    .quote-circle {
+        background: left 0% / 75% 75% url(../img/quote.png) no-repeat;
+        height: 272px;
+        margin: 300px 0 0 0;
+        position: absolute;
+            right: 10px;
+            top: 40px;
+        width: 264px;
+        z-index: 1;
+    }
+    .quote-name {
+        float: right;
+        padding-right: 20%;
+    }
+    .quote-text {
+        color: #e6c96d;
+        font: bold italic small-caps 2rem/2rem Arial;
+        margin: 0;
+        padding: 15% 35% 0 12%;
+    }
+    
     header {
         height: 250px;
     }
@@ -354,33 +431,16 @@
 
 /* Larger than Desktop HD */
 @media (min-width: 1300px) {
-    .image-container {
-      background: cyan;
-      float: left;
-      height: 300px;
-      transform: rotate(-20deg);/*Have to rotate at this level, won't work on the image*/
-      width: 40%;
+    .quote-circle {
+        background: left 0% / 85% 85% url(../img/quote.png) no-repeat;
+        position: absolute;
+            right: 50px;
+            top: 120px;
     }
-    .image-parent {
-      border: 8px solid #fff;
-      margin-left: 10%;
-      height: 80%;
-      overflow: hidden;
-      transform: skew(15deg,15deg);
-      width: 50%;
+    .quote-text {
+        font: bold italic small-caps 2.2rem/3rem Arial;
+        padding: 15% 25% 0 15%;
     }
-    .image-parent > * {
-      transform: rotate(22deg) skew(-10deg,-10deg); 
-    }
-    .image-child {
-      background: left 30% / 60% 90% url(../img/photo-home.jpg) no-repeat;
-      height: 960px;
-      position: absolute;
-        left: -60px;
-        top: -340px;
-      width: 720px;
-    }
-    
     
     header {
         height: 300px;

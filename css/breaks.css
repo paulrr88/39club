@@ -118,6 +118,89 @@
 
 /* Larger than phablet (also point when grid in Skeleton becomes active) */
 @media (min-width: 550px) {
+    .home-splash {
+        height: 800px; /*much taller thanks to needing to stack text and image on top of one another*/
+        overflow: hidden; /*hides my cheating with the rotated elements, especially the image and its containing boxes!*/
+        margin-top: 0;
+        position: relative;
+            left: -40px; /*larger than higher resolutions as box is taller and can see more of the slant*/
+            top: 0;
+        transform: rotate(-5deg);
+        width: 120%; /*needs an extra 10% to hide right side slant over higher resolutions*/
+    }
+    .home-splash-bottom {
+        height: 100px;
+        position: absolute;
+            left: 0;
+            bottom: 0;
+        width: 100%;
+    }
+    .home-splash-h1 {
+        font-size: 2.8rem;
+    }
+    .home-splash-image-container {
+        float: none; /*For mobile vertical layout*/
+        height: 250px;
+        margin-top: 40px;
+        transform: rotate(-20deg);/*Have to rotate at this level, won't work on the image*/
+        width: 40%;
+    }
+    .home-splash-image-parent {
+      border: 8px solid #fff;
+      margin-left: 10%;
+      height: 80%;
+      overflow: hidden;
+      transform: skew(15deg,15deg);
+      width: 100%;
+    }
+    .home-splash-image-parent > * {
+      transform: rotate(22deg) skew(-10deg,-10deg); 
+    }
+    .home-splash-image-child {
+      background: left 40% / 55% 80.82% url(../img/photo-home.jpg) no-repeat;
+      height: 960px;
+      position: absolute;
+        left: -45px;
+        top: -340px;
+      width: 720px;
+    }
+    .home-splash-left {
+        float: none; /*For mobile layout vertical stacking*/
+        height: 300px;
+        position: absolute; /*Basically allows it not to affect the right-hand side image area which I set up before this bit*/
+            top: 0;
+            left: 5%;
+        width: 100%;
+    }
+    .home-splash-right {
+        float: none; /*For mobile layout vertical stacking*/
+        height: 200px;
+        width: 100%;
+    }
+    .home-splash-text {
+        font-size: 1.8rem;
+    }
+    .quote-circle {
+        background: left 0% / 55% 55% url(../img/quote.png) no-repeat;
+        height: 272px;
+        margin: 300px 0 0 0;
+        position: absolute;
+            right: -100px;
+            top: -50px;
+        width: 264px;
+        z-index: 1;
+    }
+    .quote-name {
+        float: right;
+        padding-right: 20%;
+    }
+    .quote-text {
+        color: #e6c96d;
+        font: bold italic small-caps 1.4rem/1.4rem Arial;
+        margin: 0;
+        padding: 10% 55% 0 12%;
+    }
+    
     header { /*Special slanted header design for desktop/tablet)*/
         background: red;
         height: 250px;
@@ -223,10 +306,94 @@
 
 /* Larger than tablet */
 @media (min-width: 750px) {
+    .home-splash {
+        height: 400px; /*needed due to absolutely positioned elements not affecting size of box*/
+        margin-top: 0;
+        position: relative;
+            left: -20px;
+            top: 0;
+        transform: rotate(-5deg);
+        width: 110%;
+    }
+    .home-splash-bottom {
+        height: 100px;
+        position: absolute;
+            left: 0;
+            bottom: 0;
+        width: 100%;
+    }
+    .home-splash-h1 {
+        font-size: 2.8rem;
+    }
+    .home-splash-image-container {
+        float: left;
+        height: 250px;
+        margin-top: 40px;
+        transform: rotate(-20deg);/*Have to rotate at this level, won't work on the image*/
+        width: 40%;
+    }
+    .home-splash-image-parent {
+      border: 8px solid #fff;
+      margin-left: 10%;
+      height: 80%;
+      overflow: hidden;
+      transform: skew(15deg,15deg);
+      width: 60%;
+    }
+    .home-splash-image-parent > * {
+      transform: rotate(22deg) skew(-10deg,-10deg); 
+    }
+    .home-splash-image-child {
+      background: left 40% / 55% 80.82% url(../img/photo-home.jpg) no-repeat;
+      height: 960px;
+      position: absolute;
+        left: -45px;
+        top: -340px;
+      width: 720px;
+    }
+    .home-splash-left {
+        float: left;
+        height: 300px;
+        position: absolute; /*Basically allows it not to affect the right-hand side image area which I set up before this bit*/
+            top: 0;
+            left: 5%;
+        width: 45%;
+    }
+    .home-splash-right {
+        /*Right now this is horribly hacked and this part actually takes up the whole box and the image container and stuff sort of sticks to the right side... yes I don't know how it works guilty as charged*/
+        float: left;
+        height: 300px;
+        width: 55%;
+    }
+    .home-splash-text {
+        font-size: 1.8rem;
+    }
+    .quote-circle {
+        background: left 0% / 55% 55% url(../img/quote.png) no-repeat;
+        height: 272px;
+        margin: 300px 0 0 0;
+        position: absolute;
+            right: -100px;
+            top: -50px;
+        width: 264px;
+        z-index: 1;
+    }
+    .quote-name {
+        float: right;
+        padding-right: 20%;
+    }
+    .quote-text {
+        color: #e6c96d;
+        font: bold italic small-caps 1.4rem/1.4rem Arial;
+        margin: 0;
+        padding: 10% 55% 0 12%;
+    }
+    
+    
     header {
         height: 220px;
     }
-    
+
     .address { /*Little version, makes more room for header-title*/
         height: 60px;
         width: 350px;
@@ -303,6 +470,26 @@
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
+    .home-splash {
+        margin-top: 50px;
+    }
+    .home-splash-h1 {
+        font-size: 3.8rem;
+    }
+    .home-splash-text {
+        font-size: 2rem;
+    }
+    .quote-circle {
+        background: left 0% / 65% 65% url(../img/quote.png) no-repeat;
+        position: absolute;
+            right: -40px;
+            top: 40px;
+    }
+    .quote-text {
+        font: bold italic small-caps 1.7rem/1.7rem Arial;
+        padding: 15% 35% 0 12%;
+    }
+    
     .address { /*Second biggest version, makes more room for header-title*/
         height: 120px;
         width: 190px;
@@ -335,81 +522,36 @@
 }
 
 @media (min-width: 1200px) {
-    .home-splash {
-        height: 400px; /*needed due to absolutely positioned elements not affecting size of box*/
-        overflow: hidden; /*hides my cheating with the rotated elements, especially the image and its containing boxes!*/
-        margin-top: 50px;
-        position: relative;
-            left: -20px;
-            top: 0;
-        transform: rotate(-5deg);
-        width: 110%;
-    }
-    .home-splash-bottom {
-        height: 100px;
-        position: absolute;
-            left: 0;
-            bottom: 0;
-        width: 100%;
+    .home-splash-h1 {
+        font-size: 5rem;
     }
     .home-splash-image-container {
-      float: left;
-      height: 300px;
-      transform: rotate(-20deg);/*Have to rotate at this level, won't work on the image*/
-      width: 40%;
-    }
-    .home-splash-image-parent {
-      border: 8px solid #fff;
-      margin-left: 10%;
-      height: 80%;
-      overflow: hidden;
-      transform: skew(15deg,15deg);
-      width: 50%;
-    }
-    .home-splash-image-parent > * {
-      transform: rotate(22deg) skew(-10deg,-10deg); 
+        height: 300px;
+        margin-top: 0;
     }
     .home-splash-image-child {
       background: left 30% / 90% 135% url(../img/photo-home.jpg) no-repeat;
-      height: 960px;
       position: absolute;
         left: -70px;
         top: -340px;
-      width: 720px;
+    }
+    .home-splash-image-parent {
+      width: 50%;
     }
     .home-splash-left {
-        float: left;
-        height: 300px;
-        position: absolute; /*Basically allows it not to affect the right-hand side image area which I set up before this bit*/
-            top: 0;
-            left: 5%;
         width: 50%;
     }
     .home-splash-right {
-        /*Right now this is horribly hacked and this part actually takes up the whole box and the image container and stuff sort of sticks to the right side... yes I don't know how it works guilty as charged*/
-        float: left;
-        height: 300px;
         width: 60%;
     }
     .quote-circle {
         background: left 0% / 75% 75% url(../img/quote.png) no-repeat;
-        height: 272px;
-        margin: 300px 0 0 0;
         position: absolute;
             right: 10px;
             top: 40px;
-        width: 264px;
-        z-index: 1;
-    }
-    .quote-name {
-        float: right;
-        padding-right: 20%;
     }
     .quote-text {
-        color: #e6c96d;
         font: bold italic small-caps 2rem/2rem Arial;
-        margin: 0;
-        padding: 15% 35% 0 12%;
     }
     
     header {
@@ -431,6 +573,9 @@
 
 /* Larger than Desktop HD */
 @media (min-width: 1300px) {
+    .home-splash-h1 {
+        font-size: 5.5rem;
+    }
     .quote-circle {
         background: left 0% / 85% 85% url(../img/quote.png) no-repeat;
         position: absolute;

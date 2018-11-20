@@ -95,21 +95,21 @@
         
         <article class="home-splash italics smallcaps" style="background: pink;">
             <section class="home-splash-left">
-                <h1 class="home-splash-h1 italics margin-4-bottom smallcaps">Fun<span>!</span> Games<span>!</span> Activities<span>!</span></h1>
+                <h1 class="home-splash-h1 italics margin-4-bottom smallcaps" style="background: cyan;">Fun<span>!</span> Games<span>!</span> Activities<span>!</span></h1>
                 
-                <p class="home-splash-text margin-none padding-none">39 Club offers somewhere for young people to go and find friendship and relax, with WiFi, music, TV, table tennis, table football, board games and crafts. Even cooking! The idea is that there’s something for everyone, and no-one gets turned away.<br />
+                <p class="home-splash-text margin-none padding-none" style="background: brown;">39 Club offers somewhere for young people to go and find friendship and relax, with WiFi, music, TV, table tennis, table football, board games and crafts. Even cooking! There’s something for everyone, and no-one gets turned away.<br />
                     
 	               <span class="right">Learn more >></span></p>
             </section>
             <div class="home-splash-right" style="background: coral;"></div>
-            <div class="home-splash-image-container" style="background: cyan;">
+            <div class="home-splash-image-container" style="background: none;">
               <div class="home-splash-image-parent" style="background: yellow;">
                 <div class="home-splash-image-child"></div>
               </div>
             </div>
             <section class="home-splash-bottom" style="background: purple;">
-                <h3 class="margin-20-right-per padding-none right">Tuesdays 4pm to 6pm (term time only)</h3>
-                <h2 class="clear margin-22-right-per right">£1 entry <span class="padding-3-left">For 11-14 year olds</span></h2>
+                <h3 class="home-splash-bottom-h3 margin-20-right-per padding-none right">Tuesdays 4pm to 6pm (term time only)</h3>
+                <h2 class="clear home-splash-bottom-h2 margin-22-right-per right">£1 entry <span class="padding-3-left">For 11-14 year olds</span></h2>
             </section>
         </article>
 

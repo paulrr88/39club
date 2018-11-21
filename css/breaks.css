@@ -1,5 +1,46 @@
 /* Larger than mobile */
 @media (min-width: 400px) {
+    footer {
+        font-size: 1.6rem;
+        line-height: 200%; /*Adds much needed height to links especially when it goes into two lines as it will on some sites*/
+    }
+    footer ul {
+        padding: 2rem 0 0 0; /*Adds a gap above the list so it's not stuck to the bottom of the content above it*/
+    }
+    footer ul li {
+        border-right: 0.3rem solid #000;
+        display: inline-block;
+        margin: 0;
+        padding: 0 1rem 0 0.7rem;
+    }
+    /*Prevents unnecessary/problematic padding and borders on first and last elements in the list*/
+    footer ul li:first-child {
+        padding-left: 0;
+    }
+    footer ul li:last-child {
+        border-right: 0;
+        padding-right: 0;
+    }
+    header { /*Special slanted header design for desktop/tablet)*/
+        height: 400px;
+    }
+    
+    .address { /*Less wide taller version to make room for the top area and still have enough room for text!*/
+        margin-top: 30px;
+    }
+    .fluid-images-3 img {     /*figure area containing 3 images side by side*/
+        float: left; /*Lets them stack but breaks when a link is added*/
+        max-width: 30.33%; /*-3% due to padding-left %*/
+        padding-left: 4.5%; /*Would be 3% but the fact that the first one has no padding-left means we add 1.5% (half of the padding that would have been on the first image)*/
+    }
+    .header-title {
+        height: 100px;
+        margin: 100px 0 0 20px;
+        padding: 0 50px 0 0px;
+        position: static;
+        top: 0;
+        left: 0;
+    }
     .home-splash {
         height: 600px; /*much taller thanks to needing to stack text and image on top of one another*/
         width: 120%; /*needs an extra 10% to hide right side slant over higher resolutions*/
@@ -43,48 +84,6 @@
         padding-left: 12%;
         padding-top: 0;
         width: 95%;
-    }
-    
-    footer {
-        font-size: 1.6rem;
-        line-height: 200%; /*Adds much needed height to links especially when it goes into two lines as it will on some sites*/
-    }
-    footer ul {
-        padding: 2rem 0 0 0; /*Adds a gap above the list so it's not stuck to the bottom of the content above it*/
-    }
-    footer ul li {
-        border-right: 0.3rem solid #000;
-        display: inline-block;
-        margin: 0;
-        padding: 0 1rem 0 0.7rem;
-    }
-    /*Prevents unnecessary/problematic padding and borders on first and last elements in the list*/
-    footer ul li:first-child {
-        padding-left: 0;
-    }
-    footer ul li:last-child {
-        border-right: 0;
-        padding-right: 0;
-    }
-    header { /*Special slanted header design for desktop/tablet)*/
-        height: 400px;
-    }
-    
-    .address { /*Less wide taller version to make room for the top area and still have enough room for text!*/
-        margin-top: 30px;
-    }
-    .fluid-images-3 img {     /*figure area containing 3 images side by side*/
-        float: left; /*Lets them stack but breaks when a link is added*/
-        max-width: 30.33%; /*-3% due to padding-left %*/
-        padding-left: 4.5%; /*Would be 3% but the fact that the first one has no padding-left means we add 1.5% (half of the padding that would have been on the first image)*/
-    }
-    .header-title {
-        height: 100px;
-        margin: 100px 0 0 20px;
-        padding: 0 50px 0 0px;
-        position: static;
-        top: 0;
-        left: 0;
     }
     .left {
         float: left;                                            /* restores floating for higher resolutions, same below */
@@ -163,65 +162,6 @@
 
 /* Larger than phablet (also point when grid in Skeleton becomes active) */
 @media (min-width: 550px) {
-    .home-splash {
-        height: 520px; /*much taller thanks to needing to stack text and image on top of one another*/
-    }
-    .home-splash-bottom {
-        height: 80px;
-    }
-    .home-splash-bottom-h2 {
-        font-size: 3rem;
-    }
-    .home-splash-bottom-h3 {
-        font-size: 2.5rem;
-    }
-    .home-splash-h1 {
-        padding-left: 8%;
-    }
-    .home-splash-image-container {
-        margin-top: 70px;
-        width: 40%;
-    }
-    .home-splash-image-parent {
-      margin-left: 70%;
-      height: 80%;
-    }
-    .home-splash-image-child {
-      background: left 40% / 55% 80.82% url(../img/photo-home.jpg) no-repeat;
-      position: absolute;
-        left: -45px;
-        top: -340px;
-    }
-    .home-splash-right {
-        height: 200px;
-    }
-    .home-splash-text {
-        margin-top: 0; 
-        padding-left: 10%;
-        padding-top: 2%;
-    }
-    .quote-circle {
-        background: left 0% / 55% 55% url(../img/quote.png) no-repeat;
-        display: block;
-        height: 272px;
-        margin: 300px 0 0 0;
-        position: absolute;
-            right: -100px;
-            top: -50px;
-        width: 264px;
-        z-index: 1;
-    }
-    .quote-name {
-        float: right;
-        padding-right: 20%;
-    }
-    .quote-text {
-        color: #e6c96d;
-        font: bold italic small-caps 1.4rem/1.4rem Arial;
-        margin: 0;
-        padding: 10% 55% 0 12%;
-    }
-    
     header { /*Special slanted header design for desktop/tablet)*/
         background: red;
         height: 250px;
@@ -288,6 +228,44 @@
         width: 100%;
     }
     
+    .home-splash {
+        height: 520px; /*much taller thanks to needing to stack text and image on top of one another*/
+    }
+    .home-splash-bottom {
+        height: 80px;
+    }
+    .home-splash-bottom-h2 {
+        font-size: 3rem;
+    }
+    .home-splash-bottom-h3 {
+        font-size: 2.5rem;
+    }
+    .home-splash-h1 {
+        padding-left: 8%;
+    }
+    .home-splash-image-container {
+        margin-top: 70px;
+        width: 40%;
+    }
+    .home-splash-image-parent {
+      margin-left: 70%;
+      height: 80%;
+    }
+    .home-splash-image-child {
+      background: left 40% / 55% 80.82% url(../img/photo-home.jpg) no-repeat;
+      position: absolute;
+        left: -45px;
+        top: -340px;
+    }
+    .home-splash-right {
+        height: 200px;
+    }
+    .home-splash-text {
+        margin-top: 0; 
+        padding-left: 10%;
+        padding-top: 2%;
+    }
+    
     .list-contents { /*Centred list of links for pages with subpages that I want to list*/
         background: #fff;
         border-top: 5px solid #ffa726;
@@ -322,11 +300,50 @@
         height: 300px;
     }
     
-    
+    .quote-circle {
+        background: left 0% / 100% 100% url(../img/quote.png) no-repeat;
+        display: block;
+        height: 149px;
+        margin: 300px 0 0 0;
+        position: absolute;
+            right: 30px;
+            top: -30px;
+        width: 145px;
+        z-index: 1;
+    }
+    .quote-name {
+        float: right;
+        padding-right: 20%;
+    }
+    .quote-text {
+        color: #e6c96d;
+        font: bold italic small-caps 1.4rem/1.4rem Arial;
+        margin: 0;
+        padding: 20% 22% 0 22%;
+    }
 }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
+    header {
+        height: 220px;
+    }
+
+    .address { /*Little version, makes more room for header-title*/
+        height: 60px;
+        width: 350px;
+    }
+    .corner {
+        height: 80px;
+    }
+    .header-title {
+        font-size: 4rem;
+        height: auto;
+        margin: 80px 0 0 310px;
+        padding: 0 0 0 30px;
+        position: relative;
+        width: 380px;
+    }
     .home-splash {
         height: 400px; /*needed due to absolutely positioned elements not affecting size of box*/
         position: relative;
@@ -368,27 +385,6 @@
     .home-splash-text {
         padding-left: 0%;
         padding-top: 0;
-    }
-    
-    
-    header {
-        height: 220px;
-    }
-
-    .address { /*Little version, makes more room for header-title*/
-        height: 60px;
-        width: 350px;
-    }
-    .corner {
-        height: 80px;
-    }
-    .header-title {
-        font-size: 4rem;
-        height: auto;
-        margin: 80px 0 0 310px;
-        padding: 0 0 0 30px;
-        position: relative;
-        width: 380px;
     }
     .logo {
         margin: 0;
@@ -447,30 +443,8 @@
     }
 }
 
-
-
 /* Larger than desktop */
 @media (min-width: 1000px) {
-    .home-splash {
-        margin-top: 50px;
-    }
-    .home-splash-h1 {
-        font-size: 3.8rem;
-    }
-    .home-splash-text {
-        font-size: 2rem;
-    }
-    .quote-circle {
-        background: left 0% / 65% 65% url(../img/quote.png) no-repeat;
-        position: absolute;
-            right: -40px;
-            top: 40px;
-    }
-    .quote-text {
-        font: bold italic small-caps 1.7rem/1.7rem Arial;
-        padding: 15% 35% 0 12%;
-    }
-    
     .address { /*Second biggest version, makes more room for header-title*/
         height: 120px;
         width: 190px;
@@ -484,6 +458,15 @@
         margin: 80px 0 0 340px;
         transform: rotate(-2deg);
         width: 460px;
+    }
+    .home-splash {
+        margin-top: 10px;
+    }
+    .home-splash-h1 {
+        font-size: 3.8rem;
+    }
+    .home-splash-text {
+        font-size: 2rem;
     }
     .logo {
         max-height: 271px;
@@ -500,9 +483,32 @@
     .overflow-killer {
         height: 350px;
     }
+    .quote-circle {
+        background: left 0% / 100% 100% url(../img/quote.png) no-repeat;
+        height: 185px;
+        position: absolute;
+            right: 30px;
+            top: 40px;
+        width: 180px;
+    }
+    .quote-text {
+        font: bold italic small-caps 1.7rem/1.7rem Arial;
+        padding: 25% 15% 0 15%;
+    }
 }
 
 @media (min-width: 1200px) {
+    header {
+        height: 250px;
+    }
+    .header-title {
+        font-size: 6rem;
+        margin: 80px 0 0 390px;
+        width: 550px;
+    }
+    .home-splash {
+        margin-top: 30px;
+    }
     .home-splash-h1 {
         font-size: 5rem;
     }
@@ -525,24 +531,6 @@
     .home-splash-right {
         width: 60%;
     }
-    .quote-circle {
-        background: left 0% / 75% 75% url(../img/quote.png) no-repeat;
-        position: absolute;
-            right: 10px;
-            top: 40px;
-    }
-    .quote-text {
-        font: bold italic small-caps 2rem/2rem Arial;
-    }
-    
-    header {
-        height: 250px;
-    }
-    .header-title {
-        font-size: 6rem;
-        margin: 80px 0 0 390px;
-        width: 550px;
-    }
     .nav-main ul li {
         font-size: 2.1rem;
         padding-left: 2rem;
@@ -550,30 +538,23 @@
     .overflow-killer {
         height: 375px;
     }
+    .quote-circle {
+        background: left 0% / 100% 100% url(../img/quote.png) no-repeat;
+        height: 216px;
+        position: absolute;
+            right: 30px;
+            top: 10px;
+        width: 210px;
+    }
+    .quote-text {
+        font: bold italic small-caps 2rem/2rem Arial;
+    }
+    
+    
 }
 
 /* Larger than Desktop HD */
 @media (min-width: 1300px) {
-    .home-splash-bottom-h2 {
-        font-size: 4rem;
-    }
-    .home-splash-bottom-h3 {
-        font-size: 3.5rem;
-    }
-    .home-splash-h1 {
-        font-size: 5.5rem;
-    }
-    .quote-circle {
-        background: left 0% / 85% 85% url(../img/quote.png) no-repeat;
-        position: absolute;
-            right: 50px;
-            top: 120px;
-    }
-    .quote-text {
-        font: bold italic small-caps 2.2rem/3rem Arial;
-        padding: 15% 25% 0 15%;
-    }
-    
     header {
         height: 300px;
     }
@@ -599,6 +580,43 @@
         padding: 0 0 0 40px;
         width: 650px;
     }
+    .home-buttons {
+        height: 100px;
+        margin-top: 50px;
+        width: 98%;
+    }
+    .home-button {
+        box-shadow: 1px 5px 2px black;
+        float: right;
+        height: 84px;
+        margin-right: 40px;
+    }
+    .home-button-text {
+        font: bold italic small-caps 3.5rem/0rem Arial;
+        margin: 0;
+        padding: 40px 0 0 20px;
+    }
+    .home-button-contact {
+        width: 290px;
+    }
+    .home-button-join {
+        width: 238px;
+    }
+    .home-button-vol {
+        width: 424px;
+    }
+    .home-splash-bottom-h2 {
+        font-size: 4rem;
+    }
+    .home-splash-bottom-h3 {
+        font-size: 3.5rem;
+    }
+    .home-splash-h1 {
+        font-size: 5.5rem;
+    }
+    .home-splash-text {
+        font-size: 2.5rem;
+    }
     .logo {
         max-height: 361px;
         max-width: 361px;
@@ -619,5 +637,17 @@
     }
     .overflow-killer {
         height: 475px;
+    }
+    .quote-circle {
+        background: left 0% / 100% 100% url(../img/quote.png) no-repeat;
+        height: 230px;
+        position: absolute;
+            right: 30px;
+            top: 120px;
+        width: 237px;
+    }
+    .quote-text {
+        font: bold italic small-caps 2.2rem/3rem Arial;
+        padding: 15% 20% 0 20%;
     }
 }

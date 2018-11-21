@@ -1,80 +1,3 @@
-.home-splash {
-    height: 610px; /*much taller thanks to needing to stack text and image on top of one another*/
-    margin-top: 0;
-    overflow: hidden; /*hides my cheating with the rotated elements, especially the image and its containing boxes!*/
-    position: relative;
-        left: -40px; /*larger than higher resolutions as box is taller and can see more of the slant*/
-        top: 0;
-    transform: rotate(-5deg);
-    width: 130%; /*needs yet another extra 10% to hide right side slant over higher resolutions*/
-}
-.home-splash-bottom {
-    height: 50px;
-    padding-left: 20px;
-    position: absolute;
-        left: 0;
-        bottom: 0;
-    width: 100%;
-}
-.home-splash-bottom-h2 {
-    font-size: 1.9rem;
-}
-.home-splash-bottom-h3 {
-    font-size: 1.7rem;
-}
-.home-splash-h1 {
-    font-size: 2.5rem;
-    padding-left: 2%;
-    width: 100%;
-}
-.home-splash-image-container {
-    float: none; /*For mobile vertical layout*/
-    height: 250px;
-    margin-top: 0;
-    transform: rotate(-20deg);/*Have to rotate at this level, won't work on the image*/
-    width: 130%;
-}
-.home-splash-image-parent {
-  border: 8px solid #fff;
-  margin-left: -20%;
-  height: 100%;
-  overflow: hidden;
-  transform: skew(15deg,15deg);
-  width: 100%;
-}
-.home-splash-image-parent > * {
-  transform: rotate(22deg) skew(-10deg,-10deg); 
-}
-.home-splash-image-child {
-  background: left 40% / 70% 100.8% url(../img/photo-home.jpg) no-repeat;
-  height: 960px;
-  position: absolute;
-    left: 90px;
-    top: -340px;
-  width: 720px;
-}
-.home-splash-left {
-    float: none; /*For mobile layout vertical stacking*/
-    height: 300px;
-    position: absolute; /*Basically allows it not to affect the right-hand side image area which I set up before this bit*/
-        top: 0;
-        left: 15%;
-    width: 75%; /*Limits width of area for text nicely so doesn't overflow*/
-}
-.home-splash-right {
-    float: none; /*For mobile layout vertical stacking*/
-    height: 255px;
-    width: 100%;
-}
-.home-splash-text {
-    font-size: 1.8rem;
-    padding-top: 0;
-    width: 95%;
-}
-.quote-circle {
-    display: none;
-}
-
 /*N.B. THIS IS MOBILE FIRST so all selectors etc in this should be mobile-friendly, anything else is in breaks.css*/
 
 /* Element Selectors */
@@ -297,6 +220,93 @@ ul {
     transform: rotate(-20deg);
 }
 
+.home-buttons {
+    height: 200px; /*Creates margin at the bottom as Contact Us is flush against bottom*/
+    margin-top: 20px;
+}
+.home-button {
+    height: 50px;
+    
+}
+.home-button-text {
+    font: bold italic small-caps 2.2rem/0rem Arial;
+    margin: 0;
+    padding: 40px 0 0 20px;
+}
+.home-splash {
+    height: 610px; /*much taller thanks to needing to stack text and image on top of one another*/
+    margin-top: 0;
+    overflow: hidden; /*hides my cheating with the rotated elements, especially the image and its containing boxes!*/
+    position: relative;
+        left: -40px; /*larger than higher resolutions as box is taller and can see more of the slant*/
+        top: 0;
+    transform: rotate(-5deg);
+    width: 130%; /*needs yet another extra 10% to hide right side slant over higher resolutions*/
+}
+.home-splash-bottom {
+    height: 50px;
+    padding-left: 20px;
+    position: absolute;
+        left: 0;
+        bottom: 0;
+    width: 100%;
+}
+.home-splash-bottom-h2 {
+    font-size: 1.9rem;
+}
+.home-splash-bottom-h3 {
+    font-size: 1.7rem;
+}
+.home-splash-h1 {
+    font-size: 2.5rem;
+    padding-left: 2%;
+    width: 100%;
+}
+.home-splash-image-container {
+    float: none; /*For mobile vertical layout*/
+    height: 250px;
+    margin-top: 0;
+    transform: rotate(-20deg);/*Have to rotate at this level, won't work on the image*/
+    width: 130%;
+}
+.home-splash-image-parent {
+  border: 8px solid #fff;
+  margin-left: -20%;
+  height: 100%;
+  overflow: hidden;
+  transform: skew(15deg,15deg);
+  width: 100%;
+}
+.home-splash-image-parent > * {
+  transform: rotate(22deg) skew(-10deg,-10deg); 
+}
+.home-splash-image-child {
+  background: left 40% / 70% 100.8% url(../img/photo-home.jpg) no-repeat;
+  height: 960px;
+  position: absolute;
+    left: 90px;
+    top: -340px;
+  width: 720px;
+}
+.home-splash-left {
+    float: none; /*For mobile layout vertical stacking*/
+    height: 300px;
+    position: absolute; /*Basically allows it not to affect the right-hand side image area which I set up before this bit*/
+        top: 0;
+        left: 15%;
+    width: 75%; /*Limits width of area for text nicely so doesn't overflow*/
+}
+.home-splash-right {
+    float: none; /*For mobile layout vertical stacking*/
+    height: 255px;
+    width: 100%;
+}
+.home-splash-text {
+    font-size: 1.8rem;
+    padding-top: 0;
+    width: 95%;
+}
+
 .italics {
     font-style: italic;
 }
@@ -455,6 +465,10 @@ ul {
 }
 .padding-none p {
     padding: 0; /*Added p to this so if a paragraph, which I can't edit, is created by Perch, and is within a parent with these as a class, it removes margin and padding from that p child element*/
+}
+
+.quote-circle {
+    display: none;
 }
 
 .smallcaps {

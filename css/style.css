@@ -1,7 +1,7 @@
 .home-splash {
-    height: 600px; /*much taller thanks to needing to stack text and image on top of one another*/
-    overflow: hidden; /*hides my cheating with the rotated elements, especially the image and its containing boxes!*/
+    height: 610px; /*much taller thanks to needing to stack text and image on top of one another*/
     margin-top: 0;
+    overflow: hidden; /*hides my cheating with the rotated elements, especially the image and its containing boxes!*/
     position: relative;
         left: -40px; /*larger than higher resolutions as box is taller and can see more of the slant*/
         top: 0;
@@ -9,21 +9,22 @@
     width: 130%; /*needs yet another extra 10% to hide right side slant over higher resolutions*/
 }
 .home-splash-bottom {
-    height: 60px;
+    height: 50px;
+    padding-left: 20px;
     position: absolute;
         left: 0;
         bottom: 0;
     width: 100%;
 }
 .home-splash-bottom-h2 {
-    font-size: 2.2rem;
+    font-size: 1.9rem;
 }
 .home-splash-bottom-h3 {
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 .home-splash-h1 {
-    font-size: 2.8rem;
-    padding-left: 14%;
+    font-size: 2.5rem;
+    padding-left: 2%;
     width: 100%;
 }
 .home-splash-image-container {
@@ -31,11 +32,11 @@
     height: 250px;
     margin-top: 0;
     transform: rotate(-20deg);/*Have to rotate at this level, won't work on the image*/
-    width: 120%;
+    width: 130%;
 }
 .home-splash-image-parent {
   border: 8px solid #fff;
-  margin-left: -10%;
+  margin-left: -20%;
   height: 100%;
   overflow: hidden;
   transform: skew(15deg,15deg);
@@ -48,7 +49,7 @@
   background: left 40% / 70% 100.8% url(../img/photo-home.jpg) no-repeat;
   height: 960px;
   position: absolute;
-    left: 105px;
+    left: 90px;
     top: -340px;
   width: 720px;
 }
@@ -57,18 +58,16 @@
     height: 300px;
     position: absolute; /*Basically allows it not to affect the right-hand side image area which I set up before this bit*/
         top: 0;
-        left: 5%;
-    width: 80%; /*Limits width of area for text nicely so doesn't overflow*/
+        left: 15%;
+    width: 75%; /*Limits width of area for text nicely so doesn't overflow*/
 }
 .home-splash-right {
     float: none; /*For mobile layout vertical stacking*/
-    height: 235px;
+    height: 255px;
     width: 100%;
 }
 .home-splash-text {
     font-size: 1.8rem;
-    margin-top: -20px; 
-    padding-left: 12%;
     padding-top: 0;
     width: 95%;
 }

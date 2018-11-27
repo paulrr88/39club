@@ -41,6 +41,17 @@
         top: 0;
         left: 0;
     }
+    .home-buttons {
+        height: 162px;
+        margin-top: 50px;
+    }
+    .home-button {
+        height: 54px;
+    }
+    .home-button-text {
+        font: bold italic small-caps 2.2rem/0rem Arial;
+        padding: 30px 0 0 10px;
+    }
     .home-splash {
         height: 600px; /*much taller thanks to needing to stack text and image on top of one another*/
         width: 120%; /*needs an extra 10% to hide right side slant over higher resolutions*/
@@ -309,7 +320,7 @@
             right: 30px;
             top: -30px;
         width: 145px;
-        z-index: 1;
+        z-index: 2; /*Has to be 2 due to .container needing a value of 1 to float over the .containerbottom area*/
     }
     .quote-name {
         float: right;
@@ -333,6 +344,22 @@
         height: 60px;
         width: 350px;
     }
+    .container {
+        z-index: 1; /*Allows .containerbottom to hide behind it!*/
+    }
+    .containerbottom { /*Contains the below and stops it from overflowing and hides the sides etc!*/
+        height: 300px;
+        margin-left: -70px;
+        margin-top: -110px;
+        overflow: hidden;
+        z-index: 0;
+    }
+        .containerbottomgraphic { /*Used for wider viewports with slanted bottom and drop shadow, hidden behind .container, coincides with the home page buttons switching from 100% width mobile version to their button forms!*/
+            box-shadow: 1px 10px 6px #000;
+            height: 200px;
+            transform: skew(-15deg,-3deg);
+            width: 120%;
+        }
     .corner {
         height: 80px;
     }
@@ -343,6 +370,26 @@
         padding: 0 0 0 30px;
         position: relative;
         width: 380px;
+    }
+    .home-buttons {
+        float: right;
+        height: 60px;
+        width: 682px;
+    }
+    .home-button {
+        box-shadow: 1px 5px 2px black;
+        float: left;
+        height: 54px;
+        margin-right: 40px;
+    }
+    .home-button-contact {
+        width: 190px;
+    }
+    .home-button-join {
+        width: 128px;
+    }
+    .home-button-vol {
+        width: 244px;
     }
     .home-splash {
         height: 400px; /*needed due to absolutely positioned elements not affecting size of box*/
@@ -459,6 +506,27 @@
         transform: rotate(-2deg);
         width: 460px;
     }
+    .home-buttons {
+        height: 80px;
+        margin-top: 50px;
+        width: 892px;
+    }
+    .home-button {
+        height: 64px;
+    }
+    .home-button-text {
+        font: bold italic small-caps 2.8rem/0rem Arial;
+        padding: 30px 0 0 20px;
+    }
+    .home-button-contact {
+        width: 230px;
+    }
+    .home-button-join {
+        width: 178px;
+    }
+    .home-button-vol {
+        width: 364px;
+    }
     .home-splash {
         margin-top: 10px;
     }
@@ -505,6 +573,27 @@
         font-size: 6rem;
         margin: 80px 0 0 390px;
         width: 550px;
+    }
+    .home-buttons {
+        height: 100px;
+        margin-top: 70px;
+        width: 1072px;
+    }
+    .home-button {
+        height: 84px;
+    }
+    .home-button-text {
+        font: bold italic small-caps 3.5rem/0rem Arial;
+        padding: 40px 0 0 20px;
+    }
+    .home-button-contact {
+        width: 290px;
+    }
+    .home-button-join {
+        width: 238px;
+    }
+    .home-button-vol {
+        width: 424px;
     }
     .home-splash {
         margin-top: 30px;
@@ -581,29 +670,7 @@
         width: 650px;
     }
     .home-buttons {
-        height: 100px;
         margin-top: 50px;
-        width: 98%;
-    }
-    .home-button {
-        box-shadow: 1px 5px 2px black;
-        float: right;
-        height: 84px;
-        margin-right: 40px;
-    }
-    .home-button-text {
-        font: bold italic small-caps 3.5rem/0rem Arial;
-        margin: 0;
-        padding: 40px 0 0 20px;
-    }
-    .home-button-contact {
-        width: 290px;
-    }
-    .home-button-join {
-        width: 238px;
-    }
-    .home-button-vol {
-        width: 424px;
     }
     .home-splash-bottom-h2 {
         font-size: 4rem;

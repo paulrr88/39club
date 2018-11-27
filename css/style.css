@@ -221,17 +221,16 @@ ul {
 }
 
 .home-buttons {
-    height: 200px; /*Creates margin at the bottom as Contact Us is flush against bottom*/
-    margin-top: 20px;
+    height: 120px;
+    margin-top: 30px;
 }
 .home-button {
-    height: 50px;
-    
+    height: 40px;
 }
 .home-button-text {
-    font: bold italic small-caps 2.2rem/0rem Arial;
+    font: bold italic small-caps 2.2rem/2.2rem Arial;
     margin: 0;
-    padding: 40px 0 0 20px;
+    padding: 10px 0 0 10px;
 }
 .home-splash {
     height: 610px; /*much taller thanks to needing to stack text and image on top of one another*/

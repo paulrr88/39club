@@ -47,7 +47,7 @@
         </nav><!--End of top information area-->
         
         <div class="overflow-killer"><!--Needed to stop absolutely positioned elements from exploding outside of the container area-->
-            <div class="corner"></div><!--Covers up any gaps above the slanted header area-->
+            <div aria-hidden="true" class="corner"></div><!--Covers up any gaps above the slanted header area-->
             
             <section class="address z-1" role="complementary" style="background: cyan;">
                 <p class="address-p"><?/*php perch_content('Address');*/ ?>
@@ -85,7 +85,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 
-    <div class="quote-circle">
+    <div aria-hidden="true" class="quote-circle">
         <p class="quote-text">"I love the activities and playing with my friends"<br />
         <span class="quote-name">- Tia</span></p>
     </div>
@@ -102,7 +102,7 @@
 	               <span class="right"><a href="">Learn more &gt;&gt;</a></span></p>
             </section>
             <div class="home-splash-right" style="background: coral;"></div>
-            <div class="home-splash-image-container" style="background: none;">
+            <div aria-hidden="true" class="home-splash-image-container" style="background: none;">
               <div class="home-splash-image-parent" style="background: yellow;">
                 <div class="home-splash-image-child"></div>
               </div>
@@ -112,20 +112,28 @@
                 <h2 class="clear home-splash-bottom-h2 margin-22-right-per right">£1 entry <span class="padding-3-left">For 11-14 year olds</span></h2>
             </section>
         </article>
+        
         <nav class="home-buttons" role="navigation" style="background: brown;">
-            <div class="home-button home-button-vol" style="background: pink;">
-                <p class="italics home-button-text">Volunteer with Us &gt;&gt;</p>
-            </div>
-            <div class="home-button home-button-join" style="background: pink;">
-                <p class="italics home-button-text">Join Us &gt;&gt;</p>
-            </div>
             <div class="home-button home-button-contact" style="background: pink;">
                 <p class="italics home-button-text">Contact Us &gt;&gt;</p>
+            </div>
+            <div class="home-button home-button-join" style="background: orange;">
+                <p class="italics home-button-text">Join Us &gt;&gt;</p>
+            </div>
+            <div class="home-button home-button-vol" style="background: cyan;">
+                <p class="italics home-button-text">Volunteer with Us &gt;&gt;</p>
             </div>
         </nav>
         
       <p class="clear">End of container</p>
     </main>
+    
+    <!--Purely graphical slanted area with drop shadow at bottom of main content-->
+    <div aria-hidden="true" class="containerbottom"  style="background: red;">
+        <div class="containerbottomgraphic" style="background: mediumpurple;"></div>
+        
+        <p style="float: right;">End of .containerbottom</p>
+    </div>
 
   
   </div><!--END OF CONTAINER-->

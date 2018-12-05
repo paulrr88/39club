@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "26148",
 "files": {
+	"\/_about-top.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/_about-top.html",
+		"oF": 0
+		},
 	"\/_footer.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -22,6 +29,20 @@
 		"oA": 1,
 		"oAP": "\/_opening.html",
 		"oF": 0
+		},
+	"\/about.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/about.html",
+		"oF": 0
+		},
+	"\/about.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/Applications\/MAMP\/htdocs\/39club\/about.php",
+		"oF": 6
 		},
 	"\/index.kit": {
 		"cB": 0,

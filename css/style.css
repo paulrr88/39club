@@ -166,29 +166,6 @@ ul {
 .bold {
     font-weight: 900;
 }
-.header-title {
-    border-bottom: 5px solid black;
-    font-size: 3.5rem;
-    height: 50px;
-    margin: 0 0 0 40px;
-    padding: 0 50px 0 30px;
-    position: absolute;
-    top: 150px;
-    left: 0;
-    width: 100%;
-}
-.hidden {
-    display: none;
-    visibility: hidden;
-}
-
-.inline {
-    display: inline;
-}
-.inline-block {
-    display: inline-block;
-}
-
 .centre {
     text-align: center;
 }
@@ -219,7 +196,21 @@ ul {
 .header-skew {
     transform: rotate(-20deg);
 }
-
+.header-title {
+    border-bottom: 5px solid black;
+    font-size: 3.5rem;
+    height: 50px;
+    margin: 0 0 0 40px;
+    padding: 0 50px 0 30px;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 100%;
+}
+.hidden {
+    display: none;
+    visibility: hidden;
+}
 .home-buttons {
     height: 120px;
     margin-top: 30px;
@@ -304,6 +295,13 @@ ul {
     font-size: 1.8rem;
     padding-top: 0;
     width: 95%;
+}
+
+.inline {
+    display: inline;
+}
+.inline-block {
+    display: inline-block;
 }
 
 .italics {

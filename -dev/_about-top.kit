@@ -1,0 +1,53 @@
+<!--$page-title About Us-->
+<!--$description nil-->
+<!--$dir nil-->
+<!--$tablescript <script>
+  // DELETE THIS IF NOT NEEDED ON THIS PAGE
+  // fix for mobile table layout from http://sitesforprofit.com/responsive-tables-in-wordpress
+
+  var headertext = [];
+  var headers = document.querySelectorAll("thead");
+  var tablebody = document.querySelectorAll("tbody");
+
+  for (var i = 0; i < headers.length; i++) {
+    headertext[i]=[];
+    for (var j = 0, headrow; headrow = headers[i].rows[0].cells[j]; j++) {
+      var current = headrow;
+      headertext[i].push(current.textContent);
+      }
+  }
+
+  for (var h = 0, tbody; tbody = tablebody[h]; h++) {
+    for (var i = 0, row; row = tbody.rows[i]; i++) {
+      for (var j = 0, col; col = row.cells[j]; j++) {
+        col.setAttribute("data-th", headertext[h][j]);
+      }
+    }
+  }
+</script>
+-->
+
+<!--@import opening-->
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+    <div aria-hidden="true" class="quote-circle">
+        <p class="quote-text">Favourite things:<br />
+            "Baking and playing with my friends"
+        <span class="quote-name">- Mercedes</span></p>
+    </div>
+
+    <main class="container clear overflow-hidden" role="main" style="background: blue; color: white;"><!--Container for ALL content, everything inside this-->
+        <p>Container begins</p>
+        
+        <section class="about-top" role="complementary">
+            <h1 class="smallcaps italics" style="background: orange;">About Us</h1>
+
+            <ul class="bold italics margin-none smallcaps padding-none textmid35" role="navigation" style="background: pink;">
+                <li class="inline-block"><a href="">About Us</a> &gt;&gt;</li>
+                <li class="inline-block padding-3-left"><a href="">History </a> &gt;&gt;</li>
+                <li class="inline-block padding-3-left"><a href="">Our Policies</a> &gt;&gt;</li>
+            </ul>
+        </section>

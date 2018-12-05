@@ -1,32 +1,59 @@
-
+    <!--Purely graphical slanted area with drop shadow at bottom of main content-->
+    <div aria-hidden="true" class="containerbottom"  style="background: red;">
+        <div class="containerbottomgraphic" style="background: mediumpurple;"></div>
+        
+        <p style="float: right;">End of .containerbottom</p>
+    </div>
 </div><!--END OF CONTAINER-->
 
-    <footer style="background: orange;">
-        <ul style="background: green;">
-          <li style="background: yellow;"><a href="<!--$dir-->">Home</a></li>
-          <li style="background: yellow;"><a href="<!--$dir-->events/">Events</a></li>
-          <li style="background: yellow;"><a href="<!--$dir-->diary/">Diary</a></li>
-          <li style="background: yellow;"><a href="<!--$dir-->news/">News</a></li>
-          <li style="background: yellow;"><a href="<!--$dir-->videos/">Videos</a></li>
-          <li style="background: yellow;"><a href="<!--$dir-->admin/">Admin</a></li>
-          <li style="background: yellow;"><a href="<!--$dir-->findus/">Find Us</a></li>
-        </ul>
+<footer role="complementary" style="background: orange;">
+    <section class="footer-link-scyp" role="navigation" style="background: cyan;"><a href=""><img src="" alt="Sussex Clubs for Young People" /> <?php /*perch_content('SCYP Logo Link');*/ ?></a></section>
 
-        <br />
+    <ul class="footer-links" role="navigation" style="background: green;">
+        <li style="background: yellow;"><a href="<!--$dir-->">Home</a></li>
+        <li style="background: yellow;"><a href="<!--$dir-->events/">About Us</a></li>
+        <li style="background: yellow;"><a href="<!--$dir-->diary/">History</a></li>
+        <li style="background: yellow;"><a href="<!--$dir-->news/">Our Policies</a></li>
+        <li style="background: yellow;"><a href="<!--$dir-->videos/">Events</a></li>
+        <li style="background: yellow;"><a href="<!--$dir-->admin/">Time &amp; Dates</a></li>
+        <li style="background: yellow;"><a href="<!--$dir-->findus/">Join Us</a></li>
+        <li style="background: yellow;"><a href="<!--$dir-->findus/">Volunteer</a></li>
+        <li style="background: yellow;"><a href="<!--$dir-->findus/">Contact Us</a></li>
+        <li style="background: yellow;"><a href="<!--$dir-->findus/">Room Hire</a></li>
+    </ul>
 
-        <div role="contentinfo"><!--Copyright info etc-->
-            <p><strong>&copy; <?php echo date('Y'); ?> Arun Sunshine Group | Designed by <a href="http://www.paulcomputerhelp.co.uk/">Paul Robinson</a></strong><br />
-
-            <br />
-            <br />
-
-            <a href="<!--$dir-->perch/">Perch Login</a></p>
+    <br />
+    
+    <section class="footer-links-box" role="navigation" style="background: olive;">
+        <div class="footer-links-box-inner" style="background: green;">
+            <div class="footer-link-wscc" style="background: yellow;">
+            </div>
+            <div class="footer-link-brtc" style="background: blue;">
+            </div>
+            <div class="footer-link-lottery" style="background: purple;">
+            </div>
+            <div class="footer-link-fb" style="background: pink;">
+            </div>
         </div>
+    </section>
+
+    <section class="clear" role="contentinfo"><!--Copyright info etc-->
+        <p><strong>&copy; <?php echo date('Y'); ?> 39 Youth Club Bognor | Designed by <a href="http://www.paulcomputerhelp.co.uk/">Paul Robinson</a></strong>
+            
+        <p>Charity no: ########</p>
+        
+        <p>Address</p>
 
         <br />
         <br />
-        <br />
-    </footer>
+
+        <a href="<!--$dir-->perch/">Perch Login</a></p>
+    </section>
+
+    <br />
+    <br />
+    <br />
+</footer>
 
     <!--$tablescript-->
 

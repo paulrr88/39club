@@ -143,6 +143,15 @@ ul {
 
 /* Class Selectors */
 
+.about-top {
+    margin: 0 auto 30px auto;
+    padding-left: 2rem;
+    text-shadow: 3px 3px 3px #666; 
+    width: 100%;
+}
+.about-top-nav {
+    padding-left: 4rem;
+}
 .address { /*Less wide taller version to make room for the top area and still have enough room for text!*/
     height: 70px;
     margin-top: 0;
@@ -171,6 +180,30 @@ ul {
 }
 .clear {
     clear: both;
+}
+.content {
+    background: #fff;
+    border-top: 10px solid #652f96;
+    margin: 0 auto;
+    width: 100%;
+}
+.content-row {
+    margin: 0rem 0rem 6rem 0rem;
+}
+.content-subtitle {
+    font: bold italic small-caps 3rem/3rem Arial;
+    padding: 2rem 2rem 1rem 1.5rem;
+}
+.content-title {
+    border-bottom: 5px solid #652f96;
+    font: bold italic small-caps 3rem/2.5rem Arial;
+    margin-bottom: 1rem;
+    padding: 2rem 2rem 1rem 2rem;
+}
+.content-title-top {
+    font-style: italic;
+    font-variant: small-caps;
+    padding-bottom: 2rem;
 }
 .corner { /*Covers up gap above slanted header area*/
   background: red;
@@ -204,7 +237,7 @@ ul {
     padding: 0 50px 0 30px;
     position: absolute;
     top: 150px;
-    left: 0;
+    left: -10px;
     width: 100%;
 }
 .hidden {
@@ -334,6 +367,9 @@ ul {
 }
 .margin-1-top {
     margin-top: 1rem;
+}
+.margin-10-top-scale {
+    margin-top: 0;
 }
 .margin-2 {
     margin: 2rem;
@@ -476,6 +512,10 @@ ul {
     float: left;
     height: 3em;
     width: 100%;
+}
+
+.textmid35 {
+    font-size: 2.2rem;
 }
 
 .wordbreak { /*Useful for table cells in particular sometimes if I need them to be more fluid with how they display text*/

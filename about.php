@@ -86,8 +86,8 @@
         
         
             <div aria-hidden="true" class="quote-circle">
-                <p class="quote-text">Favourite things:<br />
-                    "Baking and playing with my friends"
+                <p class="quote-text-smaller">Favourite things:<br />
+                    "Baking and playing with my friends"<br />
                 <span class="quote-name">- Mercedes</span></p>
             </div>
         
@@ -95,9 +95,9 @@
                 <p>Container begins</p>
                 
                 <section class="about-top" role="complementary">
-                    <h1 class="smallcaps italics" style="background: orange;">About Us</h1>
+                    <h1 class="content-title-top" style="background: orange;">About Us</h1>
         
-                    <ul class="bold italics margin-none smallcaps padding-none textmid35" role="navigation" style="background: pink;">
+                    <ul class="about-top-nav bold italics margin-none smallcaps padding-none textmid35" role="navigation" style="background: pink;">
                         <li class="inline-block"><a href="">About Us</a> &gt;&gt;</li>
                         <li class="inline-block padding-3-left"><a href="">History </a> &gt;&gt;</li>
                         <li class="inline-block padding-3-left"><a href="">Our Policies</a> &gt;&gt;</li>
@@ -106,25 +106,39 @@
         
         
         <article class="content" role="article">
-            <div class="row">
-                <section class="three columns" role="complementary" style="background: purple;">
-                    <?php /*perch_content('About Us Content 1');*/ ?>
-                    <h3>Title for some content</h3>
+            <div class="content-row row">
+                <div class="four columns">
+                    <section class="bold twelve columns textmid2" role="complementary" style="background: purple;">
+                        <?php /*perch_content('About Us Content 1');*/ ?>
+                        <h3 class="content-title">Title for some content</h3>
 
-                    <p>Body text would go here. Going to use some placeholder text:</p>
+                        <p>Body text would go here. Going to use some placeholder text:</p>
 
-                    <p>Odio dapibus eleifend Maecenas magnis justo inceptos non lobortis pharetra lorem et ornare pretium eleifend. Primis in. Molestie sit tellus gravida. Ligula. Aliquam nec. Pretium ornare lectus ultrices euismod.</p>
+                        <p>Odio dapibus eleifend Maecenas magnis justo inceptos non lobortis pharetra lorem et ornare pretium eleifend. Primis in. Molestie sit tellus gravida. Ligula. Aliquam nec. Pretium ornare lectus ultrices euismod.</p>
 
-                    <p>Nam aliquam ullamcorper. Duis sodales habitant. Quam amet magnis et senectus sociis nisl fringilla enim montes. Nonummy netus. A hendrerit montes adipiscing orci Sagittis. Praesent tortor senectus class. Mi Dis morbi congue sociis cubilia euismod porta. Nibh.</p>
+                        <p>Nam aliquam ullamcorper. Duis sodales habitant. Quam amet magnis et senectus sociis nisl fringilla enim montes. Nonummy netus. A hendrerit montes adipiscing orci Sagittis. Praesent tortor senectus class. Mi Dis morbi congue sociis cubilia euismod porta. Nibh.</p>
 
-                    <p>Sem sociosqu at at. Tempus. Neque nibh non phasellus elementum inceptos scelerisque nam, venenatis. Eget scelerisque vitae. Vel aliquam vulputate dolor augue porttitor tristique Vehicula placerat non hac. Duis duis vivamus non congue ultricies.</p>
-                </section>
-                <section class="nine columns" role="complementary" style="background: yellow; color: black;">
+                        <p>Sem sociosqu at at. Tempus. Neque nibh non phasellus elementum inceptos scelerisque nam, venenatis. Eget scelerisque vitae. Vel aliquam vulputate dolor augue porttitor tristique Vehicula placerat non hac. Duis duis vivamus non congue ultricies.</p>
+                    </section>
+                    
+                    <section class="bold twelve columns margin-10-top-scale textmid2" role="complementary" style="background: green;">
+                        <?php /*perch_content('About Us Content 3');*/ ?>
+
+                        <h3 class="content-title">Title for yet more content</h3>
+
+                        <p>Another example of a text area. Suspendisse nullam integer. Hac consectetuer dis massa duis aliquet justo velit iaculis blandit ultrices justo class conubia condimentum lacus. Dis dignissim justo suscipit.</p>
+
+                        <p>Semper felis. Sociosqu tempor inceptos proin torquent phasellus purus ridiculus posuere aliquet montes ultricies facilisi tincidunt, morbi aliquet curabitur sollicitudin suspendisse. Commodo aliquet praesent consectetuer nisl id.</p>
+
+                        <p>Habitasse mi erat neque vitae, lobortis. Tempor habitant consectetuer suspendisse. Sapien accumsan diam adipiscing in platea. Dui erat eget blandit cubilia nostra auctor habitasse habitant vestibulum felis cubilia mattis. Convallis nisl. Cubilia vestibulum dui praesent. Facilisis quisque nullam porttitor imperdiet. Sollicitudin nibh euismod dignissim Tempor luctus felis torquent velit. Hendrerit.</p>
+                    </section>
+                </div>
+                <section class="bold eight columns textmid3" role="main" style="background: yellow; color: black;">
                     <?php /*perch_content('About Us Content 2');*/ ?>
                     
-                    <h3>Title for some more content</h3>
+                    <h3 class="content-title">Title for some more content</h3>
 
-                    <p>Lobortis nam condimentum dapibus sem ridiculus. Sed, dui ac sodales turpis per felis dignissim pulvinar arcu, purus mus in, aenean mattis ligula. Nisi viverra hendrerit, ridiculus Dolor. Duis. Curabitur diam.</p>
+                    <p class="italics smallcaps">Lobortis nam condimentum dapibus sem ridiculus. Sed, dui ac sodales turpis per felis dignissim pulvinar arcu, purus mus in, aenean mattis ligula. Nisi viverra hendrerit, ridiculus Dolor. Duis. Curabitur diam.</p>
                     
                     <img alt="Image of kids" src="" />
 
@@ -132,24 +146,13 @@
 
                     <p>Magna. Hac hac molestie habitasse per pellentesque. Primis turpis praesent accumsan nisl eros suspendisse mattis faucibus feugiat et sapien. Facilisis ante bibendum ut venenatis ipsum duis ultricies. Pede id.</p>
                     
-                    <h4>Subtitle for another piece of content</h4>
+                    <br />
+                    
+                    <h4 class="content-subtitle">Subtitle for another piece of content</h4>
 
                     <p>Sodales cursus fusce fames semper fringilla fames Est eu hendrerit tincidunt luctus fringilla volutpat. Nonummy nulla etiam pulvinar convallis. Laoreet aliquet interdum aptent vehicula sociosqu porttitor proin convallis curabitur, iaculis felis sociosqu id posuere, mollis.</p>
                     
                     <p>Dapibus tempor congue. Turpis orci condimentum. Euismod primis. Integer euismod cursus tempus mi lacus aptent morbi nulla hymenaeos.</p>
-                </section>
-            </div>
-            <div class="row">
-                <section class="three columns" role="complementary" style="background: green;">
-                    <?php /*perch_content('About Us Content 3');*/ ?>
-                    
-                    <h3>Title for yet more content</h3>
-
-                    <p>Another example of a text area. Suspendisse nullam integer. Hac consectetuer dis massa duis aliquet justo velit iaculis blandit ultrices justo class conubia condimentum lacus. Dis dignissim justo suscipit.</p>
-
-                    <p>Semper felis. Sociosqu tempor inceptos proin torquent phasellus purus ridiculus posuere aliquet montes ultricies facilisi tincidunt, morbi aliquet curabitur sollicitudin suspendisse. Commodo aliquet praesent consectetuer nisl id.</p>
-
-                    <p>Habitasse mi erat neque vitae, lobortis. Tempor habitant consectetuer suspendisse. Sapien accumsan diam adipiscing in platea. Dui erat eget blandit cubilia nostra auctor habitasse habitant vestibulum felis cubilia mattis. Convallis nisl. Cubilia vestibulum dui praesent. Facilisis quisque nullam porttitor imperdiet. Sollicitudin nibh euismod dignissim Tempor luctus felis torquent velit. Hendrerit.</p>
                 </section>
             </div>
         </article>

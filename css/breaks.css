@@ -25,8 +25,8 @@
         height: 400px;
     }
     
-    .address { /*Less wide taller version to make room for the top area and still have enough room for text!*/
-        margin-top: 30px;
+    .address {
+        margin-top 30px;
     }
     .fluid-images-3 img {     /*figure area containing 3 images side by side*/
         float: left; /*Lets them stack but breaks when a link is added*/
@@ -36,7 +36,7 @@
     .header-title {
         height: 100px;
         margin: 100px 0 0 20px;
-        padding: 0 50px 0 0px;
+        padding: 20px 50px 0 0px;
         position: static;
         top: 0;
         left: 0;
@@ -214,7 +214,11 @@
         text-align: center;
     }
     
+    .about-top-nav {
+        padding-left: 0rem;
+    }
     .address { /*Less wide taller version to make room for the top area and still have enough room for text!*/
+        margin-top: 0;
         position: absolute;
             right: -16px;
             top: -10px;
@@ -236,6 +240,7 @@
     
     .header-title {
         height: 50px;
+        padding: 0 50px 0 0px;
         width: 100%;
     }
     
@@ -332,6 +337,10 @@
         margin: 0;
         padding: 20% 22% 0 22%;
     }
+    .quote-text-smaller {
+        font: bold italic small-caps 1.5rem/1.3rem Arial;
+        padding: 23% 2% 0 12%;
+    }
 }
 
 /* Larger than tablet */
@@ -360,6 +369,13 @@
             transform: skew(-15deg,-3deg);
             width: 120%;
         }
+    .content-subtitle {
+        font: bold italic small-caps 3.5rem/3rem Arial;
+    }
+    .content-title {
+        font: bold italic small-caps 3.5rem/3rem Arial;
+        margin-bottom: 2rem;
+    }
     .corner {
         height: 80px;
     }
@@ -462,11 +478,17 @@
     .textbig9 {
         font-size: 9rem;
     }
-    .textmid1.75 {
+    .textmid175 {
         font-size: 1.75rem;
     }
     .textmid2 {
         font-size: 2rem;
+    }
+    .textmid2-scale {
+        font-size: 2rem;
+    }
+    .textmid3 {
+        font-size: 3rem;
     }
     .textmid35 {
         font-size: 3.5rem;
@@ -502,6 +524,9 @@
     .address-p {
         font-size: 1.4rem;
         transform: rotate(0deg);
+    }
+    .content-row {
+        margin: 5rem 0rem 6rem 0rem;
     }
     .header-title {
         font-size: 5rem;
@@ -543,6 +568,9 @@
         max-height: 271px;
         max-width: 271px;
     }
+    .margin-10-top-scale { /*Mainly used to separate content boxes so don't always want it to be this much, it's lowered on lower resolutions*/
+        margin-top: 10rem;
+    }
     .nav-main {
         margin: 20px 0 0 341px;
     }
@@ -566,11 +594,25 @@
         font: bold italic small-caps 1.7rem/1.7rem Arial;
         padding: 25% 15% 0 15%;
     }
+    .quote-text-smaller {
+        font: bold italic small-caps 1.5rem/2.2rem Arial;
+        padding: 15% 18% 0 21%;
+    }
 }
 
 @media (min-width: 1200px) {
     header {
         height: 250px;
+    }
+    .about-top {
+        padding-left: 0;
+        width: 80%;
+    }
+    .content {
+        width: 90%;
+    }
+    .content-row {
+        margin: 10rem 6rem 6rem 6rem;
     }
     .header-title {
         font-size: 6rem;
@@ -641,24 +683,14 @@
     .quote-text {
         font: bold italic small-caps 2rem/2rem Arial;
     }
-    
-    
+    .quote-text-smaller {
+        font: bold italic small-caps 1.8rem/2.6rem Arial;
+        padding: 15% 15% 0 18%;
+    }
 }
 
 /* Larger than Desktop HD */
 @media (min-width: 1300px) {
-    .about-nav-list {
-        box-shadow: ;
-    }
-    .about-top {
-        margin: 0 auto 30px auto;
-        width: 80%;
-    }
-    .content {
-        margin: 0 auto;
-        width: 90%;
-    }
-    
     /*Not finished with this, needs breakpoint adjustments etc later when have logo graphics finalised*/
         footer {
             position: relative; /*Needed to make .link-scyp box stick*/
@@ -780,5 +812,8 @@
     .quote-text {
         font: bold italic small-caps 2.2rem/3rem Arial;
         padding: 15% 20% 0 20%;
+    }
+    .quote-text-smaller {
+        padding: 15% 18% 0 18%;
     }
 }

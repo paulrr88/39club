@@ -33,12 +33,12 @@
 
 </perch:help>
 
-<div class="ten columns offset-by-one background-orange-light content-box-wide" id="event">
-  <h2 class="header-purple event-title"><perch:content id="heading" type="text" label="Heading" required="true" title="true" /></h2>
+<div class="content-row row">
+    <section class="bold ten columns offset-by-one textmid3" role="main" style="background: yellow; color: black;">
+        <h3 class="content-title"><perch:content id="heading" type="text" label="Heading" required="true" title="true" /></h3>
+        <h4 class="content-subtitle margin-1 padding-1"><perch:content id="date" type="date" label="Date" format="%d %B %Y" required="true" /></h4>
 
-  <h3 class="header-purple-sub event-date"><perch:content id="date" type="date" label="Date" format="%d %B %Y" required="true" /></h3>
+        <perch:content id="body" type="textarea" label="Body" markdown="true" editor="markitup" required="true" imageclasses="image" />
 
-  <div class="spacer"></div>
-
-  <perch:content id="body" type="textarea" label="Body" markdown="true" editor="markitup" required="true"  imageclasses="image" />
+    </section>
 </div>

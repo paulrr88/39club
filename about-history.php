@@ -51,13 +51,9 @@
                     <div aria-hidden="true" class="corner"></div><!--Covers up any gaps above the slanted header area-->
                     
                     <section class="address z-1" role="complementary" style="background: cyan;">
-                        <p class="address-p"><?php perch_content('Address'); ?>
-                            Church Path,
-                            Glamis Street,
-                            Bognor Regis PO21 1DB<br />
-                            TEL:  01243 864124<br />
-                            <span class="address-charity"><a href="<?php perch_content('Charity commission link'); ?>">Registered Charity No. 305344</a></span>
-                        </p>
+                        <div class="address-p"><?php perch_content('Address'); ?>
+                            <p style="margin: 0; padding: 0 0 0 1.8rem;">TEL:  01243 864124 <span class="address-charity"><a href="<?php perch_content('Charity commission link'); ?>">Registered Charity No. 305344</a></span></p>
+                        </div>
                     </section>
                     
                     <header role="banner"><!--Start of header area containing website title, graphics and navigation etc-->
@@ -113,13 +109,7 @@
                 <section class="bold ten columns offset-by-one textmid3" role="main" style="background: yellow; color: black;">
                     <h3 class="content-title">The History of 39 Youth Club</h3>
                     
-                    <?php /*perch_content('History Content 1');*/ ?>
-                    
-                    <?php /*perch_content('History Content 1 image');*/ ?>
-                    
-                    <?php /*perch_content('History Content 2');*/ ?>
-                    
-                    <?php /*perch_content('History Content 2 image');*/ ?>
+                    <?php perch_content('History Content'); ?>
                 </section>
             </div>
         </article>

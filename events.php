@@ -51,13 +51,9 @@
             <div aria-hidden="true" class="corner"></div><!--Covers up any gaps above the slanted header area-->
             
             <section class="address z-1" role="complementary" style="background: cyan;">
-                <p class="address-p"><?php perch_content('Address'); ?>
-                    Church Path,
-                    Glamis Street,
-                    Bognor Regis PO21 1DB<br />
-                    TEL:  01243 864124<br />
-                    <span class="address-charity"><a href="<?php perch_content('Charity commission link'); ?>">Registered Charity No. 305344</a></span>
-                </p>
+                <div class="address-p"><?php perch_content('Address'); ?>
+                    <p style="margin: 0; padding: 0 0 0 1.8rem;">TEL:  01243 864124 <span class="address-charity"><a href="<?php perch_content('Charity commission link'); ?>">Registered Charity No. 305344</a></span></p>
+                </div>
             </section>
             
             <header role="banner"><!--Start of header area containing website title, graphics and navigation etc-->
@@ -98,7 +94,7 @@
             
             <h3 class="content-title" style="color: black;">Events</h3>
             
-            <?php /*perch_content('Events'); - each would be one of the below perhaps, include that structure*/ ?>
+            <?php perch_content('Events'); ?>
             
             <div class="content-row row">
                 <section class="bold ten columns offset-by-one textmid3" role="main" style="background: yellow; color: black;">
@@ -108,6 +104,8 @@
                 </section>
             </div>
         </article>
+        
+        <h1 class="centre"><a href="">Events Archive</a></h1>
     </main>
 
       <!--Purely graphical slanted area with drop shadow at bottom of main content-->

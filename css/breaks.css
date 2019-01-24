@@ -745,12 +745,13 @@
     .address {
         height: 120px;
         position: absolute;
-            right: -20px;
+            right: -15px;
             top: -10px;
         width: 300px;
     }
     .address-p {
         font-size: 1.8rem;
+        padding-right: 10px; /*Stops registered charity part from going off-screen*/
     }
     .address-charity {
         font-size: 1.4rem;

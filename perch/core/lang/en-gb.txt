@@ -465,5 +465,14 @@
     "Read the getting started guide to find out more": "Read the getting started guide to find out more",
     "Reordering pages": "Reordering pages",
     "Drag and drop the pages to reorder them.": "Drag and drop the pages to reorder them.",
-    "Page orders successfully updated.": "Page orders successfully updated."
+    "Page orders successfully updated.": "Page orders successfully updated.",
+    "Republish Pages": "Republish Pages",
+    "Republishing pages": "Republishing pages",
+    "Are you sure you wish to republish all pages?": "Are you sure you wish to republish all pages?",
+    "Republishing is under way.": "Republishing is under way.",
+    "Republishing: %s on page %s": "Republishing: %s on page %s",
+    "Republishing completed successfully": "Republishing completed successfully",
+    "Subpage folder": "Subpage folder",
+    "Editing Shared Regions": "Editing Shared Regions",
+    "Reorder Region": "Reorder Region"
 }

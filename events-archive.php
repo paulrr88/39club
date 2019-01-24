@@ -9,7 +9,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Home &mdash; 39 Youth Club Bognor</title>
+  <title>Events &mdash; 39 Youth Club Bognor</title>
   <meta name="description" content="">
 
   <!-- Mobile Specific Metas
@@ -89,41 +89,23 @@
 
     <main class="container clear overflow-hidden" role="main" style="background: blue; color: white;"><!--Container for ALL content, everything inside this-->
         <p>Container begins</p>
-        
-        <article class="home-splash italics smallcaps" style="background: pink;">
-            <section class="home-splash-left">
-                <h1 class="home-splash-h1 italics margin-4-bottom smallcaps" style="background: cyan;">Fun<span>!</span> Games<span>!</span> Activities<span>!</span></h1>
-                
-                <p class="home-splash-text margin-none padding-none" style="background: brown;"><?php perch_content('Home page blurb'); ?>39 Club offers somewhere for young people to go and find friendship and relax, with WiFi, music, TV, table tennis, table football, board games and crafts. Even cooking and outdoor activities! There’s something for everyone, and no-one gets turned away.<br />
+
+        <article class="content" role="article">
+            
+            <h3 class="content-title" style="color: black;">Events Archive</h3>
+            
+            <h2 class="centre"><a href="">Go back to Events</a></h2>
+            
+            <?php perch_content('Events archive'); ?>
+            
+            <div class="content-row row">
+                <section class="bold ten columns offset-by-one textmid3" role="main" style="background: yellow; color: black;">
                     
-	               <span class="right"><a href="">Learn more &gt;&gt;</a></span></p>
-            </section>
-            <div class="home-splash-right" style="background: coral;"></div>
-            <div aria-hidden="true" class="home-splash-image-container" style="background: none;">
-              <div class="home-splash-image-parent" style="background: yellow;">
-                <div class="home-splash-image-child"></div>
-              </div>
+                    <p>This would be an event</p>
+                    
+                </section>
             </div>
-            <section class="home-splash-bottom" style="background: purple;">
-                <?php perch_content('Home page club times/fees etc'); ?>
-                <h3 class="home-splash-bottom-h3 margin-20-right-per padding-none right">Tuesdays 4pm to 6pm (term time only)</h3>
-                <h2 class="clear home-splash-bottom-h2 margin-22-right-per right">£1 entry <span class="padding-3-left">For 11-14 year olds</span></h2>
-            </section>
         </article>
-        
-        <nav class="home-buttons" role="navigation" style="background: brown;">
-            <div class="home-button home-button-contact" style="background: pink;">
-                <p class="italics home-button-text">Contact Us &gt;&gt;</p>
-            </div>
-            <div class="home-button home-button-join" style="background: orange;">
-                <p class="italics home-button-text">Join Us &gt;&gt;</p>
-            </div>
-            <div class="home-button home-button-vol" style="background: cyan;">
-                <p class="italics home-button-text">Volunteer with Us &gt;&gt;</p>
-            </div>
-        </nav>
-        
-      <p class="clear">End of container</p>
     </main>
 
       <!--Purely graphical slanted area with drop shadow at bottom of main content-->

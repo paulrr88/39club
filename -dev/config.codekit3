@@ -30,12 +30,19 @@
 		"oAP": "\/_opening.html",
 		"oF": 0
 		},
-	"\/about.html": {
+	"\/about-history.kit": {
 		"cB": 0,
-		"ft": 8192,
+		"ft": 2048,
 		"oA": 0,
-		"oAP": "\/about.html",
-		"oF": 0
+		"oAP": "\/Applications\/MAMP\/htdocs\/39club\/about-history.php",
+		"oF": 6
+		},
+	"\/about-policies.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/Applications\/MAMP\/htdocs\/39club\/about-policies.php",
+		"oF": 6
 		},
 	"\/about.kit": {
 		"cB": 0,
@@ -44,11 +51,46 @@
 		"oAP": "\/Applications\/MAMP\/htdocs\/39club\/about.php",
 		"oF": 6
 		},
+	"\/contact.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/Applications\/MAMP\/htdocs\/39club\/contact.php",
+		"oF": 6
+		},
+	"\/dates.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/Applications\/MAMP\/htdocs\/39club\/dates.php",
+		"oF": 6
+		},
+	"\/events.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/Applications\/MAMP\/htdocs\/39club\/events.php",
+		"oF": 6
+		},
 	"\/index.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/Applications\/MAMP\/htdocs\/39club\/index.php",
+		"oF": 6
+		},
+	"\/membership.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/Applications\/MAMP\/htdocs\/39club\/membership.php",
+		"oF": 6
+		},
+	"\/volunteer.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/Applications\/MAMP\/htdocs\/39club\/volunteer.php",
 		"oF": 6
 		}
 	},

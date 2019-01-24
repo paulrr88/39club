@@ -43,6 +43,7 @@
                     <ul>
                         <li><a href="sitemap/">Sitemap</a></li>
                         <li><img src="" style="width: 25px; height: 25px; vertical-align: middle;" /><a href="https://www.facebook.com/39clubbognorregis/">@39ClubBognorRegis</a></li>
+                        <li><img src="" style="width: 25px; height: 25px; vertical-align: middle;" /><a href="https://www.facebook.com/39youthclub/">@39YouthClub</a></li>
                     </ul>
                 </nav><!--End of top information area-->
                 
@@ -50,12 +51,12 @@
                     <div aria-hidden="true" class="corner"></div><!--Covers up any gaps above the slanted header area-->
                     
                     <section class="address z-1" role="complementary" style="background: cyan;">
-                        <p class="address-p"><?/*php perch_content('Address');*/ ?>
+                        <p class="address-p"><?php perch_content('Address'); ?>
                             Church Path,
                             Glamis Street,
                             Bognor Regis PO21 1DB<br />
                             TEL:  01243 864124<br />
-                            <span class="address-charity">Registered Charity No. #########</span>
+                            <span class="address-charity"><a href="<?php perch_content('Charity commission link'); ?>">Registered Charity No. 305344</a></span>
                         </p>
                     </section>
                     
@@ -104,55 +105,22 @@
                     </ul>
                 </section>
         
+
+
         
         <article class="content" role="article">
             <div class="content-row row">
-                <div class="four columns">
-                    <section class="bold twelve columns textmid2" role="complementary" style="background: purple;">
-                        <?php /*perch_content('About Us Content 1');*/ ?>
-                        <h3 class="content-title">Title for some content</h3>
-
-                        <p>Body text would go here. Going to use some placeholder text:</p>
-
-                        <p>Odio dapibus eleifend Maecenas magnis justo inceptos non lobortis pharetra lorem et ornare pretium eleifend. Primis in. Molestie sit tellus gravida. Ligula. Aliquam nec. Pretium ornare lectus ultrices euismod.</p>
-
-                        <p>Nam aliquam ullamcorper. Duis sodales habitant. Quam amet magnis et senectus sociis nisl fringilla enim montes. Nonummy netus. A hendrerit montes adipiscing orci Sagittis. Praesent tortor senectus class. Mi Dis morbi congue sociis cubilia euismod porta. Nibh.</p>
-
-                        <p>Sem sociosqu at at. Tempus. Neque nibh non phasellus elementum inceptos scelerisque nam, venenatis. Eget scelerisque vitae. Vel aliquam vulputate dolor augue porttitor tristique Vehicula placerat non hac. Duis duis vivamus non congue ultricies.</p>
-                    </section>
-                    
-                    <section class="bold twelve columns margin-10-top-scale textmid2" role="complementary" style="background: green;">
-                        <?php /*perch_content('About Us Content 3');*/ ?>
-
-                        <h3 class="content-title">Title for yet more content</h3>
-
-                        <p>Another example of a text area. Suspendisse nullam integer. Hac consectetuer dis massa duis aliquet justo velit iaculis blandit ultrices justo class conubia condimentum lacus. Dis dignissim justo suscipit.</p>
-
-                        <p>Semper felis. Sociosqu tempor inceptos proin torquent phasellus purus ridiculus posuere aliquet montes ultricies facilisi tincidunt, morbi aliquet curabitur sollicitudin suspendisse. Commodo aliquet praesent consectetuer nisl id.</p>
-
-                        <p>Habitasse mi erat neque vitae, lobortis. Tempor habitant consectetuer suspendisse. Sapien accumsan diam adipiscing in platea. Dui erat eget blandit cubilia nostra auctor habitasse habitant vestibulum felis cubilia mattis. Convallis nisl. Cubilia vestibulum dui praesent. Facilisis quisque nullam porttitor imperdiet. Sollicitudin nibh euismod dignissim Tempor luctus felis torquent velit. Hendrerit.</p>
-                    </section>
-                </div>
-                <section class="bold eight columns textmid3" role="main" style="background: yellow; color: black;">
-                    <?php /*perch_content('About Us Content 2');*/ ?>
-                    
-                    <h3 class="content-title">Title for some more content</h3>
+                <section class="bold ten columns offset-by-one textmid3" role="main" style="background: yellow; color: black;">
+                    <?php /*perch_content('About Us Content');*/ ?>
 
                     <p class="italics smallcaps">Lobortis nam condimentum dapibus sem ridiculus. Sed, dui ac sodales turpis per felis dignissim pulvinar arcu, purus mus in, aenean mattis ligula. Nisi viverra hendrerit, ridiculus Dolor. Duis. Curabitur diam.</p>
                     
-                    <img alt="Image of kids" src="" />
+                    <?php /*perch_content('About Us Content image');*/ ?>
+                        <img alt="Image of kids" src="img/photo-activity-001.jpg" />
 
                     <p>Dapibus cum vestibulum est turpis at aliquam at urna. Donec et dapibus habitant, luctus. Augue euismod imperdiet, fames penatibus leo. Penatibus platea nascetur ut porttitor lorem potenti at at bibendum.</p>
 
                     <p>Magna. Hac hac molestie habitasse per pellentesque. Primis turpis praesent accumsan nisl eros suspendisse mattis faucibus feugiat et sapien. Facilisis ante bibendum ut venenatis ipsum duis ultricies. Pede id.</p>
-                    
-                    <br />
-                    
-                    <h4 class="content-subtitle">Subtitle for another piece of content</h4>
-
-                    <p>Sodales cursus fusce fames semper fringilla fames Est eu hendrerit tincidunt luctus fringilla volutpat. Nonummy nulla etiam pulvinar convallis. Laoreet aliquet interdum aptent vehicula sociosqu porttitor proin convallis curabitur, iaculis felis sociosqu id posuere, mollis.</p>
-                    
-                    <p>Dapibus tempor congue. Turpis orci condimentum. Euismod primis. Integer euismod cursus tempus mi lacus aptent morbi nulla hymenaeos.</p>
                 </section>
             </div>
         </article>
@@ -168,7 +136,7 @@
   </div><!--END OF CONTAINER-->
   
   <footer role="complementary" style="background: orange;">
-      <section class="footer-link-scyp" role="navigation" style="background: cyan;"><a href=""><img src="" alt="Sussex Clubs for Young People" /> <?php /*perch_content('SCYP Logo Link');*/ ?></a></section>
+      <section class="footer-link-scyp" role="navigation" style="background: cyan;"><a href="<?php perch_content('SCYP logo link'); ?>"><img src="" alt="Sussex Clubs for Young People" /></a></section>
   
       <ul class="footer-links" role="navigation" style="background: green;">
           <li style="background: yellow;"><a href="">Home</a></li>
@@ -187,23 +155,35 @@
       
       <section class="footer-links-box" role="navigation" style="background: olive;">
           <div class="footer-links-box-inner" style="background: green;">
-              <div class="footer-link-wscc" style="background: yellow;">
-              </div>
-              <div class="footer-link-brtc" style="background: blue;">
-              </div>
-              <div class="footer-link-lottery" style="background: purple;">
-              </div>
-              <div class="footer-link-fb" style="background: pink;">
-              </div>
+              <a href="<?php perch_content('WSCC logo link'); ?>">
+                  <div class="footer-link-wscc" style="background: yellow;">
+                  </div>
+              </a>
+              <a href="<?php perch_content('Bognor Regis Town Council logo link'); ?>">
+                  <div class="footer-link-brtc" style="background: blue;">
+                  </div>
+              </a>
+              <a href="<?php perch_content('Lottery logo & link'); ?>">
+                  <div class="footer-link-lottery" style="background: purple;">
+                  </div>
+              </a>
+              <a href="<?php perch_content('FB main link'); ?>">
+                  <div class="footer-link-fb" style="background: pink;">
+                  </div>
+              </a>
+              <a href="<?php perch_content('FB Friends of 39 Club link'); ?>">
+                  <div class="footer-link-fb" style="background: pink;">
+                  </div>
+              </a>
           </div>
       </section>
   
       <section class="clear" role="contentinfo"><!--Copyright info etc-->
           <p><strong>&copy; <?php echo date('Y'); ?> 39 Youth Club Bognor | Designed by <a href="http://www.paulcomputerhelp.co.uk/">Paul Robinson</a></strong>
               
-          <p>Charity no: ########</p>
+          <p><a href="<?php perch_content('Charity commission link'); ?>">Registered Charity No. 305344</a></p>
           
-          <p>Address</p>
+          <p><?php perch_content('Address'); ?></p>
   
           <br />
           <br />

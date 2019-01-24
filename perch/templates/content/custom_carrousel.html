@@ -1,0 +1,44 @@
+<perch:help>
+    <p>For the carrousel on the home page. Instructions to edit are below!</p>
+    
+    <p>Each of the carrousel slides are split into sections below. Within each section is the "Background image for section" where you can change the background image used, "Title of activity" where you can change the title associated with the image, and "Description of activity" which is the blurb for that slide.</p>
+    
+    <p><strong>To add a new carrousel slide:</strong> Click "Add an item" in the lower right corner underneath the bottom-most group of images.</p>
+    <p><strong>To delete a carrousel slide:</strong> Mouse over the number to the left of the "Background image for section" area below to get a red X to appear, click the red X to delete the slide.</p>
+    <p><strong>To reorder section rows:</strong> Mouse over the number to the left of the "Background image for section" area, click and hold on the three lines underneath the red X and drag your mouse down/up.</p>
+    
+    <p><strong>To upload an image:</strong> Follow the usual steps as with any other image/file on the website:<br /><br />
+    
+    <strong>N.B. IMAGES SHOULD BE A GOOD SIZE and sharp as they will appear large on the website. About 1500px across minimum or 5-6 megapixels. Check the current images used to get an idea.</strong><br />
+            
+    <span style="padding-left: 20px">- Click "Select or upload an image" in the "Background image for section" area.<br />
+    <span style="padding-left: 20px">- In the resulting Select an Asset box that pops up, either:<br />
+        <span style="padding-left: 40px"> - Click an existing item that you want to link to and then click "Use Selected" (should be highlighted green), or<br />
+        <span style="padding-left: 40px"> - Click the "Add Asset" button in the top right, and then either drop an image into the indicated box area or click the box area to select the file from your computer.<br />
+        <span style="padding-left: 60px">- Click the image that you just added that should now be displayed in green<br />
+        <span style="padding-left: 60px">- Click "Use Selected" in the top right<br />
+        <span style="padding-left: 60px">- <strong>N.B. if you enter this area by accident and want to go back</strong>, click the grey (X) icon in the far top right of the "Select an Asset" box, or press ESC on your keyboard.<br />
+    </p>
+            
+    <p><strong>To add links</strong>: select/highlight the area of text that you want to be a link and then click the small chain link symbol to the far right of the toolbar above the text area below. A small box labeled URL should appear. Type in/paste the link here. If you want to include a link to a page on the website, it's simplest to include the full address (so "http://preview.ferringbaptist.org.uk/club/"). This will then change your text to look like this: <code>[this is the text to be linked](http://preview.ferringbaptist.org.uk/club/ "")</code></p>
+</perch:help>
+
+            <div class="carousel twelve columns">
+                <perch:repeater id="carrousel" label="Carrousel sections" title="true">
+                    <div>
+                        <div class="homecarousel twelve columns">
+                            <img src="<perch:content id="background" type="image" label="Background image for section" title="true" required="true" quality="75" />" class="fluid-100 homecarousel-bg">
+                            <div class="padding-3">
+                                <article class="background-white75 border-top-15-green boxshadow-softextra6 homecarousel-box six columns u-pull-right" role="article">
+                                    <h2 class="centre padding-1 textpurple"><perch:content id="carrousel_title" type="text" label="Title of activity" required="true" title="true" /></h2>
+
+                                    <perch:content id="carrousel_text" type="textarea" label="Description of activity" markdown="true" editor="markitup" imagewidth="640" imageheight="480" maxlength="675" required="true" />
+                                </article>
+                                <div class="spacer"></div>
+                            </div><!--End of padding-3-->
+                        </div><!--End of carousell section-->
+                    </div>
+                </perch:repeater>
+            </div>
+
+

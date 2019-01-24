@@ -7,7 +7,7 @@
 </div><!--END OF CONTAINER-->
 
 <footer role="complementary" style="background: orange;">
-    <section class="footer-link-scyp" role="navigation" style="background: cyan;"><a href=""><img src="" alt="Sussex Clubs for Young People" /> <?php /*perch_content('SCYP Logo Link');*/ ?></a></section>
+    <section class="footer-link-scyp" role="navigation" style="background: cyan;"><a href="<?php perch_content('SCYP logo link'); ?>"><img src="" alt="Sussex Clubs for Young People" /></a></section>
 
     <ul class="footer-links" role="navigation" style="background: green;">
         <li style="background: yellow;"><a href="<!--$dir-->">Home</a></li>
@@ -26,23 +26,35 @@
     
     <section class="footer-links-box" role="navigation" style="background: olive;">
         <div class="footer-links-box-inner" style="background: green;">
-            <div class="footer-link-wscc" style="background: yellow;">
-            </div>
-            <div class="footer-link-brtc" style="background: blue;">
-            </div>
-            <div class="footer-link-lottery" style="background: purple;">
-            </div>
-            <div class="footer-link-fb" style="background: pink;">
-            </div>
+            <a href="<?php perch_content('WSCC logo link'); ?>">
+                <div class="footer-link-wscc" style="background: yellow;">
+                </div>
+            </a>
+            <a href="<?php perch_content('Bognor Regis Town Council logo link'); ?>">
+                <div class="footer-link-brtc" style="background: blue;">
+                </div>
+            </a>
+            <a href="<?php perch_content('Lottery logo & link'); ?>">
+                <div class="footer-link-lottery" style="background: purple;">
+                </div>
+            </a>
+            <a href="<?php perch_content('FB main link'); ?>">
+                <div class="footer-link-fb" style="background: pink;">
+                </div>
+            </a>
+            <a href="<?php perch_content('FB Friends of 39 Club link'); ?>">
+                <div class="footer-link-fb" style="background: pink;">
+                </div>
+            </a>
         </div>
     </section>
 
     <section class="clear" role="contentinfo"><!--Copyright info etc-->
         <p><strong>&copy; <?php echo date('Y'); ?> 39 Youth Club Bognor | Designed by <a href="http://www.paulcomputerhelp.co.uk/">Paul Robinson</a></strong>
             
-        <p>Charity no: ########</p>
+        <p><a href="<?php perch_content('Charity commission link'); ?>">Registered Charity No. 305344</a></p>
         
-        <p>Address</p>
+        <p><?php perch_content('Address'); ?></p>
 
         <br />
         <br />

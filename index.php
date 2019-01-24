@@ -43,6 +43,7 @@
             <ul>
                 <li><a href="sitemap/">Sitemap</a></li>
                 <li><img src="" style="width: 25px; height: 25px; vertical-align: middle;" /><a href="https://www.facebook.com/39clubbognorregis/">@39ClubBognorRegis</a></li>
+                <li><img src="" style="width: 25px; height: 25px; vertical-align: middle;" /><a href="https://www.facebook.com/39youthclub/">@39YouthClub</a></li>
             </ul>
         </nav><!--End of top information area-->
         
@@ -50,12 +51,12 @@
             <div aria-hidden="true" class="corner"></div><!--Covers up any gaps above the slanted header area-->
             
             <section class="address z-1" role="complementary" style="background: cyan;">
-                <p class="address-p"><?/*php perch_content('Address');*/ ?>
+                <p class="address-p"><?php perch_content('Address'); ?>
                     Church Path,
                     Glamis Street,
                     Bognor Regis PO21 1DB<br />
                     TEL:  01243 864124<br />
-                    <span class="address-charity">Registered Charity No. #########</span>
+                    <span class="address-charity"><a href="<?php perch_content('Charity commission link'); ?>">Registered Charity No. 305344</a></span>
                 </p>
             </section>
             
@@ -97,7 +98,7 @@
             <section class="home-splash-left">
                 <h1 class="home-splash-h1 italics margin-4-bottom smallcaps" style="background: cyan;">Fun<span>!</span> Games<span>!</span> Activities<span>!</span></h1>
                 
-                <p class="home-splash-text margin-none padding-none" style="background: brown;">39 Club offers somewhere for young people to go and find friendship and relax, with WiFi, music, TV, table tennis, table football, board games and crafts. Even cooking and outdoor activities! There’s something for everyone, and no-one gets turned away.<br />
+                <p class="home-splash-text margin-none padding-none" style="background: brown;"><?php perch_content('Home page blurb'); ?>39 Club offers somewhere for young people to go and find friendship and relax, with WiFi, music, TV, table tennis, table football, board games and crafts. Even cooking and outdoor activities! There’s something for everyone, and no-one gets turned away.<br />
                     
 	               <span class="right"><a href="">Learn more &gt;&gt;</a></span></p>
             </section>
@@ -108,6 +109,7 @@
               </div>
             </div>
             <section class="home-splash-bottom" style="background: purple;">
+                <?php perch_content('Home page club times/fees etc'); ?>
                 <h3 class="home-splash-bottom-h3 margin-20-right-per padding-none right">Tuesdays 4pm to 6pm (term time only)</h3>
                 <h2 class="clear home-splash-bottom-h2 margin-22-right-per right">£1 entry <span class="padding-3-left">For 11-14 year olds</span></h2>
             </section>
@@ -137,7 +139,7 @@
   </div><!--END OF CONTAINER-->
   
   <footer role="complementary" style="background: orange;">
-      <section class="footer-link-scyp" role="navigation" style="background: cyan;"><a href=""><img src="" alt="Sussex Clubs for Young People" /> <?php /*perch_content('SCYP Logo Link');*/ ?></a></section>
+      <section class="footer-link-scyp" role="navigation" style="background: cyan;"><a href="<?php perch_content('SCYP logo link'); ?>"><img src="" alt="Sussex Clubs for Young People" /></a></section>
   
       <ul class="footer-links" role="navigation" style="background: green;">
           <li style="background: yellow;"><a href="">Home</a></li>
@@ -156,23 +158,35 @@
       
       <section class="footer-links-box" role="navigation" style="background: olive;">
           <div class="footer-links-box-inner" style="background: green;">
-              <div class="footer-link-wscc" style="background: yellow;">
-              </div>
-              <div class="footer-link-brtc" style="background: blue;">
-              </div>
-              <div class="footer-link-lottery" style="background: purple;">
-              </div>
-              <div class="footer-link-fb" style="background: pink;">
-              </div>
+              <a href="<?php perch_content('WSCC logo link'); ?>">
+                  <div class="footer-link-wscc" style="background: yellow;">
+                  </div>
+              </a>
+              <a href="<?php perch_content('Bognor Regis Town Council logo link'); ?>">
+                  <div class="footer-link-brtc" style="background: blue;">
+                  </div>
+              </a>
+              <a href="<?php perch_content('Lottery logo & link'); ?>">
+                  <div class="footer-link-lottery" style="background: purple;">
+                  </div>
+              </a>
+              <a href="<?php perch_content('FB main link'); ?>">
+                  <div class="footer-link-fb" style="background: pink;">
+                  </div>
+              </a>
+              <a href="<?php perch_content('FB Friends of 39 Club link'); ?>">
+                  <div class="footer-link-fb" style="background: pink;">
+                  </div>
+              </a>
           </div>
       </section>
   
       <section class="clear" role="contentinfo"><!--Copyright info etc-->
           <p><strong>&copy; <?php echo date('Y'); ?> 39 Youth Club Bognor | Designed by <a href="http://www.paulcomputerhelp.co.uk/">Paul Robinson</a></strong>
               
-          <p>Charity no: ########</p>
+          <p><a href="<?php perch_content('Charity commission link'); ?>">Registered Charity No. 305344</a></p>
           
-          <p>Address</p>
+          <p><?php perch_content('Address'); ?></p>
   
           <br />
           <br />

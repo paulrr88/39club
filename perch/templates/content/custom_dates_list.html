@@ -1,0 +1,21 @@
+<perch:help>
+  <p><strong>Instructions:</strong></p>
+
+  <p>This is for the diary page table that displays all the dates and events etc.</p>
+
+  <p>You can either:<br />
+    <span style="padding-left: 20px">- <strong>Edit an existing diary entry</strong> by changing the fields that are currently on this page</span><br />
+    <span style="padding-left: 20px">- <strong>Add a new diary entry</strong> to the bottom of the list by scrolling to the bottom of this page and clicking "Save &amp; Add another", which will result in a new blank set of fields appearing at the bottom of this page that can then be filled in with appropriate text.</span>
+
+  <p><strong>A special notice or meeting without activities can be added in place of a normal event</strong> entry simply by leaving the activities field blank and entering the notice that you want to display as the event's title. Dates are still required; if dates really don't apply just put a dash (-) there, that will be accepted. The field just can't be blank!</p>
+
+</perch:help>
+
+<tr class="background-orange-mid">
+  <td scope="row"><perch:content id="textDate" type="text" label="Date of event" required="true" title="true" /></td>
+
+  <td class="background-teal" scope="row"><strong><perch:content id="textEvent" type="text" label="Event title/times etc" required="true" title="true" /></strong></td>
+
+  <td scope="row"><perch:content id="textActivities" type="text" label="Activities taking place at event" required="false" title="true" help="(For all but special meetings or special notices etc that have no activities taking place)" /><br /><br />
+  <strong><em><perch:content id="textAlert" type="text" label="Special notice" required="false" title="true" help="Special alert (optional), attached to activities message, will appear in bold italicised text" /></em></strong></td>
+</tr>

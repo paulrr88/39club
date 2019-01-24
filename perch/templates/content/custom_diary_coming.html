@@ -1,0 +1,35 @@
+<perch:help>
+    <p><strong>Instructions:</strong></p>
+    
+    <p>This is for the coming weeks schedule. You can add/delete items here and change the period that the schedule is for, see below.</p>
+    
+    <p><strong>To add a new item to the schedule:</strong> Click "Add an item" in the lower right corner underneath the bottom-most item.</p>
+    <p><strong>To delete an item:</strong> Mouse over the number next to an item below to get a red X to appear, click the red X to delete the item.</p>
+    <p><strong>To reorder items:</strong> Mouse over the number as above, but instead click and hold on the three lines underneath the red X and drag your mouse down/up to reorder.</p>
+    
+    <p>As ever for any of this to take effect you need to click Save Changes at the bottom. If you make a mistake just click Cancel instead.</p>
+</perch:help>
+
+<p class="left underline">Preaching Schedule <perch:content id="date" type="text" label="Period that current preaching schedule covers" required="true" title="true" help="Format: for example 'November 2021-January 2022' or 'January-March 2022'" /></p> 
+<p class="right underline"><strong>(C)</strong> - Communion</p>
+
+<table class="styled" role="grid" summary="Schedule for who is preaching in these coming months">
+    <thead>
+        <tr class="tabletop">
+            <th scope="col">Date</th>
+            <th scope="col">Morning Preacher</th>
+            <th scope="col">Evening Preacher</th>
+        </tr>
+    </thead>
+    <tbody class="tablecoming">
+        <perch:repeater id="entries" label="Schedule items" title="true"><tr>
+            <th scope="row"><perch:content id="entrydate" type="text" label="Date of Sunday in question" required="true" title="true" help="Format: month (short form) day, for example 'Jul 1st'" chars="9"/></th>
+            <td class="morning">
+                <perch:content id="entrymorning" type="text" label="Morning preacher" required="true" title="true" chars="50"/> <perch:content id="communion-morn" type="radio" label="Communion?" options="Yes, No" allowempty="false" required="true" suppress="true" /><perch:if id="communion-morn" value="Yes"><strong>(C)</strong></perch:if>
+            </td>
+            <td class="evening">
+                <perch:content id="entryeve" type="text" label="Evening preacher" required="true" title="true" chars="50"/> <perch:content id="communion-eve" type="radio" label="Communion?" options="Yes, No" allowempty="false" required="true" suppress="true" /><perch:if id="communion-eve" value="Yes"><strong>(C)</strong></perch:if>
+            </td>
+        </tr></perch:repeater>
+    </tbody>
+</table>

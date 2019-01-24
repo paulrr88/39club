@@ -1,0 +1,31 @@
+<perch:help>
+  <p><strong>Instructions:</strong></p>
+
+  <p>This is for the videos page, and will allow you to add new videos. </p>
+
+  <p>You can either:<br />
+    <span style="padding-left: 20px">- <strong>Replace an existing video</strong> by changing the fields that are currently on this page</span><br />
+    <span style="padding-left: 20px">- <strong>Add a new video</strong> to the top of the list by scrolling to the bottom of this page and clicking "Save &amp; Add another", which will result in a new blank set of fields appearing above the others that can then be filled in.</span>
+
+  <p>You can also delete a video by clicking the small red delete button to the top right corner of a video section.</p>
+
+  <p>Enter a title for the video in the Title box below (such as "Arun Sunshine Group Irish Night 2nd Nov 2013"), and then copy and paste the link to the video into the Link to video box.</p>
+
+  <p><strong>If you want to link to a YouTube video, the link has to be an embed link</strong>, which you can extract from the iframe HTML code that YouTube gives you when you go to Share. Instructions below!</p>
+  <span style="padding-left: 20px">- Go to the video that you want to copy on YouTube</span><br />
+  <span style="padding-left: 20px">- Find the Share button under the video, and in the box that appears, look for the Embed button.</span><br />
+  <span style="padding-left: 20px">- The embed button should take you to a link that includes code that looks something like this: <img src="../../../../../images/perch-embedexample.png" width="900"></span><br />
+  <span style="padding-left: 20px">- Select the part inside the ""s that starts "https://" and ends with the string of letters and numbers, so in the above example you'd end up with this: <code>https://www.youtube.com/embed/cFi_fJl40BA?list=PL1CROEEuQ31V0D30xjP6CilXGphlecjYl</code></span><br />
+  <span style="padding-left: 20px">- Paste that into the Link to video box below.</span><br /><br />
+
+  <p>Click Save Changes and you should be good to go!</p>
+
+</perch:help>
+
+<div class="ten columns offset-by-one background-yellow content-box-wide">
+  <h1 class="header-purple"><perch:content id="textTitle" type="text" label="Title" required="true" title="true" /></h1>
+
+  <div class="video-container">
+    <iframe src="<perch:content id="textLink" type="text" label="Link to video" required="true" title="true" />" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>

@@ -1,0 +1,57 @@
+<perch:help>
+    <p><strong>Instructions:</strong></p>
+    
+    <p>This is for the image gallery on the Holiday Club page. The gallery is split into rows of three images each. You can enter the title of the Holiday Club that these pictures are from in the "Pictures from" area below.</p>
+    
+    <p><strong>To add a new row of images:</strong> Click "Add an item" in the lower right corner underneath the bottom-most group of images.</p>
+    <p><strong>To delete a row of images:</strong> Mouse over the number at the top of a group of images below to get a red X to appear, click the red X to delete the entry.</p>
+    <p><strong>To delete an individual image:</strong> Mouse over the image in question and look for the red X that appears over the top left of the image, click that to delete the image. If you just want to replace the image, simply click the "Select or upload an image" link as below in the upload instructions.</p>
+    <p><strong>To reorder image rows:</strong> Mouse over the number as above, but instead click and hold on the three lines underneath the red X and drag your mouse down/up to reorder.</p>
+    
+    <p><strong>To upload an image:</strong> Follow the usual steps as with any other image/file on the website:<br /><br />
+    
+    <span style="padding-left: 20px">- Click "Select or upload an image".<br />
+    <span style="padding-left: 20px">- In the resulting Select an Asset box that pops up, either:<br />
+        <span style="padding-left: 40px"> - Click an existing item that you want to link to and then click "Use Selected" (should be highlighted green), or<br />
+        <span style="padding-left: 40px"> - Click the "Add Asset" button in the top right, and then either drop an image into the indicated box area or click the box area to select the file from your computer.<br />
+        <span style="padding-left: 60px">- Click the image that you just added that should now be displayed in green<br />
+        <span style="padding-left: 60px">- Click "Use Selected" in the top right<br />
+        <span style="padding-left: 60px">- <strong>N.B. if you enter this area by accident and want to go back</strong>, click the grey (X) icon in the far top right of the "Select an Asset" box, or press ESC on your keyboard.<br />
+    </p>
+            
+    <p><strong>When new club photos need to be added</strong> it's a good idea to delete the below and replace it with the new photos - old photos can be added to the Holiday Club Photos Archive page.</p>
+            
+    <p><strong>About "image alt text"</strong>: this is the text that is displayed when an image cannot be displayed due to some problem or a blind person is using a screen reader. It's best practice to include some descriptive text but it's not 100% necessary.</p>
+</perch:help>
+
+<h1 class="centre padding-1">Pictures from <perch:content id="clubtitle" type="text" required="true" label="Pictures from" title="true" help="Club title and year, i.e. Rocky's Plaice (2016)" /></h1>
+                
+<p class="centre">(All identifiable pictures of children used with permission of parents)</p>
+
+<perch:repeater id="photos_row" label="Photo rows" title="true">
+    <div class="left margin-4-top">
+        <figure class="fluid-images-hc">
+            <a class="link-nostyle" href="<perch:content id="photo1" type="image" required="true" />">
+                <img
+                    alt="<perch:content id="photo1alt" type="text" required="false" label="Image alt text" />"
+                    role="img"
+                    src="<perch:content id="photo1" type="image" required="true" quality="5" />"
+                >
+            </a>
+            <a class="link-nostyle" href="<perch:content id="photo2" type="image" required="true" />">
+                <img
+                    alt="<perch:content id="photo2alt" type="text" required="false" label="Image alt text" />"
+                    role="img"
+                    src="<perch:content id="photo2" type="image" required="true" quality="5" />"
+                >
+            </a>
+            <a class="link-nostyle" href="<perch:content id="photo3" type="image" required="true" />">
+                <img
+                    alt="<perch:content id="photo3alt" type="text" required="false" label="Image alt text" />"
+                    role="img"
+                    src="<perch:content id="photo3" type="image" required="true" quality="5" />"
+                >
+            </a>
+        </figure>
+    </div>
+</perch:repeater>

@@ -1,0 +1,25 @@
+<perch:help>
+    <p><strong>Instructions:</strong></p>
+    
+    <p>This is for the contact details on the Contact Us page. You can add/delete emails, phone numbers and mobile phone numbers here as needed.</p>
+    
+    <p><strong>To add a new email/phone number/mobile number:</strong> Click "Add an item" in the lower right corner underneath the bottom-most item in the appropriate section.</p>
+    <p><strong>To delete an item:</strong> Mouse over the number next to an item below to get a red X to appear, click the red X to delete the item.</p>
+    <p><strong>To reorder items:</strong> Mouse over the number as above, but instead click and hold on the three lines underneath the red X and drag your mouse down/up to reorder.</p>
+    
+    <p>As ever for any of this to take effect you need to click Save Changes at the bottom. If you make a mistake just click Cancel instead.</p>
+</perch:help>
+
+<perch:repeater id="emails" label="Add an email" title="true">
+    <p>Email: <strong><a href="mailto:<perch:content id="email" type="text" label="Email" required="true" title="true" help="Format: name@email.com" chars="50"/>"><perch:content id="email" /></a></strong></p>
+</perch:repeater>
+
+<perch:repeater id="phonenos" label="Add a landline phone number" title="true">
+    <p>Telephone: <strong><perch:content id="phone" type="text" label="Phone number" required="true" title="true" help="Format: ##### ######, i.e. 01903 592308" chars="12"/></strong></p>
+</perch:repeater>
+
+<perch:repeater id="mobilenos" label="Add a mobile phone number" title="true">
+    <p>Mobile: <strong><perch:content id="mobile" type="text" label="Mobile phone number" required="true" title="true" help="Format: ##### ######, i.e. 07503 592308" chars="12"/></strong></p>
+</perch:repeater>
+
+<perch:content id="body" type="textarea" label="Room hire message" title="true" markdown="true" editor="markitup" required="true" imageclasses="image" />

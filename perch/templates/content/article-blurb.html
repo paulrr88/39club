@@ -1,0 +1,25 @@
+<perch:help>
+    <p><strong>Instructions:</strong></p>
+    
+    <p>This is for writing a blurb/block of text for a given part of a page. Just type in the box below and click Save Changes as usual to send the results to the page.</p>
+    
+    <p>
+        Adding styling/images etc to content:<br />
+        <span style="padding-left: 20px">- <strong>Bold/italic can be done</strong> by selecting the text you want to bolden/italicise and then clicking the little B or I buttons just above the area where you type. Or, you can add ** to either side of a piece of text for bold, or __ for italics - i.e. "Our club runs from **3-6pm**. Parents __please be aware__."</span><br />
+        <span style="padding-left: 20px">- <strong>Add an image</strong> by clicking where you want the image to appear (advisable to only place one between two paragraphs of text) and then clicking the little picture symbol in the same area as the bold and italic buttons above. In the "Select an Asset" box that appears:</span><br />
+            <span style="padding-left: 40px"> - Click an existing item that you want to link to and then click "Use Selected" (should be highlighted green), or<br />
+            <span style="padding-left: 40px"> - Click the "Add Asset" button in the top right, and then either drop an image into the indicated box area or click the box area to select the file from your computer.<br />
+                <span style="padding-left: 60px">- Click the image that you just added that should now be displayed in green<br />
+                <span style="padding-left: 60px">- Click "Use Selected" in the top right<br />
+                <span style="padding-left: 60px">- <strong>N.B. if you enter this area by accident and want to go back</strong>, click the grey (X) icon in the far top right of the "Select an Asset" box, or press ESC on your keyboard.<br />
+        <span style="padding-left: 20px"><strong>After this, a piece of code should appear that looks like this: [cms:asset 10 title="Hc 04"]. To get the image to centre and look nice, you'll need to change this to read:<br /><br />
+        
+        [cms:asset 10 title="Hc 04" class="image"]<br /><br />
+            
+        Basically just adding class="image" within the square bracket. Make sure there's a space between the title part and the class="image" part so it's composed exactly as above.</strong></span>
+    </p>
+                    
+    <p><strong>To add links</strong>: select/highlight the area of text that you want to be a link and then click the small chain link symbol to the far right of the toolbar above the text area below. A small box labeled URL should appear. Type in/paste the link here. If you want to include a link to a page on the website, it's simplest to include the full address (so "http://preview.ferringbaptist.org.uk/club/"). This will then change your text to look like this: <code>[this is the text to be linked](http://preview.ferringbaptist.org.uk/club/ "")</code></p>
+</perch:help>
+
+<perch:content id="body" type="textarea" label="Body" markdown="true" editor="markitup" required="true" imageclasses="image" />

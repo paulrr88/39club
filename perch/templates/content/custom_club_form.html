@@ -1,0 +1,23 @@
+<perch:help>
+    <p><strong>Instructions:</strong></p>
+    
+    <p>This is for the area on the Holiday Club page that shows parents a link to download this year's registration form. Below you'll find the option to turn this section on or off (it should be off when there is no club due to be on soon, obviously!) and the link to the file itself.</p>
+    
+    <p><strong>To add a registration form file</strong>: <br />
+    
+    <span style="padding-left: 20px">- Click "Select or upload a file" in the "Registration form file" section below.<br />
+    <span style="padding-left: 20px">- In the resulting Select an Asset box that pops up, either:<br />
+        <span style="padding-left: 40px"> - Click an existing item that you want to link to and then click "Use Selected", or<br />
+        <span style="padding-left: 40px"> - Click the "Add Asset" button in the top right, and then either drop a file into the indicated box area or click the box area to select the file from your computer.<br />
+        <span style="padding-left: 60px">- Click the file that you just added that should now be displayed in green<br />
+        <span style="padding-left: 60px">- Click "Use Selected" in the top right<br />
+        <span style="padding-left: 60px">- <strong>N.B. if you enter this area by accident and want to go back</strong>, click the grey (X) icon in the far top right of the "Select an Asset" box, or press ESC on your keyboard.<br />
+        <span style="padding-left: 60px">- PDF format for documents is preferable if you can manage it as more people can read this format than items created in Word etc!</p>
+</perch:help>
+
+<perch:content id="activate" type="radio" label="Make this visible on the website?" options="Yes, No" allowempty="false" required="true" suppress="true" />
+
+<perch:if id="activate" value="Yes"><section aria-label="This year's Holiday Club registration forms and data protection policy" class="background-white75 border-top-15-orange boxshadow-softextra6 twelve columns margin-6-top" role="complementary">
+    <h1 class="centre padding-1">Download this year's <a href="<perch:content id="registration" type="file" label="Registration form file" />">registration form</a></h1>
+    <h3 class="centre padding-1">Download our <a href="<perch:content id="dataprotect" type="file" label="Data protection document" />">data protection policy</a></h3> 
+</section></perch:if>

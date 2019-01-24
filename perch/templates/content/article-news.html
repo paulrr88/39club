@@ -1,0 +1,43 @@
+<perch:help>
+  <p><strong>Instructions:</strong></p>
+
+  <p>This is for the news page, with each section here representing one news item.</p>
+
+  <p>You can either:<br />
+    <span style="padding-left: 20px">- <strong>Edit an existing news item</strong> by changing the fields that are currently on this page</span><br />
+    <span style="padding-left: 20px">- <strong>Add a new news item</strong> to the bottom of the list by scrolling to the bottom of this page and clicking "Save &amp; Add another", which will result in a new blank set of fields appearing above the others that can then be filled in with appropriate text.</span></p>
+
+  <p><strong>You can also delete a news item</strong> by clicking the small red delete button to the top right of a news item.</p>
+
+  <p>The main part of the news article should be placed in the large text box, and you can find various buttons that will allow you formatting options. The editor uses "Markdown", which allows the editor to do a few things that a program like Word might normally do (like adding links, bolding, underlining etc). You can just highlight text and press the buttons in the editor and the Markdown will be added automatically.</p>
+
+  <p><strong>If you want to add an image</strong>:</p>
+    <span style="padding-left: 20px">- Position the writing cursor in the text where you want the image to appear (on a new line is recommended)</span><br />
+    <span style="padding-left: 20px">- Click the little landscape symbol in the line of tools above the text editing area (it will say Picture if you hold your mouse cursor over it for a bit)</span><br />
+    <span style="padding-left: 20px">- In the Select an Asset window that appears, either select an existing image to use or click "Add Asset" in the top right</span><br />
+    <span style="padding-left: 20px">- Then in the grey box that appears, either drag and drop the image into the box from your computer or click the box to bring up a window that shows your computer files and will allow you to select the folder where the image is saved that you want to use. When you've found it, select it and click Open to upload it.</span><br />
+
+  <p>This will create a line of Markdown that looks something like this: <code>[cms:asset 97]</code>. You can cut and paste this if you want to move it around your writing and reposition it.</p>
+
+  <p>If you want to have multiple images side by side, simply move the above code into the same line with NO SPACE inbetween, so:<br /><code>[cms:asset 60][cms:asset 61]</code>. This should happen automatically if you just put one image in after another without moving the cursor. I recommend having only two images to a line, so:</p>
+
+  <p><code>[cms:asset 60][cms:asset 61]<br />
+    [cms:asset 62][cms:asset 63]</code></p>
+
+  <p>Otherwise the layout will start to go wrong!</p>
+
+  <p><strong>If you want to have larger text</strong>, mouse over the H symbol at the top of the editor and select between headings 1-6 (1 is largest, 6 is smallest), and click to add it where your cursor currently is in the text.</p>
+
+  <p><strong>As with everything else in Perch, remember to click Save Changes at the bottom to save your text to the page!</strong></p>
+
+</perch:help>
+
+<div class="ten columns offset-by-one background-orange-light content-box-wide newsbox">
+  <h2 class="header-purple news-title"><perch:content id="heading" type="text" label="Heading" required="true" title="true" /></h2>
+
+  <h3 class="header-purple-sub news-date"><perch:content id="date" type="date" label="Date (if applicable)" format="%d %B %Y" required="false" /></h3>
+
+  <div class="spacer"></div>
+
+  <perch:content id="body" type="textarea" label="Body" markdown="true" editor="markitup" required="true" />
+</div>

@@ -214,6 +214,18 @@ ul {
     margin: 0 auto;
     width: 100%;
 }
+/*Images in Events page entries, targets those. Have to use these specific selectors as the content is user-generated, can't target each image directly with a class*/
+/*Necessary to include the .event p img one as it's affected by the 1000px breakpoint in breaks.css and need to set a baseline here*/
+.event img { /*targets images that are alone*/
+  margin: 0;
+  padding: 5% 0 5% 0;
+  width: 100%;
+}
+.event p img { /*targets the images when they're two in a line as they're always in <p> tags*/
+  margin: 0;
+  padding: 5% 0 5% 0;
+  width: 100%;
+}
 .fluid-images-3 img {     /*figure area containing 3 images side by side*/
     max-width: 100%; /*gets images to stack on mobile instead of be inline with each-other*/
     padding-left: 0; /*removes padding not needed for mobile*/

@@ -528,6 +528,19 @@
     .content-row {
         margin: 5rem 0rem 6rem 0rem;
     }
+    .event img { /*targets images that are alone*/
+      margin: 0 0 0 25%;
+      padding: 0;
+      width: 50%;
+    }
+    .event p img { /*targets the images when they're two in a line as they're always in <p> tags*/
+      margin: 0;
+      padding: 0;
+      width: 45%; /*to compensate for 10% margin on first image below - 45+45=90 and then 10% margin*/
+    }
+    .event p img:first-child {
+      margin-right: 10%; /*so there's some space between two images in a line*/
+    }
     .header-title {
         font-size: 5rem;
         margin: 80px 0 0 340px;

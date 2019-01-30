@@ -94,12 +94,21 @@
             
             <h3 class="content-title" style="color: black;">Times &amp; Dates</h3>
             
-            <?php perch_content('Diary'); ?>
-            
             <div class="content-row row">
                 <section class="bold ten columns offset-by-one textmid3" role="main" style="background: yellow; color: black;">
                     
-                    <p>This would be where diary goes?</p>
+                    <table id="table" summary="Table of upcoming dates" style="background: cyan;">
+                        <thead>
+                          <tr class="background-orange">
+                                <th class="centre" scope="col">Date</th>
+                                <th class="centre" scope="col">Event</th>
+                                <th class="centre" scope="col">Activities</th>
+                            </tr>
+                        </thead>
+                        <tbody class="diary">
+                            <?php perch_content('Diary'); ?>
+                        </tbody>
+                    </table>
                     
                 </section>
             </div>

@@ -185,7 +185,9 @@
       <br />
   </footer>
   
-      <script>
+      <!--JavaScript-->
+  
+          <script>
     // DELETE THIS IF NOT NEEDED ON THIS PAGE
     // fix for mobile table layout from http://sitesforprofit.com/responsive-tables-in-wordpress
   
@@ -209,6 +211,10 @@
       }
     }
   </script>
+    
+          <script>document.createElement('main');</script><!--fix for support of HTML5 <main> element-->
+    
+      <!--End JavaScript-->
   
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

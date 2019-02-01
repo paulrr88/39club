@@ -611,6 +611,9 @@
         font: bold italic small-caps 1.5rem/2.2rem Arial;
         padding: 15% 18% 0 21%;
     }
+    .table { /*For any tables on the website, particularly diary page*/
+        font-size: 2.2rem;
+    }
 }
 
 @media (min-width: 1200px) {

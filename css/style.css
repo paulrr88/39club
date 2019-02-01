@@ -512,6 +512,10 @@ ul {
     padding: 0; /*Added p to this so if a paragraph, which I can't edit, is created by Perch, and is within a parent with these as a class, it removes margin and padding from that p child element*/
 }
 
+.table { /*For any tables on the website, particularly diary page*/
+    font-size: 1.8rem;
+}
+
 .quote-circle {
     display: none;
 }

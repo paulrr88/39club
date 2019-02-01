@@ -94,7 +94,9 @@
             
             <?php perch_content('Contact form'); ?>
             
-            <?php perch_content('Location map'); ?>
+            <h3>Location Map</h3>
+            
+            <p>Just add this bit myself</p>
         </article>
     </main>
 
@@ -167,7 +169,13 @@
       <br />
   </footer>
   
-      
+      <!--JavaScript-->
+  
+          
+    
+          <script>document.createElement('main');</script><!--fix for support of HTML5 <main> element-->
+    
+      <!--End JavaScript-->
   
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

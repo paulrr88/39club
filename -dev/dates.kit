@@ -1,7 +1,30 @@
 <!--$page-title Times &amp; Dates-->
 <!--$description nil-->
 <!--$dir nil-->
-<!--$tablescript nil-->
+<!--$tablescript <script>
+    // DELETE THIS IF NOT NEEDED ON THIS PAGE
+    // fix for mobile table layout from http://sitesforprofit.com/responsive-tables-in-wordpress
+  
+    var headertext = [];
+    var headers = document.querySelectorAll("thead");
+    var tablebody = document.querySelectorAll("tbody");
+  
+    for (var i = 0; i < headers.length; i++) {
+      headertext[i]=[];
+      for (var j = 0, headrow; headrow = headers[i].rows[0].cells[j]; j++) {
+        var current = headrow;
+        headertext[i].push(current.textContent);
+        }
+    }
+  
+    for (var h = 0, tbody; tbody = tablebody[h]; h++) {
+      for (var i = 0, row; row = tbody.rows[i]; i++) {
+        for (var j = 0, col; col = row.cells[j]; j++) {
+          col.setAttribute("data-th", headertext[h][j]);
+        }
+      }
+    }
+  </script>-->
 
 <!--@import opening-->
 
@@ -24,15 +47,15 @@
             <div class="content-row row">
                 <section class="bold ten columns offset-by-one textmid3" role="main" style="background: yellow; color: black;">
                     
-                    <table id="table" summary="Table of upcoming dates" style="background: cyan;">
+                    <table class="table" summary="Table of upcoming dates" style="background: cyan;">
                         <thead>
-                          <tr class="background-orange">
+                            <tr style="background: purple;">
                                 <th class="centre" scope="col">Date</th>
                                 <th class="centre" scope="col">Event</th>
                                 <th class="centre" scope="col">Activities</th>
                             </tr>
                         </thead>
-                        <tbody class="diary">
+                        <tbody class="diary" style="background: orange;">
                             <?php perch_content('Diary'); ?>
                         </tbody>
                     </table>

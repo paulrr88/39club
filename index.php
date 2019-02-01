@@ -195,7 +195,13 @@
       <br />
   </footer>
   
-      
+      <!--JavaScript-->
+  
+          
+    
+          <script>document.createElement('main');</script><!--fix for support of HTML5 <main> element-->
+    
+      <!--End JavaScript-->
   
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

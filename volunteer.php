@@ -91,6 +91,8 @@
             <?php perch_content('Volunteer blurb'); ?>
             
             <?php perch_content('Volunteer form'); ?>
+            
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScPl4iy7ajgIdTsr6ywfeHYV2N6Sa5fxVkQCKPyFv__jxjdLQ/viewform?usp=sf_link"><p>Yo it's the form</p></a>
         </article>
     </main>
 
@@ -163,7 +165,13 @@
       <br />
   </footer>
   
-      
+      <!--JavaScript-->
+  
+          
+    
+          <script>document.createElement('main');</script><!--fix for support of HTML5 <main> element-->
+    
+      <!--End JavaScript-->
   
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

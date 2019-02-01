@@ -108,15 +108,6 @@
             <div class="content-row row">
                 <section class="bold ten columns offset-by-one textmid3" role="main" style="background: yellow; color: black;">
                     <?php perch_content('About Us Content'); ?>
-
-                    <p class="italics smallcaps">Lobortis nam condimentum dapibus sem ridiculus. Sed, dui ac sodales turpis per felis dignissim pulvinar arcu, purus mus in, aenean mattis ligula. Nisi viverra hendrerit, ridiculus Dolor. Duis. Curabitur diam.</p>
-                    
-                    <?php perch_content('About Us Content image'); ?>
-                        <img alt="Image of kids" src="img/photo-activity-001.jpg" />
-
-                    <p>Dapibus cum vestibulum est turpis at aliquam at urna. Donec et dapibus habitant, luctus. Augue euismod imperdiet, fames penatibus leo. Penatibus platea nascetur ut porttitor lorem potenti at at bibendum.</p>
-
-                    <p>Magna. Hac hac molestie habitasse per pellentesque. Primis turpis praesent accumsan nisl eros suspendisse mattis faucibus feugiat et sapien. Facilisis ante bibendum ut venenatis ipsum duis ultricies. Pede id.</p>
                 </section>
             </div>
         </article>

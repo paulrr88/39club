@@ -110,6 +110,8 @@
                     <h3 class="content-title">The History of 39 Youth Club</h3>
                     
                     <?php perch_content('History Content'); ?>
+                    
+                    <?php perch_content('History Images'); ?>
                 </section>
             </div>
         </article>

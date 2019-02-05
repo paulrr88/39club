@@ -106,7 +106,7 @@
         
         <article class="content" role="article">
             <div class="content-row row">
-                <section class="bold ten columns offset-by-one textmid3" role="main" style="background: yellow; color: black;">
+                <section class="bold ten columns offset-by-one textmid3 perch-textblock" role="main" style="background: yellow; color: black;">
                     <?php perch_content('About Us Content'); ?>
                 </section>
             </div>
@@ -171,6 +171,8 @@
           <p><a href="<?php perch_content('Charity commission link'); ?>">Registered Charity No. 305344</a></p>
           
           <p><?php perch_content('Address'); ?></p>
+          
+          <p class="centre">(All identifiable pictures of children used with permission of parents)</p>
   
           <br />
           <br />

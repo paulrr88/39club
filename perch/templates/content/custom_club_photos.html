@@ -24,13 +24,9 @@
     <p><strong>About "image alt text"</strong>: this is the text that is displayed when an image cannot be displayed due to some problem or a blind person is using a screen reader. It's best practice to include some descriptive text but it's not 100% necessary.</p>
 </perch:help>
 
-<h1 class="centre padding-1">Pictures from <perch:content id="clubtitle" type="text" required="true" label="Pictures from" title="true" help="Club title and year, i.e. Rocky's Plaice (2016)" /></h1>
-                
-<p class="centre">(All identifiable pictures of children used with permission of parents)</p>
-
 <perch:repeater id="photos_row" label="Photo rows" title="true">
     <div class="left margin-4-top">
-        <figure class="fluid-images-hc">
+        <figure class="fluid-images-club">
             <a class="link-nostyle" href="<perch:content id="photo1" type="image" required="true" />">
                 <img
                     alt="<perch:content id="photo1alt" type="text" required="false" label="Image alt text" />"

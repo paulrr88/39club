@@ -175,6 +175,8 @@
           <p><a href="<?php perch_content('Charity commission link'); ?>">Registered Charity No. 305344</a></p>
           
           <p><?php perch_content('Address'); ?></p>
+          
+          <p class="centre">(All identifiable pictures of children used with permission of parents)</p>
   
           <br />
           <br />

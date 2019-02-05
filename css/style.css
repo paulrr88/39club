@@ -269,7 +269,7 @@ ul {
     padding: 10px 0 0 10px;
 }
 .home-splash {
-    height: 610px; /*much taller thanks to needing to stack text and image on top of one another*/
+    height: 640px; /*Change this to increase height of entire home splash area, which can move home-splash-bottom below further down. Much taller thanks to needing to stack text and image on top of one another*/
     margin-top: 0;
     overflow: hidden; /*hides my cheating with the rotated elements, especially the image and its containing boxes!*/
     position: relative;
@@ -323,6 +323,9 @@ ul {
     top: -340px;
   width: 720px;
 }
+.home-splash-learnmore {
+
+}
 .home-splash-left {
     float: none; /*For mobile layout vertical stacking*/
     height: 300px;
@@ -333,13 +336,8 @@ ul {
 }
 .home-splash-right {
     float: none; /*For mobile layout vertical stacking*/
-    height: 255px;
+    height: 275px; /*Change this to make distance from top greater*/
     width: 100%;
-}
-.home-splash-text {
-    font-size: 1.8rem;
-    padding-top: 0;
-    width: 95%;
 }
 
 .inline {
@@ -510,6 +508,35 @@ ul {
 }
 .padding-none p {
     padding: 0; /*Added p to this so if a paragraph, which I can't edit, is created by Perch, and is within a parent with these as a class, it removes margin and padding from that p child element*/
+}
+
+/*Formatting for Perch elements, have to use selectors and specificity as there's no practical way to apply classes directly*/
+
+.perch-textblock img {
+    margin: 0;
+    padding: 0;
+}
+.perch-textblock img { /*targets images that are alone*/
+  margin: 0;
+  padding: 5% 0 5% 0;
+  width: 100%;
+}
+.perch-textblock p img { /*targets the images when they're two in a line as they're always in <p> tags*/
+  margin: 0;
+  padding: 5% 0 5% 0;
+  width: 100%;
+}
+.perch-textblock h1 {
+    font-size: 3rem;
+    margin: 0;
+    padding: 0 0 0 1.2rem;
+}
+
+.perch-home-splash-text p { /*Fixes the home page blurb text so it works with Perch text block*/
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 0;
+    width: 95%;
 }
 
 .table { /*For any tables on the website, particularly diary page*/

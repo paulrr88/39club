@@ -7,9 +7,19 @@
                 <section class="bold ten columns offset-by-one textmid3" role="main" style="background: yellow; color: black;">
                     <h3 class="content-title">Our Policies</h3>
                     
-                    <?php perch_content('Policies blurb'); ?>
+                    <div class="perch-textblock">
+                        <?php perch_content('Policies blurb'); ?>
+                    </div>
                     
-                    <?php perch_content('Policies files'); ?>
+                    <br />
+                    
+                    <h4 class="content-subtitle">Documents</h4>
+                    
+                    <ul style="padding: 1.5rem 1.5rem 0.25rem 5.5rem;">
+                        <?php perch_content('Policies files'); ?>
+                    </ul>
+                    
+                    <br /><br />
                 </section>
             </div>
         </article>

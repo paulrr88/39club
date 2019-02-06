@@ -33,14 +33,6 @@
         max-width: 30.33%; /*-3% due to padding-left %*/
         padding-left: 4.5%; /*Would be 3% but the fact that the first one has no padding-left means we add 1.5% (half of the padding that would have been on the first image)*/
     }
-    .header-title {
-        height: 100px;
-        margin: 100px 0 0 20px;
-        padding: 20px 50px 0 0px;
-        position: static;
-        top: 0;
-        left: 0;
-    }
     .home-buttons {
         height: 162px;
         margin-top: 50px;
@@ -96,11 +88,6 @@
     .right {
         float: right;
     }
-    .logo {
-        margin: 90px 0 0 30px;
-        max-width: 201px;
-        opacity: 1.0;
-    }
     .nav-main {
         margin: 0 0 0 51px;
     }
@@ -118,30 +105,7 @@
     .nav-main ul li:last-child {
         padding-right: 3rem; /*Counterbalances the padding-left so last element in list isn't hugging right side of page - actually pushes whole list 3rem to the left*/
     }
-    .nav-top {
-      height: 30px;
-      position: absolute;
-      top: 0;
-      width: 100%;
-    }
-
-    .nav-top ul {
-      padding-left: 1rem;
-      text-align: left;
-    }
-    .nav-top ul li {
-      display: inline-block;
-      *display: inline;                                       /* IE7 */
-      *zoom: 1;
-      font-size: 1.4rem;
-      padding-left: 3rem;
-    }
-    .nav-top ul li:first-child {
-      padding-left: 0; /*Removes for first bullet so it aligns nicely at top of page*/
-    }
-    .nav-top ul li:last-child {
-      padding-right: 3rem; /*Counterbalances the padding-left so last element in list isn't hugging right side of page - actually pushes whole list 3rem to the left*/
-    }
+    
     .overflow-killer {
         height: 450px;
     }
@@ -169,6 +133,23 @@
             width:100%;
             height:100%;
         }
+}
+
+@media (min-width: 470px) {
+    /*These have to be at this point as they misbehave at 400px, header-title wraps badly*/
+    .header-title {
+        height: 50px;
+        margin: 170px 0 0 20px;
+        padding: 20px 50px 0 0px;
+        position: static;
+        top: 0;
+        left: 0;
+    }
+    .logo {
+        margin: 90px 0 0 30px;
+        max-width: 201px;
+        opacity: 1.0;
+    }
 }
 
 /* Larger than phablet (also point when grid in Skeleton becomes active) */
@@ -218,13 +199,14 @@
         padding-left: 0rem;
     }
     .address { /*Less wide taller version to make room for the top area and still have enough room for text!*/
+        height: 80px;
         margin-top: 0;
         position: absolute;
             right: -16px;
             top: -10px;
         transform: rotate(-40deg);
         transform: skew(-15deg,-3deg);
-        width: 270px;
+        width: 230px;
     }
     .address-p {
         font-size: 1.2rem;
@@ -239,7 +221,7 @@
     }
     
     .header-title {
-        height: 50px;
+        margin: 80px 0 0 20px;
         padding: 0 50px 0 0px;
         width: 100%;
     }
@@ -321,7 +303,7 @@
         background: left 0% / 100% 100% url(../img/quote.png) no-repeat;
         display: block;
         height: 149px;
-        margin: 300px 0 0 0;
+        margin: 350px 0 0 0;
         position: absolute;
             right: 30px;
             top: -30px;
@@ -351,7 +333,7 @@
     }
 
     .address { /*Little version, makes more room for header-title*/
-        height: 60px;
+        height: 70px;
         width: 350px;
     }
     .container {
@@ -470,10 +452,38 @@
         font-size: 1.9rem;
         padding-left: 1.5rem;
     }
+    /*Styles nav-top to be left-aligned and not in a strip across the top*/
+    .nav-top {
+      height: 30px;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+    .nav-top ul {
+      padding-left: 1rem;
+      text-align: left;
+    }
+    .nav-top ul li {
+      display: inline-block;
+      *display: inline;                                       /* IE7 */
+      *zoom: 1;
+      font-size: 1.4rem;
+      padding-left: 3rem;
+    }
+    .nav-top ul li:first-child {
+      padding-left: 0; /*Removes for first bullet so it aligns nicely at top of page*/
+    }
+    .nav-top ul li:last-child {
+      padding-right: 3rem; /*Counterbalances the padding-left so last element in list isn't hugging right side of page - actually pushes whole list 3rem to the left*/
+    }
     
     .perch-home-splash-text p {
         padding-left: 0%;
         padding-top: 0;
+    }
+    
+    .quote-circle {
+        margin: 300px 0 0 0;
     }
     
     .textbig7 {
@@ -727,11 +737,9 @@
 @media (min-width: 1300px) {
     /*Not finished with this, needs breakpoint adjustments etc later when have logo graphics finalised*/
         footer {
+            margin-top: 120px; /*Needed to give the SCYP logo space as it's absolutely positioned so its own margins don't matter!*/
             position: relative; /*Needed to make .link-scyp box stick*/
             width: 100%;
-        }
-        .footer-links {
-            margin-top: 150px;
         }
         .footer-links-box {
             width: 100%;
@@ -760,7 +768,7 @@
         .footer-link-scyp {
             height: 200px;
             position: absolute;
-                bottom: 800px; /*Has to be adjusted if footer gets taller*/
+                bottom: 850px; /*Has to be adjusted if footer gets taller*/
                 right: 50px;
             width: 575px;
             z-index: 3;
@@ -777,18 +785,20 @@
     }
     
     .address {
-        height: 120px;
+        height: 180px;
         position: absolute;
-            right: -15px;
-            top: -10px;
+            right: -24px;
+            top: -8px;
         width: 300px;
     }
     .address-p {
         font-size: 1.8rem;
+        margin: 15px 0 0 20px;
         padding-right: 10px; /*Stops registered charity part from going off-screen*/
+        width: 260px; /*Helps with word wrapping*/
     }
     .address-charity {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
     .corner {
         height: 100px;

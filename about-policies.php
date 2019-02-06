@@ -37,20 +37,20 @@
         
         <body>
             
-            <div class="container" style="background: purple;">
+            <div class="container">
                 
-                <nav class="nav-top z-1" role="navigation" style="background: none;"><!--Start of top information area-->
+                <nav class="nav-top z-1" role="navigation"><!--Start of top information area-->
                     <ul>
                         <li><a href="sitemap/">Sitemap</a></li>
-                        <li><img src="" style="width: 25px; height: 25px; vertical-align: middle;" /><a href="https://www.facebook.com/39clubbognorregis/">@39ClubBognorRegis</a></li>
-                        <li><img src="" style="width: 25px; height: 25px; vertical-align: middle;" /><a href="https://www.facebook.com/39youthclub/">@39YouthClub</a></li>
+                        <li><img class="logo-fb-small" src="" /><a href="https://www.facebook.com/39clubbognorregis/">@39ClubBognorRegis</a></li>
+                        <li><img class="logo-fb-small" src="" /><a href="https://www.facebook.com/39youthclub/">@39YouthClub</a></li>
                     </ul>
                 </nav><!--End of top information area-->
                 
                 <div class="overflow-killer"><!--Needed to stop absolutely positioned elements from exploding outside of the container area-->
                     <div aria-hidden="true" class="corner"></div><!--Covers up any gaps above the slanted header area-->
                     
-                    <section class="address z-1" role="complementary" style="background: cyan;">
+                    <section class="address z-1" role="complementary">
                         <div class="address-p"><?php perch_content('Address'); ?>
                             <p style="margin: 0; padding: 0 0 0 1.8rem;">TEL:  01243 864124 <span class="address-charity"><a href="<?php perch_content('Charity commission link'); ?>">Registered Charity No. 305344</a></span></p>
                         </div>
@@ -66,7 +66,7 @@
                             <li><a href="">Home</a></li>
                             <li><a href="">About Us</a></li>
                             <li><a href="">Events</a></li>
-                            <li><a href="">Time &amp; Dates</a></li>
+                            <li><a href="">Times &amp; Dates</a></li>
                             <li><a href="">Join Us</a></li>
                             <li><a href="">Volunteer</a></li>
                             <li><a href="">Contact Us</a></li>
@@ -109,9 +109,19 @@
                 <section class="bold ten columns offset-by-one textmid3" role="main" style="background: yellow; color: black;">
                     <h3 class="content-title">Our Policies</h3>
                     
-                    <?php perch_content('Policies blurb'); ?>
+                    <div class="perch-textblock">
+                        <?php perch_content('Policies blurb'); ?>
+                    </div>
                     
-                    <?php perch_content('Policies files'); ?>
+                    <br />
+                    
+                    <h4 class="content-subtitle">Documents</h4>
+                    
+                    <ul style="padding: 1.5rem 1.5rem 0.25rem 5.5rem;">
+                        <?php perch_content('Policies files'); ?>
+                    </ul>
+                    
+                    <br /><br />
                 </section>
             </div>
         </article>
@@ -135,11 +145,10 @@
           <li style="background: yellow;"><a href="diary/">History</a></li>
           <li style="background: yellow;"><a href="news/">Our Policies</a></li>
           <li style="background: yellow;"><a href="videos/">Events</a></li>
-          <li style="background: yellow;"><a href="admin/">Time &amp; Dates</a></li>
+          <li style="background: yellow;"><a href="admin/">Times &amp; Dates</a></li>
           <li style="background: yellow;"><a href="findus/">Join Us</a></li>
           <li style="background: yellow;"><a href="findus/">Volunteer</a></li>
           <li style="background: yellow;"><a href="findus/">Contact Us</a></li>
-          <li style="background: yellow;"><a href="findus/">Room Hire</a></li>
       </ul>
   
       <br />
@@ -172,11 +181,9 @@
       <section class="clear" role="contentinfo"><!--Copyright info etc-->
           <p><strong>&copy; <?php echo date('Y'); ?> 39 Youth Club Bognor | Designed by <a href="http://www.paulcomputerhelp.co.uk/">Paul Robinson</a></strong>
               
-          <p><a href="<?php perch_content('Charity commission link'); ?>">Registered Charity No. 305344</a></p>
+          <p class="padding-none margin-none"><a href="<?php perch_content('Charity commission link'); ?>">Registered Charity No. 305344</a></p>
           
-          <p><?php perch_content('Address'); ?></p>
-          
-          <p class="centre">(All identifiable pictures of children used with permission of parents)</p>
+          <p class="centre padding-none margin-none">(All identifiable pictures of children used with permission of parents)</p>
   
           <br />
           <br />

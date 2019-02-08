@@ -47,19 +47,19 @@
                     </ul>
                 </nav><!--End of top information area-->
                 
-                <div class="overflow-killer"><!--Needed to stop absolutely positioned elements from exploding outside of the container area-->
+                <div class="overflow-killer"><!--Needed to stop absolutely positioned elements from exploding outside of the container area, specifically for this bit, also influences height-->
                     <div aria-hidden="true" class="corner"></div><!--Covers up any gaps above the slanted header area-->
                     
                     <section class="address z-1" role="complementary">
                         <div class="address-p"><?php perch_content('Address'); ?>
-                            <p style="margin: 0; padding: 0 0 0 1.8rem;">TEL:  01243 864124 <span class="address-charity"><a href="<?php perch_content('Charity commission link'); ?>">Registered Charity No. 305344</a></span></p>
+                            <p class="address-p-bottom">TEL:  01243 864124 <span class="address-charity"><a href="<?php perch_content('Charity commission link'); ?>">Registered Charity No. 305344</a></span></p>
                         </div>
                     </section>
                     
                     <header role="banner"><!--Start of header area containing website title, graphics and navigation etc-->
                         <img class="left logo" src="img/logo.png" />
         
-                        <h1 style="background: pink;" class="header-title smallcaps"><em>39 Youth Club</em></h1>
+                        <h1 class="header-title smallcaps"><em>39 Youth Club</em></h1>
         
                         <nav class="nav-main" role="navigation"><!--Main navigation start-->
                           <ul>
@@ -76,6 +76,10 @@
         
                     
                 </div>
+                
+                
+                
+            </div>
         
         
           <!-- Primary Page Layout

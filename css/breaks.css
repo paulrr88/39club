@@ -22,7 +22,7 @@
         padding-right: 0;
     }
     header { /*Special slanted header design for desktop/tablet)*/
-        height: 400px;
+        height: 370px;
     }
     
     .address {
@@ -94,7 +94,7 @@
     .nav-main ul {
         margin: 0;
         text-align: left;
-        width: 300px;
+        width: 400px;
     }
     .nav-main ul li {
         display: inline-block;
@@ -155,8 +155,7 @@
 /* Larger than phablet (also point when grid in Skeleton becomes active) */
 @media (min-width: 550px) {
     header { /*Special slanted header design for desktop/tablet)*/
-        background: red;
-        height: 250px;
+        height: 310px;
         position: absolute;
             left: -35px;
             top: 0;
@@ -287,10 +286,12 @@
         margin: 30px 0 0 281px;
         position: absolute;
             bottom: 0;
-        width: 300px;
+    }
+    .nav-main ul {
+        width: 250px;
     }
     .overflow-killer {
-        height: 300px;
+        height: 380px;
     }
     
     .perch-home-splash-text p {
@@ -303,7 +304,7 @@
         background: left 0% / 100% 100% url(../img/quote.png) no-repeat;
         display: block;
         height: 149px;
-        margin: 350px 0 0 0;
+        margin: 430px 0 0 0;
         position: absolute;
             right: 30px;
             top: -30px;
@@ -329,7 +330,7 @@
 /* Larger than tablet */
 @media (min-width: 750px) {
     header {
-        height: 220px;
+        height: 230px;
     }
 
     .address { /*Little version, makes more room for header-title*/
@@ -439,7 +440,7 @@
         max-width: 241px;
         position: relative;
             left: 50px;
-            top: 5px;
+            top: 60px;
     }
     .nav-main ul {
         text-align: center;
@@ -454,10 +455,11 @@
     }
     /*Styles nav-top to be left-aligned and not in a strip across the top*/
     .nav-top {
-      height: 30px;
-      position: absolute;
-      top: 0;
-      width: 100%;
+        background: none;
+        height: 30px;
+        position: absolute;
+        top: 0;
+        width: 100%;
     }
     .nav-top ul {
       padding-left: 1rem;
@@ -475,6 +477,10 @@
     }
     .nav-top ul li:last-child {
       padding-right: 3rem; /*Counterbalances the padding-left so last element in list isn't hugging right side of page - actually pushes whole list 3rem to the left*/
+    }
+    
+    .overflow-killer {
+        height: 340px;
     }
     
     .perch-home-splash-text p {
@@ -591,15 +597,20 @@
         margin-top: 10rem;
     }
     .nav-main {
-        margin: 20px 0 0 341px;
+        margin: 20px 0 0 301px;
+        position: absolute;
+        bottom: 30px;
     }
     .nav-main ul {
         line-height: 2rem;
         text-align: left;
         width: 800px;
     }
+    .nav-top ul li {
+        font-size: 2.2rem;
+    }
     .overflow-killer {
-        height: 350px;
+        height: 370px;
     }
     .perch-home-splash-text p {
         font-size: 2rem;
@@ -646,7 +657,7 @@
 
 @media (min-width: 1200px) {
     header {
-        height: 250px;
+        height: 235px;
     }
     .about-top {
         padding-left: 0;
@@ -660,7 +671,7 @@
     }
     .header-title {
         font-size: 6rem;
-        margin: 80px 0 0 390px;
+        margin: 80px 0 0 320px;
         width: 550px;
     }
     .home-buttons {
@@ -709,6 +720,13 @@
     .home-splash-right {
         width: 60%;
     }
+    .nav-main {
+        position: absolute;
+        bottom: 0;
+    }
+    .nav-main ul {
+        width: 900px;
+    }
     .nav-main ul li {
         font-size: 2.1rem;
         padding-left: 2rem;
@@ -732,6 +750,8 @@
         padding: 15% 15% 0 18%;
     }
 }
+
+
 
 /* Larger than Desktop HD */
 @media (min-width: 1300px) {
@@ -784,30 +804,14 @@
         height: 300px;
     }
     
-    .address {
-        height: 180px;
-        position: absolute;
-            right: -24px;
-            top: -8px;
-        width: 300px;
-    }
-    .address-p {
-        font-size: 1.8rem;
-        margin: 15px 0 0 20px;
-        padding-right: 10px; /*Stops registered charity part from going off-screen*/
-        width: 260px; /*Helps with word wrapping*/
-    }
-    .address-charity {
-        font-size: 1.8rem;
-    }
     .corner {
         height: 100px;
     }
     .header-title {
-        font-size: 7rem;
-        margin: 120px 0 0 420px;
+        font-size: 9rem;
+        margin: 80px 0 0 420px;
         padding: 0 0 0 40px;
-        width: 650px;
+        width: 820px;
     }
     .home-buttons {
         margin-top: 50px;
@@ -831,10 +835,12 @@
     }
     .nav-main {
         margin: 20px 0 0 391px;
+        position: absolute;
+            bottom: 20px;
         width: 300px;
     }
     .nav-main ul {
-        width: 1000px;
+        width: 1100px;
     }
     .nav-main ul li {
         font-size: 2.5rem;
@@ -844,7 +850,7 @@
         padding-right: 3rem; /*Counterbalances the padding-left so last element in list isn't hugging right side of page - actually pushes whole list 3rem to the left*/
     }
     .overflow-killer {
-        height: 475px;
+        height: 485px;
     }
     .perch-home-splash-text p {
         font-size: 2.5rem;
@@ -863,5 +869,24 @@
     }
     .quote-text-smaller {
         padding: 15% 18% 0 18%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .address {
+        height: 180px;
+        position: absolute;
+            right: -24px;
+            top: -8px;
+        width: 300px;
+    }
+    .address-p {
+        font-size: 1.8rem;
+        margin: 15px 0 0 20px;
+        padding-right: 10px; /*Stops registered charity part from going off-screen*/
+        width: 260px; /*Helps with word wrapping*/
+    }
+    .address-charity {
+        font-size: 1.8rem;
     }
 }

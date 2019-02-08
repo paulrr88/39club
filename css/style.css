@@ -15,7 +15,7 @@ a:hover {
 }
 
 body {
-    background: #50a6cd;
+    background: #f6f5ed;
     font: 1.5rem "Arial", sans-serif;
 }
 code {
@@ -83,8 +83,9 @@ footer ul li {
     padding: 0 0 0 0;
 }
 header { /*Special slanted header design for desktop/tablet)*/
-    background: red;
-    height: 430px;
+    background-image: linear-gradient(#cda756, #e6c96d);
+    border-bottom: solid 23px #eee1b8;
+    height: 550px;
     position: absolute;
         left: -35px;
         top: 0;
@@ -154,7 +155,7 @@ ul {
     padding-left: 4rem;
 }
 .address { /*Less wide taller version to make room for the top area and still have enough room for text!*/
-    background: #e6d06b;
+    background: #e6c96d;
     color: #652f96;
     font-variant: small-caps;
     font-weight: bold;
@@ -170,6 +171,9 @@ ul {
 .address-p {
     font-size: 1.2rem;
     transform: rotate(0deg);
+}
+.address-p-bottom {
+    padding: 0 0 0 1.8rem; !important /*!important used to override parent*/
 }
 .address-charity {
     font-size: 1.1rem;
@@ -211,7 +215,7 @@ ul {
     padding-bottom: 2rem;
 }
 .corner { /*Covers up gap above slanted header area*/
-  background: red;
+  background: #cda756;
   height: 40px;
   width: 100%;
 }
@@ -247,12 +251,14 @@ ul {
     transform: rotate(-20deg);
 }
 .header-title {
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid #733aa2;
+    color: #652f96;
     font-size: 3.5rem;
     height: 50px;
     margin: 0 0 0 40px;
     padding: 0 50px 0 30px;
     position: absolute;
+    text-shadow: 2px 2px #fff;
     top: 150px;
     left: -10px;
     width: 100%;
@@ -448,8 +454,10 @@ ul {
     width: 300px;
 }
 .nav-main ul {
-    background: yellow;
-    line-height: 3rem;
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: bold;
+    line-height: 4rem;
     list-style: none;
     padding: 0;
     margin: 0 auto;
@@ -467,6 +475,7 @@ ul {
     padding-right: 0; /*Gets rid of this, not needed for mobile*/
 }
 .nav-top {
+    background: #e6c96d;
     font-style: italic;
     font-variant: small-caps;
     font-weight: 900;
@@ -481,11 +490,10 @@ ul {
     padding: 0;
     text-align: center;
 }
-.overflow-killer {
-    background: yellow;
+.overflow-killer { /*N.B. this is the only thing giving the header area height thanks to absolute positioning!*/
     overflow: hidden;
     position: relative;
-    height: 500px;
+    height: 600px;
     width: 100%;
 }
 .overflow-hidden {

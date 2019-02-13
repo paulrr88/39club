@@ -111,15 +111,21 @@
         </article>
         
         <nav class="home-buttons" role="navigation" style="background: brown;">
-            <div class="home-button home-button-contact" style="background: pink;">
-                <p class="italics home-button-text">Contact Us &gt;&gt;</p>
-            </div>
-            <div class="home-button home-button-join" style="background: orange;">
-                <p class="italics home-button-text">Join Us &gt;&gt;</p>
-            </div>
-            <div class="home-button home-button-vol" style="background: cyan;">
-                <p class="italics home-button-text">Volunteer with Us &gt;&gt;</p>
-            </div>
+            <a href="">
+                <div class="home-button home-button-contact" style="background: pink;">
+                    <p class="italics home-button-text">Contact Us &gt;&gt;</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="home-button home-button-join" style="background: orange;">
+                    <p class="italics home-button-text">Join Us &gt;&gt;</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="home-button home-button-vol" style="background: cyan;">
+                    <p class="italics home-button-text">Volunteer with Us &gt;&gt;</p>
+                </div>
+            </a>
         </nav>
         
       <p class="clear">End of container</p>

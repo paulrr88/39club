@@ -93,7 +93,7 @@
             
             <div class="row content-row">
             
-                <div class="five columns" style="background: red;">
+                <div class="four columns" style="background: red;">
                     <section class="textmid2 twelve columns" style="background: green;">
                         <h3 class="content-subtitle">Contact Details</h3>
 
@@ -106,33 +106,40 @@
                         <h4><?php perch_content('Address'); ?></h4>
                     </section>
                 </div>
+                
+                <div class="eight columns">
+                    <section class="twelve columns textmid3 bold" style="background: yellow;">
+                        <h3 class="content-subtitle">Contact Form</h3>
+                        
+                        <a href="<?php perch_content('Contact form link'); ?>">
+                            <div class="form-button" style="background: pink;">
+                                <p class="italics form-button-text">Get in contact with us! &gt;&gt;</p>
+                            </div>
+                        </a>
+                    </section>
+                    <section class="twelve columns textmid3" style="background: yellow;">
+                        <h3 class="content-subtitle">Location Map</h3>
+                        
+                        <br />
 
-                <section class="seven columns" style="background: yellow;">
-                    <h3 class="content-subtitle">Contact Form</h3>
-
-                    <?php perch_content('Contact form'); ?>
-
-                    <iframe style="background: cyan; width: 100%; height: 500px;">Hey</iframe>
+                        <div class="eight columns centre offset-by-two" style="background: red;">
+                            <a class="link-nostyle" href="https://www.google.com/maps/place/39+Youth+Club/@50.7865505,-0.6727951,17z/data=!3m1!4b1!4m5!3m4!1s0x4875ac46ce88a697:0x5998d98a2480d2fe!8m2!3d50.7865505!4d-0.6706064">
+                                <img
+                                    alt="Image of a map to our location"
+                                    class="boxshadow-softextra6 fluid-100 margin-4-top"
+                                    role="img"
+                                    src="perch/resources/map.jpg"
+                                >
+                                <p class="centre">(Source: Google Maps)</p>
+                            </a>                    
+                        </div>
                 </section>
-            
+                </div>
+                
             </div>
             
             <div class="row content-row">
-                <section class="centre twelve columns textmid3" style="background: yellow;">
-                    <h3 class="content-subtitle">Location Map</h3>
-
-                    <div class="eight columns offset-by-two">
-                        <a class="link-nostyle" href="https://www.google.com/maps/place/39+Youth+Club/@50.7865505,-0.6727951,17z/data=!3m1!4b1!4m5!3m4!1s0x4875ac46ce88a697:0x5998d98a2480d2fe!8m2!3d50.7865505!4d-0.6706064">
-                            <img
-                                alt="Image of a map to our location"
-                                class="boxshadow-softextra6 fluid-100 margin-4-top"
-                                role="img"
-                                src="perch/resources/map.jpg"
-                            >
-                            <p class="centre">(Source: Google Maps)</p>
-                        </a>                    
-                    </div>
-                </section>
+                
             </div>
         </article>
     </main>

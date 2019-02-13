@@ -246,6 +246,18 @@ ul {
 .fluid-half {
     max-width: 50%;
 }
+.form-buttons {
+    height: 120px;
+    margin-top: 30px;
+}
+.form-button {
+    height: 40px;
+}
+.form-button-text {
+    font: bold italic small-caps 2.2rem/2.2rem Arial;
+    margin: 0;
+    padding: 10px 0 0 10px;
+}
 
 .header-skew {
     transform: rotate(-20deg);

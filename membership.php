@@ -96,7 +96,7 @@
                 <?php perch_content('Membership blurb'); ?>
             </div>
             
-            <?php perch_content('Membership form'); ?>
+            <a href="<?php perch_content('Membership form'); ?>"><p>Membership Form</p></a>
         </article>
     </main>
 

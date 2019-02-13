@@ -71,7 +71,8 @@
     }
     .home-splash-h1 {
         font-size: 2.8rem;
-        padding-left: 14%;
+        padding-left: 12%;
+        word-spacing: 1.5rem;
     }
     .home-splash-image-container {
         width: 120%;
@@ -238,6 +239,7 @@
     
     .home-splash {
         height: 570px; /*much taller thanks to needing to stack text and image on top of one another*/
+        margin-top: 30px;
     }
     .home-splash-bottom {
         height: 80px;
@@ -249,6 +251,7 @@
         font-size: 2.5rem;
     }
     .home-splash-h1 {
+        font-size: 3.5rem;
         padding-left: 8%;
     }
     .home-splash-image-container {
@@ -260,9 +263,9 @@
       height: 80%;
     }
     .home-splash-image-child {
-      background: left 40% / 55% 80.82% url(../img/photo-home.jpg) no-repeat;
+      background: left 40% / 60% 87.48% url(../img/photo-home.jpg) no-repeat;
       position: absolute;
-        left: -45px;
+        left: -55px;
         top: -340px;
     }
     .home-splash-right {
@@ -307,10 +310,12 @@
     
     .perch-home-splash-text p {
         margin-top: 0; 
-        padding-left: 10%;
+        padding-left: 7%;
         padding-top: 2%;
      }
-    
+}
+
+@media (min-width: 675px) {
     .quote-circle {
         background: left 0% / 100% 100% url(../img/quote.png) no-repeat;
         display: block;
@@ -380,15 +385,13 @@
         max-width: 30.33%; /*-3% due to padding-left %*/
     }
     .form-buttons {
-        float: right;
         height: 60px;
-        width: 682px;
     }
     .form-button {
         box-shadow: 1px 5px 2px black;
-        float: left;
-        height: 54px;
-        margin-right: 40px;
+        height: 60px;
+        margin: 5%;
+        max-width: 300px;
     }
     .header-title {
         font-size: 4rem;
@@ -420,6 +423,7 @@
     }
     .home-splash {
         height: 400px; /*needed due to absolutely positioned elements not affecting size of box*/
+        margin-top: 50px;
         position: relative;
             left: -20px;
             top: 0;
@@ -437,6 +441,7 @@
     .home-splash-h1 {
         font-size: 2.8rem;
         padding-left: 0;
+        word-spacing: 0.0rem;
     }
     .home-splash-image-container {
         float: left;
@@ -511,7 +516,7 @@
     }
     
     .quote-circle {
-        margin: 300px 0 0 0;
+        margin: 320px 0 0 0;
     }
     
     .textbig7 {
@@ -560,6 +565,12 @@
     }
 }
 
+@media (min-width: 890px) {
+    .home-splash-h1 {
+        font-size: 3.5rem;
+    }
+}
+
 /* Larger than desktop */
 @media (min-width: 1000px) {
     .address { /*Second biggest version, makes more room for header-title*/
@@ -584,13 +595,9 @@
         margin-left: 2%; /*this works for some reason, I can't use first-child as that removes all margins and padding between items somehow. Could have something to do with Perch, I have no idea.*/
         max-width: 30.33%; /*-3% due to padding-left %*/
     }
-    .form-buttons {
-        height: 80px;
-        margin-top: 50px;
-        width: 892px;
-    }
+    
     .form-button {
-        height: 64px;
+        max-width: 400px;
     }
     .form-button-text {
         font: bold italic small-caps 2.8rem/0rem Arial;
@@ -618,7 +625,7 @@
         width: 364px;
     }
     .home-splash {
-        margin-top: 10px;
+        
     }
     .home-splash-h1 {
         font-size: 3.8rem;
@@ -668,6 +675,7 @@
     .quote-circle {
         background: left 0% / 100% 100% url(../img/quote.png) no-repeat;
         height: 185px;
+        margin-top: 300px;
         position: absolute;
             right: 30px;
             top: 40px;
@@ -703,13 +711,9 @@
     .content-row {
         margin: 10rem 6rem 6rem 6rem;
     }
-    .form-buttons {
-        height: 100px;
-        margin-top: 70px;
-        width: 1072px;
-    }
     .form-button {
         height: 84px;
+        max-width: 500px;
     }
     .form-button-text {
         font: bold italic small-caps 3.5rem/0rem Arial;
@@ -740,9 +744,6 @@
     }
     .home-button-vol {
         width: 424px;
-    }
-    .home-splash {
-        margin-top: 30px;
     }
     .home-splash-h1 {
         font-size: 5rem;
@@ -866,6 +867,7 @@
         margin-top: 50px;
     }
     .home-splash {
+        margin-top: 100px;
         height: 430px; /*Compensating for Learn More link going behind home-splash-bottom*/
     }
     .home-splash-bottom-h2 {
@@ -907,6 +909,7 @@
     .quote-circle {
         background: left 0% / 100% 100% url(../img/quote.png) no-repeat;
         height: 230px;
+        margin-top: 340px;
         position: absolute;
             right: 30px;
             top: 120px;

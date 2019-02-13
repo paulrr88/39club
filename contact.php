@@ -111,7 +111,7 @@
                     <section class="twelve columns textmid3 bold" style="background: yellow;">
                         <h3 class="content-subtitle">Contact Form</h3>
                         
-                        <a href="<?php perch_content('Contact form link'); ?>">
+                        <a class="link-nostyle" href="<?php perch_content('Contact form link'); ?>">
                             <div class="form-button" style="background: pink;">
                                 <p class="italics form-button-text">Get in contact with us! &gt;&gt;</p>
                             </div>

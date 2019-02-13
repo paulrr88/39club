@@ -96,7 +96,13 @@
                 <?php perch_content('Membership blurb'); ?>
             </div>
             
-            <a href="<?php perch_content('Membership form'); ?>"><p>Membership Form</p></a>
+            <a class="link-nostyle" href="<?php perch_content('Membership form'); ?>">
+                <div class="form-button" style="background: pink;">
+                    <p class="italics form-button-text">Membership Form &gt;&gt;</p>
+                </div>
+            </a>
+            
+            <br />
         </article>
     </main>
 

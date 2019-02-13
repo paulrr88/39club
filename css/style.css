@@ -68,12 +68,6 @@ footer {
     text-align: center;
     width: 80%;
 }
-footer a:link {
-    color: #004f5c;
-}
-footer a:visited {
-    color: #004f5c;
-}
 footer ul {
     list-style: none;
     padding: 0;
@@ -292,8 +286,10 @@ ul {
     padding: 10px 0 0 10px;
 }
 .home-splash {
+    background: #e6c96d;
+    color: #652f96;
     height: 640px; /*Change this to increase height of entire home splash area, which can move home-splash-bottom below further down. Much taller thanks to needing to stack text and image on top of one another*/
-    margin-top: 0;
+    margin-top: 20px; /*Needed so the top of the slanted box doesn't disappear beyond the top of the container*/
     overflow: hidden; /*hides my cheating with the rotated elements, especially the image and its containing boxes!*/
     position: relative;
         left: -40px; /*larger than higher resolutions as box is taller and can see more of the slant*/
@@ -302,11 +298,13 @@ ul {
     width: 130%; /*needs yet another extra 10% to hide right side slant over higher resolutions*/
 }
 .home-splash-bottom {
+    background: #cda756;
     height: 50px;
     padding-left: 20px;
     position: absolute;
         left: 0;
-        bottom: 0;
+        bottom: 0; 
+    text-shadow: 1px 3px 3px #7b6432; 
     width: 100%;
 }
 .home-splash-bottom-h2 {
@@ -319,6 +317,7 @@ ul {
     font-size: 2.5rem;
     padding-left: 2%;
     width: 100%;
+    word-spacing: 0;
 }
 .home-splash-image-container {
     float: none; /*For mobile vertical layout*/
@@ -339,7 +338,7 @@ ul {
   transform: rotate(22deg) skew(-10deg,-10deg); 
 }
 .home-splash-image-child {
-  background: left 40% / 70% 100.8% url(../img/photo-home.jpg) no-repeat;
+  background: left 40% / 70% 100.8% url(../img/photo-home.jpg) no-repeat; /*Ratio for width:height is 2:3*/
   height: 960px;
   position: absolute;
     left: 90px;
@@ -570,7 +569,7 @@ ul {
 .perch-home-splash-text p { /*Fixes the home page blurb text so it works with Perch text block*/
     font-size: 1.8rem;
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 1rem;
     width: 95%;
 }
 
@@ -594,6 +593,10 @@ ul {
 
 .textmid35 {
     font-size: 2.2rem;
+}
+
+.white {
+    color: #fff;
 }
 
 .wordbreak { /*Useful for table cells in particular sometimes if I need them to be more fluid with how they display text*/

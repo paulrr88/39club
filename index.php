@@ -90,7 +90,7 @@
         <span class="quote-name">- Tia</span></p>
     </div>
 
-    <main class="container clear overflow-hidden" role="main" style="background: blue;"><!--Container for ALL content, everything inside this-->
+    <main class="container clear overflow-hidden" role="main"><!--Container for ALL content, everything inside this-->
         <article class="bold home-splash italics smallcaps">
             <section class="home-splash-left perch-home-splash-text">
                 <h1 class="home-splash-h1 italics margin-4-bottom smallcaps">Fun<span class="white">!</span> Games<span class="white">!</span> Activities<span class="white">!</span></h1>
@@ -127,22 +127,18 @@
                 </div>
             </a>
         </nav>
-        
-      <p class="clear">End of container</p>
     </main>
 
       <!--Purely graphical slanted area with drop shadow at bottom of main content-->
-      <div aria-hidden="true" class="containerbottom"  style="background: red;">
-          <div class="containerbottomgraphic" style="background: mediumpurple;"></div>
-          
-          <p style="float: right;">End of .containerbottom</p>
+      <div aria-hidden="true" class="containerbottom">
+          <div class="containerbottomgraphic"></div>
       </div>
   </div><!--END OF CONTAINER-->
   
-  <footer role="complementary" style="background: orange;">
+  <footer role="complementary">
       <section class="footer-link-scyp" role="navigation" style="background: cyan;"><a href="<?php perch_content('SCYP logo link'); ?>"><img src="" alt="Sussex Clubs for Young People" /></a></section>
   
-      <ul class="footer-links" role="navigation" style="background: green;">
+      <ul class="footer-links" role="navigation">
           <li style="background: yellow;"><a href="">Home</a></li>
           <li style="background: yellow;"><a href="events/">About Us</a></li>
           <li style="background: yellow;"><a href="diary/">History</a></li>

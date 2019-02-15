@@ -357,15 +357,17 @@
         z-index: 1; /*Allows .containerbottom to hide behind it!*/
     }
     .containerbottom { /*Contains the below and stops it from overflowing and hides the sides etc!*/
-        height: 300px;
+        background: #d7d1bb; /*Needed to blend in with the footer area below it, given .containerbottomgraphic below a negative top margin to hide the top area of this element so there isn't a weird gap*/
+        height: 150px;
         margin-left: -70px;
-        margin-top: -110px;
         overflow: hidden;
         z-index: 0;
     }
         .containerbottomgraphic { /*Used for wider viewports with slanted bottom and drop shadow, hidden behind .container, coincides with the home page buttons switching from 100% width mobile version to their button forms!*/
+            background: #f6f5ed; /*Matches body colour*/
             box-shadow: 1px 10px 6px #000;
             height: 200px;
+            margin-top: -100px; /*Hides it behind the .container element so there's no gap*/
             transform: skew(-15deg,-3deg);
             width: 120%;
         }
@@ -425,7 +427,7 @@
         height: 400px; /*needed due to absolutely positioned elements not affecting size of box*/
         margin-top: 50px;
         position: relative;
-            left: -20px;
+            left: -30px;
             top: 0;
         width: 110%;
     }
@@ -440,7 +442,7 @@
     }
     .home-splash-h1 {
         font-size: 2.8rem;
-        padding-left: 0;
+        padding-left: 1rem;
         word-spacing: 0.0rem;
     }
     .home-splash-image-container {
@@ -511,7 +513,7 @@
     }
     
     .perch-home-splash-text p {
-        padding-left: 0%;
+        padding-left: 1rem;
         padding-top: 0;
     }
     
@@ -580,6 +582,9 @@
     .address-p {
         font-size: 1.4rem;
         transform: rotate(0deg);
+    }
+    .containerbottom {
+        height: 170px;
     }
     .content-row {
         margin: 5rem 0rem 6rem 0rem;
@@ -804,7 +809,7 @@
 @media (min-width: 1300px) {
     /*Not finished with this, needs breakpoint adjustments etc later when have logo graphics finalised*/
         footer {
-            margin-top: 120px; /*Needed to give the SCYP logo space as it's absolutely positioned so its own margins don't matter!*/
+            margin-top: 100px; /*Needed to give the SCYP logo space as it's absolutely positioned so its own margins don't matter!*/
             position: relative; /*Needed to make .link-scyp box stick*/
             width: 100%;
         }
@@ -833,7 +838,7 @@
             width: 284px;
         }
         .footer-link-scyp {
-            height: 200px;
+            height: 150px;
             position: absolute;
                 bottom: 850px; /*Has to be adjusted if footer gets taller*/
                 right: 50px;

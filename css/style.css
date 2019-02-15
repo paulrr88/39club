@@ -63,10 +63,11 @@ h6 {
     padding: 0;
 }
 footer {
+    background: #d7d1bb;
     font-size: 1.5rem;
     margin: 0 auto;
     text-align: center;
-    width: 80%;
+    width: 100%;
 }
 footer ul {
     list-style: none;
@@ -184,6 +185,10 @@ ul {
 .clear {
     clear: both;
 }
+.container {
+    margin: 0 auto;
+    width: 100%;
+}
 .content {
     background: #fff;
     border-top: 10px solid #652f96;
@@ -212,10 +217,6 @@ ul {
   background: #cda756;
   height: 40px;
   width: 100%;
-}
-.container {
-    margin: 0 auto;
-    width: 100%;
 }
 /*Images in Events page entries, targets those. Have to use these specific selectors as the content is user-generated, can't target each image directly with a class*/
 /*Necessary to include the .event p img one as it's affected by the 1000px breakpoint in breaks.css and need to set a baseline here*/
@@ -287,6 +288,7 @@ ul {
 }
 .home-splash {
     background: #e6c96d;
+    box-shadow: 0px 25px 10px #ccc;
     color: #652f96;
     height: 640px; /*Change this to increase height of entire home splash area, which can move home-splash-bottom below further down. Much taller thanks to needing to stack text and image on top of one another*/
     margin-top: 20px; /*Needed so the top of the slanted box doesn't disappear beyond the top of the container*/
@@ -344,9 +346,6 @@ ul {
     left: 90px;
     top: -340px;
   width: 720px;
-}
-.home-splash-learnmore {
-
 }
 .home-splash-left {
     float: none; /*For mobile layout vertical stacking*/

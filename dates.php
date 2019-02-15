@@ -120,17 +120,15 @@
     </main>
 
       <!--Purely graphical slanted area with drop shadow at bottom of main content-->
-      <div aria-hidden="true" class="containerbottom"  style="background: red;">
-          <div class="containerbottomgraphic" style="background: mediumpurple;"></div>
-          
-          <p style="float: right;">End of .containerbottom</p>
+      <div aria-hidden="true" class="containerbottom">
+          <div class="containerbottomgraphic"></div>
       </div>
   </div><!--END OF CONTAINER-->
   
-  <footer role="complementary" style="background: orange;">
+  <footer role="complementary">
       <section class="footer-link-scyp" role="navigation" style="background: cyan;"><a href="<?php perch_content('SCYP logo link'); ?>"><img src="" alt="Sussex Clubs for Young People" /></a></section>
   
-      <ul class="footer-links" role="navigation" style="background: green;">
+      <ul class="footer-links" role="navigation">
           <li style="background: yellow;"><a href="">Home</a></li>
           <li style="background: yellow;"><a href="events/">About Us</a></li>
           <li style="background: yellow;"><a href="diary/">History</a></li>

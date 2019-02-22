@@ -241,6 +241,12 @@ ul {
 .fluid-half {
     max-width: 50%;
 }
+
+.footer-links {
+    margin-top: 2rem;
+    line-height: 3rem;
+}
+
 .form-buttons {
     height: 120px;
     margin-top: 30px;
@@ -276,9 +282,10 @@ ul {
 }
 .home-buttons {
     height: 120px;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 .home-button {
+    background: #e6c96d;
     height: 40px;
 }
 .home-button-text {

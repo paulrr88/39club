@@ -8,7 +8,7 @@
         padding: 2rem 0 0 0; /*Adds a gap above the list so it's not stuck to the bottom of the content above it*/
     }
     footer ul li {
-        border-right: 0.3rem solid #000;
+        border-right: 0.3rem solid #652f96;
         display: inline-block;
         margin: 0;
         padding: 0 1rem 0 0.7rem;
@@ -237,6 +237,9 @@
         width: 100%;
     }
     
+    .home-buttons {
+        margin-top: 75px;
+    }
     .home-splash {
         height: 570px; /*much taller thanks to needing to stack text and image on top of one another*/
         margin-top: 30px;
@@ -365,7 +368,7 @@
     }
         .containerbottomgraphic { /*Used for wider viewports with slanted bottom and drop shadow, hidden behind .container, coincides with the home page buttons switching from 100% width mobile version to their button forms!*/
             background: #f6f5ed; /*Matches body colour*/
-            box-shadow: 1px 10px 6px #000;
+            box-shadow: 1px 10px 6px #b9b3a0;
             height: 200px;
             margin-top: -100px; /*Hides it behind the .container element so there's no gap*/
             transform: skew(-15deg,-3deg);
@@ -405,11 +408,11 @@
     }
     .home-buttons {
         float: right;
-        height: 60px;
+        height: 70px;
         width: 682px;
     }
     .home-button {
-        box-shadow: 1px 5px 2px black;
+        box-shadow: 1px 10px 4px #ccc;
         float: left;
         height: 54px;
         margin-right: 40px;
@@ -594,6 +597,9 @@
         margin: 80px 0 0 340px;
         transform: rotate(-2deg);
         width: 460px;
+    }
+    .home-buttons {
+        padding-top: 25px; /*Keeps it clear of the drop shadow from home-splash*/
     }
     .fluid-images-club img {     /*figure area containing 3 images side by side*/
         /*float: left; had to remove as when you put a link in around images it ruins any margins etc for some reason */ /*Lets them stack*/
@@ -809,7 +815,7 @@
 @media (min-width: 1300px) {
     /*Not finished with this, needs breakpoint adjustments etc later when have logo graphics finalised*/
         footer {
-            margin-top: 100px; /*Needed to give the SCYP logo space as it's absolutely positioned so its own margins don't matter!*/
+            padding-top: 100px; /*Needed to give the SCYP logo space as it's absolutely positioned so its own margins don't matter!*/
             position: relative; /*Needed to make .link-scyp box stick*/
             width: 100%;
         }
@@ -822,30 +828,46 @@
             margin: 0 auto;
             width: 1032px; /*Needs to equal width of all logos that it needs to contain at current resolution*/
         }
+        .footer-link-bpc {
+            background: left 0% / 100% 100% url(../img/placeholder-bpc.png) no-repeat;
+            float: left;
+            height: 322px;
+            width: 212px;
+        }
         .footer-link-brtc {
+            background: left 0% / 100% 100% url(../img/logo-brtc.png) no-repeat;
             float: left;
             height: 322px;
             width: 212px;
         }
         .footer-link-fb {
+            background: left 0% / 100% 100% url(../img/fb.png) no-repeat;
             float: left;
-            height: 212px;
-            width: 212px;
+            height: 112px;
+            width: 112px;
+        }
+        .footer-link-lions {
+            background: left 0% / 100% 100% url(../img/placeholder-lions.png) no-repeat;
+            float: left;
+            height: 274px;
+            width: 274px;
         }
         .footer-link-lottery {
+            background: left 0% / 100% 100% url(../img/logo-lottery.png) no-repeat;
             float: left;
-            height: 222px;
+            height: 100px;
             width: 284px;
         }
         .footer-link-scyp {
             height: 150px;
             position: absolute;
-                bottom: 850px; /*Has to be adjusted if footer gets taller*/
+                bottom: 970px; /*Has to be adjusted if footer gets taller*/
                 right: 50px;
             width: 575px;
             z-index: 3;
         }
         .footer-link-wscc {
+            background: left 0% / 100% 100% url(../img/placeholder-wscc.jpg) no-repeat;
             float: left;
             height: 207px;
             width: 324px;

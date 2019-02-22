@@ -110,19 +110,19 @@
             </section>
         </article>
         
-        <nav class="home-buttons" role="navigation" style="background: brown;">
+        <nav class="home-buttons" role="navigation">
             <a href="">
-                <div class="home-button home-button-contact" style="background: pink;">
+                <div class="home-button home-button-contact">
                     <p class="italics home-button-text">Contact Us &gt;&gt;</p>
                 </div>
             </a>
             <a href="">
-                <div class="home-button home-button-join" style="background: orange;">
+                <div class="home-button home-button-join">
                     <p class="italics home-button-text">Join Us &gt;&gt;</p>
                 </div>
             </a>
             <a href="">
-                <div class="home-button home-button-vol" style="background: cyan;">
+                <div class="home-button home-button-vol">
                     <p class="italics home-button-text">Volunteer with Us &gt;&gt;</p>
                 </div>
             </a>
@@ -138,42 +138,56 @@
   <footer role="complementary">
       <section class="footer-link-scyp" role="navigation" style="background: cyan;"><a href="<?php perch_content('SCYP logo link'); ?>"><img src="" alt="Sussex Clubs for Young People" /></a></section>
   
-      <ul class="footer-links" role="navigation">
-          <li style="background: yellow;"><a href="">Home</a></li>
-          <li style="background: yellow;"><a href="events/">About Us</a></li>
-          <li style="background: yellow;"><a href="diary/">History</a></li>
-          <li style="background: yellow;"><a href="news/">Our Policies</a></li>
-          <li style="background: yellow;"><a href="videos/">Events</a></li>
-          <li style="background: yellow;"><a href="admin/">Times &amp; Dates</a></li>
-          <li style="background: yellow;"><a href="findus/">Join Us</a></li>
-          <li style="background: yellow;"><a href="findus/">Volunteer</a></li>
-          <li style="background: yellow;"><a href="findus/">Contact Us</a></li>
+      <ul class="footer-links bold italics smallcaps textmid2" role="navigation">
+          <li><a href="">Home</a></li>
+          <li><a href="events/">About Us</a></li>
+          <li><a href="diary/">History</a></li>
+          <li><a href="news/">Our Policies</a></li>
+          <li><a href="videos/">Events</a></li>
+          <li><a href="admin/">Times &amp; Dates</a></li>
+          <li><a href="findus/">Join Us</a></li>
+          <li><a href="findus/">Volunteer</a></li>
+          <li><a href="findus/">Contact Us</a></li>
       </ul>
   
       <br />
       
       <section class="footer-links-box" role="navigation" style="background: olive;">
           <div class="footer-links-box-inner" style="background: green;">
-              <a href="<?php perch_content('WSCC logo link'); ?>">
-                  <div class="footer-link-wscc" style="background: yellow;">
-                  </div>
-              </a>
-              <a href="<?php perch_content('Bognor Regis Town Council logo link'); ?>">
-                  <div class="footer-link-brtc" style="background: blue;">
-                  </div>
-              </a>
-              <a href="<?php perch_content('Lottery logo & link'); ?>">
-                  <div class="footer-link-lottery" style="background: purple;">
-                  </div>
-              </a>
-              <a href="<?php perch_content('FB main link'); ?>">
-                  <div class="footer-link-fb" style="background: pink;">
-                  </div>
-              </a>
-              <a href="<?php perch_content('FB Friends of 39 Club link'); ?>">
-                  <div class="footer-link-fb" style="background: pink;">
-                  </div>
-              </a>
+              <div class="row">
+                  <a href="<?php perch_content('WSCC logo link'); ?>">
+                      <div class="footer-link-wscc"></div>
+                  </a>
+                  <a href="<?php perch_content('Bognor Regis Town Council logo link'); ?>">
+                      <div class="footer-link-brtc"></div>
+                  </a>
+                  <a href="<?php perch_content('Bersted logo link'); ?>">
+                      <div class="footer-link-bpc"></div>
+                  </a>
+                  <a href="<?php perch_content('Lions Club logo link'); ?>">
+                      <div class="footer-link-lions"></div>
+                  </a>
+              </div>
+              
+              <div class="row">
+                  
+                  <a href="<?php perch_content('Lottery link'); ?>">
+                      <div class="footer-link-lottery"></div>
+                  </a>
+                  
+                  
+              </div>
+              
+              <div class="row">
+                  <a href="<?php perch_content('FB main link'); ?>">
+                      <div class="footer-link-fb"></div>
+                      <p class="left">@39ClubBognorRegis</p>
+                  </a>
+                  <a href="<?php perch_content('FB Friends of 39 Club link'); ?>">
+                      <div class="footer-link-fb"></div>
+                      <p class="left">@39YouthClub</p>
+                  </a>
+              </div>
           </div>
       </section>
   

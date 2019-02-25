@@ -243,8 +243,12 @@ ul {
 }
 
 .footer-links {
-    margin-top: 2rem;
+    padding-top: 2rem;
     line-height: 3rem;
+}
+.footer-link-fb-container {
+    display: none;
+    visibility: hidden;
 }
 
 .form-buttons {
@@ -350,7 +354,7 @@ ul {
   background: left 40% / 70% 100.8% url(../img/photo-home.jpg) no-repeat; /*Ratio for width:height is 2:3*/
   height: 960px;
   position: absolute;
-    left: 90px;
+    left: 70px;
     top: -340px;
   width: 720px;
 }
@@ -401,6 +405,7 @@ ul {
 }
 .logo-fb-small {
     height: 25px; 
+    margin-right: 5px;
     width: 25px; 
     vertical-align: middle;
 }

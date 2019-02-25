@@ -42,8 +42,8 @@
         <nav class="nav-top z-1" role="navigation"><!--Start of top information area-->
             <ul>
                 <li><a href="sitemap/">Sitemap</a></li>
-                <li><img class="logo-fb-small" src="" /><a href="https://www.facebook.com/39clubbognorregis/">@39ClubBognorRegis</a></li>
-                <li><img class="logo-fb-small" src="" /><a href="https://www.facebook.com/39youthclub/">@39YouthClub</a></li>
+                <li><img class="logo-fb-small" src="img/fb.png" /><a href="https://www.facebook.com/39clubbognorregis/">@39ClubBognorRegis</a></li>
+                <li><img class="logo-fb-small" src="img/fb.png" /><a href="https://www.facebook.com/39youthclub/">@39YouthClub</a></li>
             </ul>
         </nav><!--End of top information area-->
         
@@ -151,7 +151,7 @@
   </div><!--END OF CONTAINER-->
   
   <footer role="complementary">
-      <section class="footer-link-scyp" role="navigation" style="background: cyan;"><a href="<?php perch_content('SCYP logo link'); ?>"><img src="" alt="Sussex Clubs for Young People" /></a></section>
+      <a href="<?php perch_content('SCYP logo link'); ?>" title="Sussex Clubs for Young People"><section class="footer-link-scyp" role="navigation"></section></a>
   
       <ul class="footer-links bold italics smallcaps textmid2" role="navigation">
           <li><a href="">Home</a></li>
@@ -167,38 +167,35 @@
   
       <br />
       
-      <section class="footer-links-box" role="navigation" style="background: olive;">
-          <div class="footer-links-box-inner" style="background: green;">
+      <section class="footer-links-box" role="navigation">
+          <div class="footer-links-box-inner">
               <div class="row">
-                  <a href="<?php perch_content('WSCC logo link'); ?>">
+                  <a href="<?php perch_content('WSCC logo link'); ?>" title="West Sussex County Council">
                       <div class="footer-link-wscc"></div>
                   </a>
-                  <a href="<?php perch_content('Bognor Regis Town Council logo link'); ?>">
+                  <a href="<?php perch_content('Bognor Regis Town Council logo link'); ?>" title="Bognor Regis Town Council">
                       <div class="footer-link-brtc"></div>
                   </a>
-                  <a href="<?php perch_content('Bersted logo link'); ?>">
+                  <a href="<?php perch_content('Bersted logo link'); ?>" title="Bersted Parish Council">
                       <div class="footer-link-bpc"></div>
                   </a>
-                  <a href="<?php perch_content('Lions Club logo link'); ?>">
+                  <a href="<?php perch_content('Lions Club logo link'); ?>" title="Bognor Regis Lions Club">
                       <div class="footer-link-lions"></div>
                   </a>
               </div>
               
-              <div class="row">
-                  
-                  <a href="<?php perch_content('Lottery link'); ?>">
+              <div class="row footer-link-lottery-container">
+                  <a href="<?php perch_content('Lottery link'); ?>" title="The National Lottery Community Fund">
                       <div class="footer-link-lottery"></div>
                   </a>
-                  
-                  
               </div>
               
-              <div class="row">
-                  <a href="<?php perch_content('FB main link'); ?>">
+              <div class="row footer-link-fb-container">
+                  <a href="<?php perch_content('FB main link'); ?>" title="Follow us on Facebook!">
                       <div class="footer-link-fb"></div>
                       <p class="left">@39ClubBognorRegis</p>
                   </a>
-                  <a href="<?php perch_content('FB Friends of 39 Club link'); ?>">
+                  <a href="<?php perch_content('FB Friends of 39 Club link'); ?>" title="Follow us on Facebook!">
                       <div class="footer-link-fb"></div>
                       <p class="left">@39YouthClub</p>
                   </a>

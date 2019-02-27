@@ -37,25 +37,22 @@
         <span class="quote-name">- Tia</span></p>
     </div>
 
-    <main class="container clear overflow-hidden" role="main" style="background: blue; color: white;"><!--Container for ALL content, everything inside this-->
-        <p>Container begins</p>
-
+    <main class="container clear overflow-hidden" role="main"><!--Container for ALL content, everything inside this-->
+        <h1 class="content-title-top content-title-pagetop">Times &amp; Dates</h1>
+        
         <article class="content" role="article">
-            
-            <h3 class="content-title" style="color: black;">Times &amp; Dates</h3>
-            
             <div class="content-row row">
-                <section class="bold ten columns offset-by-one textmid3" role="main" style="background: yellow; color: black;">
+                <section class="bold ten columns offset-by-one textmid3" role="main">
                     
-                    <table class="table" summary="Table of upcoming dates" style="background: cyan;">
-                        <thead>
-                            <tr style="background: purple;">
+                    <table class="table" summary="Table of upcoming dates">
+                        <thead class="diarytop">
+                            <tr>
                                 <th class="centre" scope="col">Date</th>
                                 <th class="centre" scope="col">Event</th>
                                 <th class="centre" scope="col">Activities</th>
                             </tr>
                         </thead>
-                        <tbody class="diary" style="background: orange;">
+                        <tbody class="diary">
                             <?php perch_content('Diary'); ?>
                         </tbody>
                     </table>

@@ -232,6 +232,18 @@
         height: 40px;
     }
     
+    .diary { /*Basic styling for tbody of diary table on times & dates page*/
+        background: #eee1b8;
+        color: #652f96;
+    }
+    .diary tr {
+        border-bottom: 3px solid #d3bd6f;
+    }
+    .diarytop {
+        background-image: linear-gradient(#cda756, #e6c96d);
+        color: #452067;
+    }
+    
     .header-title {
         margin: 80px 0 0 20px;
         padding: 0 50px 0 0px;
@@ -324,9 +336,9 @@
         background: left 0% / 100% 100% url(../img/quote.png) no-repeat;
         display: block;
         height: 149px;
-        margin: 430px 0 0 0;
+        margin: 500px 0 0 0;
         position: absolute;
-            right: 30px;
+            right: 10px;
             top: -30px;
         width: 145px;
         z-index: 2; /*Has to be 2 due to .container needing a value of 1 to float over the .containerbottom area*/
@@ -353,7 +365,10 @@
     header {
         height: 230px;
     }
-
+    
+    .about-top {
+        margin-top: 6rem; /*A lot more white space needed!*/
+    }
     .address { /*Little version, makes more room for header-title*/
         height: 70px;
         width: 350px;
@@ -369,7 +384,7 @@
         z-index: 0;
     }
         .containerbottomgraphic { /*Used for wider viewports with slanted bottom and drop shadow, hidden behind .container, coincides with the home page buttons switching from 100% width mobile version to their button forms!*/
-            background: #f6f5ed; /*Matches body colour*/
+            background: #fff; /*Matches body colour*/
             box-shadow: 1px 10px 6px #b9b3a0;
             height: 200px;
             margin-top: -100px; /*Hides it behind the .container element so there's no gap*/
@@ -523,7 +538,7 @@
     }
     
     .quote-circle {
-        margin: 320px 0 0 0;
+        margin: 350px 0 0 0;
     }
     
     .textbig7 {
@@ -594,6 +609,9 @@
     }
     .content-row {
         margin: 5rem 0rem 6rem 0rem;
+    }
+    .content-title-pagetop { /*Page titles right at the top of each content page need more padding as header gets bigger*/
+        padding: 6rem 0 2rem 2rem;
     }
     .header-title {
         font-size: 5rem;
@@ -671,7 +689,7 @@
         font-size: 2rem;
     }
     .perch-textblock h1 {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
     .perch-textblock img { /*targets images that are alone*/
         margin: 0 0 0 25%;
@@ -689,7 +707,7 @@
     .quote-circle {
         background: left 0% / 100% 100% url(../img/quote.png) no-repeat;
         height: 185px;
-        margin-top: 300px;
+        margin-top: 420px;
         position: absolute;
             right: 30px;
             top: 40px;
@@ -727,7 +745,7 @@
         width: 1032px; /*Needs to equal width of all logos that it needs to contain at current resolution*/
     }
     .footer-link-bpc {
-        background: left 0% / 100% 100% url(../img/placeholder-bpc.png) no-repeat;
+        background: left 0% / 100% 100% url(../img/logo-bpc.png) no-repeat;
         float: left;
         height: 322px;
         width: 212px;
@@ -752,7 +770,7 @@
         width: 112px;
     }
     .footer-link-lions {
-        background: left 0% / 100% 100% url(../img/placeholder-lions.png) no-repeat;
+        background: left 0% / 100% 100% url(../img/logo-lions.png) no-repeat;
         float: left;
         height: 274px;
         width: 274px;
@@ -777,7 +795,7 @@
         z-index: 3;
     }
     .footer-link-wscc {
-        background: left 0% / 100% 100% url(../img/placeholder-wscc.jpg) no-repeat;
+        background: left 0% / 100% 100% url(../img/logo-wscc.jpg) no-repeat;
         float: left;
         height: 207px;
         width: 324px;
@@ -798,6 +816,9 @@
     }
     .content-row {
         margin: 10rem 6rem 6rem 6rem;
+    }
+    .content-title-pagetop { /*Now content boxes are moved away from left edge, the titles at the very top of pages need the same treatment*/
+        padding: 6rem 0 2rem 8%;
     }
     .form-button {
         height: 84px;
@@ -873,7 +894,7 @@
         background: left 0% / 100% 100% url(../img/quote.png) no-repeat;
         height: 216px;
         position: absolute;
-            right: 30px;
+            right: 80px;
             top: 10px;
         width: 210px;
     }
@@ -952,11 +973,11 @@
     .quote-circle {
         background: left 0% / 100% 100% url(../img/quote.png) no-repeat;
         height: 230px;
-        margin-top: 340px;
+        margin-top: 440px;
         position: absolute;
-            right: 30px;
+            right: 10%; /*Needs to be % to remain in consistent position on higher resolutions*/
             top: 120px;
-        width: 237px;
+        width: 220px;
     }
     .quote-text {
         font: bold italic small-caps 2.2rem/3rem Arial;

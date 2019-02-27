@@ -92,15 +92,13 @@
                 <span class="quote-name">- Mercedes</span></p>
             </div>
         
-            <main class="container clear overflow-hidden" role="main" style="background: blue; color: white;"><!--Container for ALL content, everything inside this-->
-                <p>Container begins</p>
-                
+            <main class="container clear overflow-hidden" role="main"><!--Container for ALL content, everything inside this-->
                 <section class="about-top" role="complementary">
-                    <h1 class="content-title-top" style="background: orange;">About Us</h1>
+                    <h1 class="content-title-top">About Us</h1>
         
-                    <ul class="about-top-nav bold italics margin-none smallcaps padding-none textmid35" role="navigation" style="background: pink;">
+                    <ul class="about-top-nav bold italics margin-none smallcaps padding-none textmid35" role="navigation">
                         <li class="inline-block"><a href="">About Us</a> &gt;&gt;</li>
-                        <li class="inline-block padding-3-left"><a href="">History </a> &gt;&gt;</li>
+                        <li class="inline-block padding-3-left"><a href="">History</a> &gt;&gt;</li>
                         <li class="inline-block padding-3-left"><a href="">Our Policies</a> &gt;&gt;</li>
                     </ul>
                 </section>
@@ -110,7 +108,7 @@
         
         <article class="content" role="article">
             <div class="content-row row">
-                <section class="bold ten columns offset-by-one textmid3" role="main" style="background: yellow; color: black;">
+                <section class="bold ten columns offset-by-one textmid3" role="main">
                     <h3 class="content-title">Our Policies</h3>
                     
                     <div class="perch-textblock">
@@ -129,8 +127,6 @@
                 </section>
             </div>
         </article>
-        
-      <p class="clear">End of container</p>
     </main>
       <!--Purely graphical slanted area with drop shadow at bottom of main content-->
       <div aria-hidden="true" class="containerbottom">

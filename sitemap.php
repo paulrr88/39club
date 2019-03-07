@@ -14,16 +14,16 @@
 
   <!-- CSS & JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css"><!-- reset file do not change -->
-  <link rel="stylesheet" href="css/skeleton.css"><!-- framework CSS -->
-  <link rel="stylesheet" href="css/style.css"><!--my additions-->
-  <link rel="stylesheet" href="css/breaks.css"><!--breakpoints of mine-->
+  <link rel="stylesheet" href="../css/normalize.css"><!-- reset file do not change -->
+  <link rel="stylesheet" href="../css/skeleton.css"><!-- framework CSS -->
+  <link rel="stylesheet" href="../css/style.css"><!--my additions-->
+  <link rel="stylesheet" href="../css/breaks.css"><!--breakpoints of mine-->
 
   <script>document.createElement('main');</script><!--fix for support of HTML5 <main> element-->
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="../images/favicon.png">
 
   <!-- Google fonts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -40,14 +40,15 @@
         <h1 class="content-title-top content-title-pagetop">Sitemap</h1>
         
         <ul class="bold sitemap textmid3">
-            <li><a href="">Home</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">History</a></li>
-            <li><a href="">Our Policies</a></li>
-            <li><a href="">Events</a></li>
-            <li><a href="">Times &amp; Dates</a></li>
-            <li><a href="">Join Us</a></li>
-            <li><a href="">Volunteer</a></li>
-            <li><a href="">Contact Us</a></li>
+            <li><a href="../">Home</a></li>
+            <li><a href="../about/">About Us</a></li>
+            <li><a href="../about/history/">History</a></li>
+            <li><a href="../about/policies/">Our Policies</a></li>
+            <li><a href="../events/">Events</a></li>
+            <li><a href="../events/archive/">Events Archive</a></li>
+            <li><a href="../diary/">Times &amp; Dates</a></li>
+            <li><a href="../join/">Join Us</a></li>
+            <li><a href="../volunteer/">Volunteer</a></li>
+            <li><a href="../contact/">Contact Us</a></li>
         </ul>
     </main>

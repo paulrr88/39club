@@ -64,12 +64,12 @@
                 <nav class="nav-main" role="navigation"><!--Main navigation start-->
                   <ul>
                     <li><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Events</a></li>
-                    <li><a href="">Times &amp; Dates</a></li>
-                    <li><a href="">Join Us</a></li>
-                    <li><a href="">Volunteer</a></li>
-                    <li><a href="">Contact Us</a></li>
+                    <li><a href="about/">About Us</a></li>
+                    <li><a href="events/">Events</a></li>
+                    <li><a href="diary/">Times &amp; Dates</a></li>
+                    <li><a href="join/">Join Us</a></li>
+                    <li><a href="volunteer/">Volunteer</a></li>
+                    <li><a href="contact/">Contact Us</a></li>
                   </ul>
                 </nav><!--Main navigation ends-->
             </header><!--Header area ends-->

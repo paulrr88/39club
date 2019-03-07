@@ -638,6 +638,11 @@ ul {
     display: none;
 }
 
+.sitemap {
+  margin: 20px auto;
+  width: 70%;
+}
+
 .smallcaps {
     font-variant: small-caps;
 }

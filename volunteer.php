@@ -85,20 +85,21 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-    <main class="container clear overflow-hidden" role="main" style="background: blue; color: white;"><!--Container for ALL content, everything inside this-->
-        <p>Container begins</p>
-
+    <main class="container clear overflow-hidden" role="main"><!--Container for ALL content, everything inside this-->
+        <h1 class="content-title-top content-title-pagetop">Volunteer with 39 Club</h1>
+        
         <article class="content textmid3 bold" role="article">
-            
-            <h3 class="content-title" style="color: black;">Volunteer with Us</h3>
-            
-            <div class="perch-textblock" style="color: black;">
+            <div class="perch-textblock">
                 <?php perch_content('Volunteer blurb'); ?>
             </div>
             
-            <?php perch_content('Volunteer form'); ?>
+            <a class="link-nostyle" href="<?php perch_content('Volunteer form'); ?>">
+                <div class="form-button">
+                    <p class="italics form-button-text">Volunteer Form (PDF) &gt;&gt;</p>
+                </div>
+            </a>
             
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScPl4iy7ajgIdTsr6ywfeHYV2N6Sa5fxVkQCKPyFv__jxjdLQ/viewform?usp=sf_link"><p>Yo it's the form</p></a>
+            <br />
         </article>
     </main>
 

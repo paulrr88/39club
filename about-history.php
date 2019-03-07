@@ -86,7 +86,7 @@
           –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         
         
-            <div aria-hidden="true" class="quote-circle">
+            <div aria-hidden="true" class="quote-circle quote-pos-about">
                 <p class="quote-text-smaller">Favourite things:<br />
                     "Baking and playing with my friends"<br />
                 <span class="quote-name">- Mercedes</span></p>
@@ -118,6 +118,8 @@
                     </div>
                     
                     <br /><br />
+                    
+                    <h3 class="content-title">History Gallery</h3>
                     
                     <?php perch_content('History Images'); ?>
                 </section>

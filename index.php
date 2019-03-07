@@ -85,7 +85,7 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-    <div aria-hidden="true" class="quote-circle">
+    <div aria-hidden="true" class="quote-circle quote-pos-home">
         <p class="quote-text">"I love the activities and playing with my friends"<br />
         <span class="quote-name">- Tia</span></p>
     </div>
@@ -100,8 +100,8 @@
 	               <p><span class="right"><a href="">Learn more &gt;&gt;</a></span></p>
             </section>
             <div class="home-splash-right"></div>
-            <div aria-hidden="true" class="home-splash-image-container" style="background: none;">
-              <div class="home-splash-image-parent" style="background: yellow;">
+            <div aria-hidden="true" class="home-splash-image-container">
+              <div class="home-splash-image-parent">
                 <div class="home-splash-image-child"></div>
               </div>
             </div>

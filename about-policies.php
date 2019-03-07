@@ -86,7 +86,7 @@
           –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         
         
-            <div aria-hidden="true" class="quote-circle">
+            <div aria-hidden="true" class="quote-circle quote-pos-about">
                 <p class="quote-text-smaller">Favourite things:<br />
                     "Baking and playing with my friends"<br />
                 <span class="quote-name">- Mercedes</span></p>
@@ -119,7 +119,7 @@
                     
                     <h4 class="content-subtitle">Documents</h4>
                     
-                    <ul style="padding: 1.5rem 1.5rem 0.25rem 5.5rem;">
+                    <ul class="policies-list">
                         <?php perch_content('Policies files'); ?>
                     </ul>
                     

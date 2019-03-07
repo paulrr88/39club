@@ -86,9 +86,9 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 
-    <div aria-hidden="true" class="quote-circle">
-        <p class="quote-text">"I love the activities and playing with my friends"<br />
-        <span class="quote-name">- Tia</span></p>
+    <div aria-hidden="true" class="quote-circle quote-pos-dates">
+        <p class="quote-text">"I like spending time with my friends"<br />
+        <span class="quote-name">- Kiera</span></p>
     </div>
 
     <main class="container clear overflow-hidden" role="main"><!--Container for ALL content, everything inside this-->

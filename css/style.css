@@ -181,6 +181,9 @@ ul {
 .bold {
     font-weight: 900;
 }
+.boxshadow-soft {
+    box-shadow: 2px 2px 20px #000;
+}
 .centre {
     text-align: center;
 }
@@ -250,6 +253,20 @@ ul {
     max-width: 100%; /*gets images to stack on mobile instead of be inline with each-other*/
     padding-left: 0; /*removes padding not needed for mobile*/
 }
+.fluid-images-club img {
+    margin: 0;
+    padding: 0;
+}
+.fluid-images-club img { /*targets images that are alone*/
+  margin: 0;
+  padding: 5% 0 5% 0;
+  width: 100%;
+}
+.fluid-images-club p img { /*targets the images when they're two in a line as they're always in <p> tags*/
+  margin: 0;
+  padding: 5% 0 5% 0;
+  width: 100%;
+}
 
 .fluid-100 {
     max-width: 100%;
@@ -272,6 +289,7 @@ ul {
     margin-top: 30px;
 }
 .form-button {
+    background: #e6c96d;
     height: 40px;
 }
 .form-button-text {
@@ -317,7 +335,7 @@ ul {
     background: #e6c96d;
     box-shadow: 0px 25px 10px #ccc;
     color: #652f96;
-    height: 640px; /*Change this to increase height of entire home splash area, which can move home-splash-bottom below further down. Much taller thanks to needing to stack text and image on top of one another*/
+    height: 680px; /*Change this to increase height of entire home splash area, which can move home-splash-bottom below further down. Much taller thanks to needing to stack text and image on top of one another*/
     margin-top: 20px; /*Needed so the top of the slanted box doesn't disappear beyond the top of the container*/
     overflow: hidden; /*hides my cheating with the rotated elements, especially the image and its containing boxes!*/
     position: relative;
@@ -344,14 +362,14 @@ ul {
 }
 .home-splash-h1 {
     font-size: 2.5rem;
-    padding-left: 2%;
+    padding-left: 6%;
     width: 100%;
     word-spacing: 0;
 }
 .home-splash-image-container {
     float: none; /*For mobile vertical layout*/
     height: 250px;
-    margin-top: 0;
+    margin-top: 40px;
     transform: rotate(-20deg);/*Have to rotate at this level, won't work on the image*/
     width: 130%;
 }
@@ -605,6 +623,10 @@ ul {
     margin: 0;
     padding: 0 0 0 1rem;
     width: 95%;
+}
+
+.policies-list {
+    padding: 1.5rem 1.5rem 0.25rem 5.5rem;
 }
 
 .table { /*For any tables on the website, particularly diary page*/

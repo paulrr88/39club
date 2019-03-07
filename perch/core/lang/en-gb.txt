@@ -474,5 +474,6 @@
     "Republishing completed successfully": "Republishing completed successfully",
     "Subpage folder": "Subpage folder",
     "Editing Shared Regions": "Editing Shared Regions",
-    "Reorder Region": "Reorder Region"
+    "Reorder Region": "Reorder Region",
+    "Item orders successfully updated.": "Item orders successfully updated."
 }

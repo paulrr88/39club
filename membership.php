@@ -85,20 +85,17 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-    <main class="container clear overflow-hidden" role="main" style="background: blue; color: white;"><!--Container for ALL content, everything inside this-->
-        <p>Container begins</p>
-
-        <article class="content textmid3 bold" role="article" style="color: black;">
-            
-            <h3 class="content-title" style="color: black;">Join Us - Membership Information</h3>
-            
+    <main class="container clear overflow-hidden" role="main"><!--Container for ALL content, everything inside this-->
+        <h1 class="content-title-top content-title-pagetop">Join Us at 39 Club</h1>
+        
+        <article class="content textmid3 bold" role="article">
             <div class="perch-textblock">
                 <?php perch_content('Membership blurb'); ?>
             </div>
             
             <a class="link-nostyle" href="<?php perch_content('Membership form'); ?>">
-                <div class="form-button" style="background: pink;">
-                    <p class="italics form-button-text">Membership Form &gt;&gt;</p>
+                <div class="form-button">
+                    <p class="italics form-button-text">Membership Form (PDF) &gt;&gt;</p>
                 </div>
             </a>
             

@@ -75,6 +75,7 @@
         word-spacing: 1.5rem;
     }
     .home-splash-image-container {
+        margin-top: 0;
         width: 120%;
     }
     .home-splash-image-parent {
@@ -336,16 +337,36 @@
         background: left 0% / 100% 100% url(../img/quote.png) no-repeat;
         display: block;
         height: 149px;
-        margin: 500px 0 0 0;
-        position: absolute;
-            right: 10px;
-            top: -30px;
         width: 145px;
         z-index: 2; /*Has to be 2 due to .container needing a value of 1 to float over the .containerbottom area*/
     }
     .quote-name {
         float: right;
         padding-right: 20%;
+    }
+    .quote-pos-about {
+        margin: 500px 0 0 0;
+        position: absolute;
+            right: 10px;
+            top: -30px;
+    }
+    .quote-pos-dates {
+        margin: 440px 0 0 0;
+        position: absolute;
+            right: 10px;
+            top: -30px;
+    }
+    .quote-pos-event {
+        margin: 500px 0 0 0;
+        position: absolute;
+            right: 10px;
+            top: -30px;
+    }
+    .quote-pos-home {
+        margin: 420px 0 0 0;
+        position: absolute;
+            right: 10px;
+            top: -30px;
     }
     .quote-text {
         color: #e6c96d;
@@ -537,7 +558,19 @@
         padding-top: 0;
     }
     
-    .quote-circle {
+    .quote-pos-about {
+        margin: 350px 0 0 0;
+    }
+    .quote-pos-dates {
+        margin: 400px 0 0 0;
+        position: absolute;
+            right: 10px;
+            top: -30px;
+    }
+    .quote-pos-dates {
+        margin: 370px 0 0 0;
+    }
+    .quote-pos-home {
         margin: 350px 0 0 0;
     }
     
@@ -707,11 +740,20 @@
     .quote-circle {
         background: left 0% / 100% 100% url(../img/quote.png) no-repeat;
         height: 185px;
-        margin-top: 420px;
+        width: 180px;
+    }
+    .quote-pos-about {
+        margin: 500px 0 0 0;
         position: absolute;
             right: 30px;
-            top: 40px;
-        width: 180px;
+    }
+    .quote-pos-dates {
+        margin: 450px 0 0 0;
+        position: absolute;
+            right: 40px;
+    }
+    .quote-pos-event {
+        margin: 450px 0 0 0;
     }
     .quote-text {
         font: bold italic small-caps 1.7rem/1.7rem Arial;
@@ -893,10 +935,28 @@
     .quote-circle {
         background: left 0% / 100% 100% url(../img/quote.png) no-repeat;
         height: 216px;
-        position: absolute;
-            right: 80px;
-            top: 10px;
         width: 210px;
+    }
+    .quote-pos-about {
+        margin: 500px 0 0 0;
+        position: absolute;
+            right: 8%;
+    }
+    .quote-pos-dates {
+        margin: 420px 0 0 0;
+        position: absolute;
+            right: 8%;
+    }
+    .quote-pos-event {
+        margin: 400px 0 0 0;
+        position: absolute;
+            right: 8%;
+    }
+    .quote-pos-home {
+        margin: 300px 0 0 0;
+        position: absolute;
+            right: 30px;
+            top: -30px;
     }
     .quote-text {
         font: bold italic small-caps 2rem/2rem Arial;
@@ -973,14 +1033,25 @@
     .quote-circle {
         background: left 0% / 100% 100% url(../img/quote.png) no-repeat;
         height: 230px;
-        margin-top: 440px;
-        position: absolute;
-            right: 10%; /*Needs to be % to remain in consistent position on higher resolutions*/
-            top: 120px;
         width: 220px;
     }
+    .quote-pos-about {
+        margin: 600px 0 0 0;
+    }
+    .quote-pos-dates {
+        margin: 550px 0 0 0;
+    }
+    .quote-pos-event {
+        margin: 550px 0 0 0;
+    }
+    .quote-pos-home {
+        margin: 450px 0 0 0;
+        position: absolute;
+            right: 4%; /*Needs to be % so consistent on higher resolutions (future-proofing!)*/
+            top: -30px;
+    }
     .quote-text {
-        font: bold italic small-caps 2.2rem/3rem Arial;
+        font: bold italic small-caps 2.1rem/2.7rem Arial;
         padding: 15% 20% 0 20%;
     }
     .quote-text-smaller {

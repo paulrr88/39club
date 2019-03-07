@@ -85,48 +85,46 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-    <main class="container clear overflow-hidden" role="main" style="background: blue; color: white;"><!--Container for ALL content, everything inside this-->
-        <p>Container begins</p>
+    <main class="container clear overflow-hidden" role="main"><!--Container for ALL content, everything inside this-->
+        <h1 class="content-title-top content-title-pagetop">Contact Us</h1>
 
-        <article class="content" role="article" style="color: black;">
-            <h3 class="content-title" style="color: black;">Contact Us</h3>
-            
+        <article class="content" role="article">
             <div class="row content-row">
             
-                <div class="four columns" style="background: red;">
-                    <section class="textmid2 twelve columns" style="background: green;">
+                <div class="four columns">
+                    <section class="textmid2 twelve columns">
                         <h3 class="content-subtitle">Contact Details</h3>
 
                         <?php perch_content('Contact basic details'); ?>
                     </section>
 
-                    <section class="twelve columns" style="background: pink;">
+                    <section class="twelve columns">
                         <h3 class="content-subtitle">Our Address</h3>
 
-                        <h4><?php perch_content('Address'); ?></h4>
+                        <h4 class="textmid2"><?php perch_content('Address'); ?></h4>
                     </section>
                 </div>
                 
                 <div class="eight columns">
-                    <section class="twelve columns textmid3 bold" style="background: yellow;">
+                    <section class="twelve columns textmid3 bold">
                         <h3 class="content-subtitle">Contact Form</h3>
                         
                         <a class="link-nostyle" href="<?php perch_content('Contact form link'); ?>">
-                            <div class="form-button" style="background: pink;">
+                            <div class="form-button">
                                 <p class="italics form-button-text">Get in contact with us! &gt;&gt;</p>
                             </div>
                         </a>
                     </section>
-                    <section class="twelve columns textmid3" style="background: yellow;">
+                    <section class="twelve columns textmid3">
                         <h3 class="content-subtitle">Location Map</h3>
                         
                         <br />
 
-                        <div class="eight columns centre offset-by-two" style="background: red;">
+                        <div class="eight columns centre offset-by-two">
                             <a class="link-nostyle" href="https://www.google.com/maps/place/39+Youth+Club/@50.7865505,-0.6727951,17z/data=!3m1!4b1!4m5!3m4!1s0x4875ac46ce88a697:0x5998d98a2480d2fe!8m2!3d50.7865505!4d-0.6706064">
                                 <img
                                     alt="Image of a map to our location"
-                                    class="boxshadow-softextra6 fluid-100 margin-4-top"
+                                    class="boxshadow-soft fluid-100 margin-4-top"
                                     role="img"
                                     src="perch/resources/map.jpg"
                                 >

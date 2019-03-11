@@ -558,6 +558,10 @@
         padding-top: 0;
     }
     
+    .perch-textblock h1 {
+        padding: 2rem 0 0 1.2rem; /*Adds some much needed space between paragraphs and headers*/
+    }
+    
     .quote-pos-about {
         margin: 350px 0 0 0;
     }

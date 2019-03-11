@@ -91,7 +91,7 @@
         <article class="content" role="article">
             <br />
             
-            <h2 class="centre"><a href="">&lt;&lt; Go back to Events</a></h2>
+            <h2 class="centre"><a href="../../events/">&lt;&lt; Go back to Events</a></h2>
             
             <br />
             

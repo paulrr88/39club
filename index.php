@@ -97,7 +97,7 @@
                 
                 <?php perch_content('Home page blurb'); ?><br />
                     
-	               <p><span class="right"><a href="">Learn more &gt;&gt;</a></span></p>
+	               <p><span class="right"><a href="about/">Learn more &gt;&gt;</a></span></p>
             </section>
             <div class="home-splash-right"></div>
             <div aria-hidden="true" class="home-splash-image-container">
@@ -111,17 +111,17 @@
         </article>
         
         <nav class="home-buttons" role="navigation">
-            <a href="">
+            <a href="contact/">
                 <div class="home-button home-button-contact">
                     <p class="italics home-button-text">Contact Us &gt;&gt;</p>
                 </div>
             </a>
-            <a href="">
+            <a href="join/">
                 <div class="home-button home-button-join">
                     <p class="italics home-button-text">Join Us &gt;&gt;</p>
                 </div>
             </a>
-            <a href="">
+            <a href="volunteer/">
                 <div class="home-button home-button-vol">
                     <p class="italics home-button-text">Volunteer with Us &gt;&gt;</p>
                 </div>

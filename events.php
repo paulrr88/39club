@@ -100,7 +100,7 @@
             
         </article>
         
-        <h1 class="centre content-title-top"><a href="">Events Archive</a></h1>
+        <h1 class="centre content-title-top"><a href="archive/">Events Archive</a></h1>
         <br /><br />
     </main>
 

@@ -126,7 +126,7 @@
                                     alt="Image of a map to our location"
                                     class="boxshadow-soft fluid-100 margin-4-top"
                                     role="img"
-                                    src="perch/resources/map.jpg"
+                                    src="../perch/resources/map.jpg"
                                 >
                                 <p class="centre">(Source: Google Maps)</p>
                             </a>                    

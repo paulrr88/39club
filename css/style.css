@@ -254,18 +254,14 @@ ul {
     max-width: 100%; /*gets images to stack on mobile instead of be inline with each-other*/
     padding-left: 0; /*removes padding not needed for mobile*/
 }
-.fluid-images-club img {
-    margin: 0;
-    padding: 0;
-}
 .fluid-images-club img { /*targets images that are alone*/
-  margin: 0;
-  padding: 5% 0 5% 0;
-  width: 100%;
+    border: 10px solid #fff;
+    box-shadow: 2px 2px 20px #000;
+    margin: 5% 0 5% -1rem; /*-1rem needed to compensate for border so it doesn't disappear off right side of page*/
+    padding: 0;
+    width: 100%;
 }
 .fluid-images-club p img { /*targets the images when they're two in a line as they're always in <p> tags*/
-  margin: 0;
-  padding: 5% 0 5% 0;
   width: 100%;
 }
 
@@ -280,9 +276,75 @@ ul {
     padding-top: 2rem;
     line-height: 3rem;
 }
+.footer-links-box {
+    width: 100%;
+    height: 250px;
+}
+.footer-links-box-inner {
+    height: 250px;
+    margin: 0 auto;
+    width: 206px; /*Minimum width it can be while still looking centred on mobile*/
+}
+.footer-link-bpc {
+    background: left 0% / 100% 100% url(../img/logo-bpc.png) no-repeat;
+    float: left;
+    height: 110px;
+    width: 72px;
+}
+.footer-link-brtc {
+    background: left 0% / 100% 100% url(../img/logo-brtc.png) no-repeat;
+    float: left;
+    height: 110px;
+    width: 72px;
+}
 .footer-link-fb-container {
-    display: none;
-    visibility: hidden;
+    background: #c3bdab; /*Just helps it to look more centred as each Facebook link isn't the same width and it looks a bit skewed underneath the lottery logo*/
+    display: block;
+    margin: 0 auto;
+    width: 206px;
+}
+.footer-link-fb-text {
+    font-size: 1.2rem;
+    height: 15px; /*Needed to separate the two FB logos from one another*/
+    margin: 0;
+    padding: 5px 5px 5px 5px;
+}
+.footer-link-fb {
+    background: left 0% / 100% 100% url(../img/fb.png) no-repeat;
+    float: left;
+    height: 30px;
+    width: 30px;
+}
+.footer-link-lions {
+    background: left 0% / 100% 100% url(../img/logo-lions.png) no-repeat;
+    float: left;
+    height: 104px;
+    width: 104px;
+}
+.footer-link-lottery-container {
+    margin: 40px auto;
+    width: 234px;
+}
+.footer-link-lottery {
+    background: left 0% / 100% 100% url(../img/logo-lottery.png) no-repeat;
+    float: left;
+    height: 72px;
+    width: 206px;
+}
+.footer-link-scyp {
+    background: left 0% / 100% 100% url(../img/logo-scyp.png) no-repeat;
+    height: 97px;
+    position: absolute;
+        bottom: 1080px; /*Has to be adjusted if footer gets taller*/
+        right: 50px;
+    width: 575px;
+    z-index: 3;
+}
+.footer-link-wscc {
+    background: left 0% / 100% 100% url(../img/logo-wscc.jpg) no-repeat;
+    float: left;
+    height: 79px;
+    width: 134px;
 }
 
 .form-buttons {
@@ -317,6 +379,9 @@ ul {
 }
 .hidden {
     display: none;
+    visibility: hidden;
+}
+.hide {
     visibility: hidden;
 }
 .home-buttons {
@@ -593,19 +658,17 @@ ul {
 
 /*Formatting for Perch elements, have to use selectors and specificity as there's no practical way to apply classes directly*/
 
-.perch-textblock img {
-    margin: 0;
-    padding: 0;
-}
 .perch-textblock img { /*targets images that are alone*/
-  margin: 0;
-  padding: 5% 0 5% 0;
-  width: 100%;
+    border: 10px solid #fff;
+    box-shadow: 2px 2px 20px #000;
+    margin: 5% 0 5% 0;
+    padding: 0;
+    width: 98%; /*Can't be 100% as it clips the right of the border off the screen*/
 }
 .perch-textblock p img { /*targets the images when they're two in a line as they're always in <p> tags*/
-  margin: 0;
-  padding: 5% 0 5% 0;
-  width: 100%;
+    margin: 5% 0 5% -1rem; /*-1rem needed to compensate for p margin that it's embedded in or it's off-centre*/
+    padding: 0;
+    width: 100%;
 }
 .perch-textblock h1 {
     border-bottom: 3px solid #652f96;

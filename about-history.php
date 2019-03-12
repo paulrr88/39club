@@ -174,11 +174,11 @@
               <div class="row footer-link-fb-container">
                   <a href="<?php perch_content('FB main link'); ?>" title="Follow us on Facebook!">
                       <div class="footer-link-fb"></div>
-                      <p class="left">@39ClubBognorRegis</p>
+                      <p class="left footer-link-fb-text">@39ClubBognorRegis</p>
                   </a>
                   <a href="<?php perch_content('FB Friends of 39 Club link'); ?>" title="Follow us on Facebook!">
                       <div class="footer-link-fb"></div>
-                      <p class="left">@39YouthClub</p>
+                      <p class="left footer-link-fb-text">@39YouthClub</p>
                   </a>
               </div>
           </div>

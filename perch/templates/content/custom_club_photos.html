@@ -20,6 +20,8 @@
     </p>
             
     <p><strong>About "image alt text"</strong>: this is the text that is displayed when an image cannot be displayed due to some problem or a blind person is using a screen reader. It's best practice to include some descriptive text but it's not 100% necessary.</p>
+            
+    <p><strong>About "select visibility"</strong>: this is purely a visual thing, unfortunately if a row only has one or two images in it, a third blank image will appear as a funny little white box! To prevent this, if you have a row that has less than three images in it, please set the blank image entries to "hide" by selecting the option.</p>
 </perch:help>
 
 <perch:repeater id="photos_row" label="Photo rows" title="true">
@@ -28,6 +30,7 @@
             <a class="link-nostyle" href="<perch:content id="photo1" type="image" required="true" />">
                 <img
                     alt="<perch:content id="photo1alt" type="text" required="false" label="Image alt text" />"
+                     class="<perch:content id="visibility1" type="radio" label="Select visibility (select hidden if no image in this part of the row to prevent visual glitches on the site)" options="visible, hide">"
                     role="img"
                     src="<perch:content id="photo1" type="image" required="true" quality="5" />"
                 >
@@ -35,6 +38,7 @@
             <a class="link-nostyle" href="<perch:content id="photo2" type="image" required="true" />">
                 <img
                     alt="<perch:content id="photo2alt" type="text" required="false" label="Image alt text" />"
+                     class="<perch:content id="visibility2" type="radio" label="Select visibility (select hidden if no image in this part of the row to prevent visual glitches on the site)" options="visible, hide">"
                     role="img"
                     src="<perch:content id="photo2" type="image" required="true" quality="5" />"
                 >
@@ -42,6 +46,7 @@
             <a class="link-nostyle" href="<perch:content id="photo3" type="image" required="true" />">
                 <img
                     alt="<perch:content id="photo3alt" type="text" required="false" label="Image alt text" />"
+                     class="<perch:content id="visibility3" type="radio" label="Select visibility (select hidden if no image in this part of the row to prevent visual glitches on the site)" options="visible, hide">"
                     role="img"
                     src="<perch:content id="photo3" type="image" required="true" quality="5" />"
                 >

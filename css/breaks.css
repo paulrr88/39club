@@ -33,6 +33,33 @@
         max-width: 30.33%; /*-3% due to padding-left %*/
         padding-left: 4.5%; /*Would be 3% but the fact that the first one has no padding-left means we add 1.5% (half of the padding that would have been on the first image)*/
     }
+    
+    .footer-links-box-inner {
+        width: 382px; /*Needs to equal width of all logos that it needs to contain at current resolution to get them all on one line*/
+    }
+    .footer-link-fb-container {
+        width: 282px;
+    }
+    .footer-link-fb-text {
+        padding: 0 5px 0 5px;
+    }
+    .footer-link-lottery-container {
+        width: 284px;
+    }
+    .footer-link-lottery {
+        height: 100px;
+        width: 284px;
+    }
+    .footer-link-scyp {
+        background: left 0% / 100% 100% url(../img/logo-scyp.png) no-repeat;
+        height: 97px;
+        position: absolute;
+            bottom: 1080px; /*Has to be adjusted if footer gets taller*/
+            right: 50px;
+        width: 575px;
+        z-index: 3;
+    }
+    
     .form-buttons {
         height: 162px;
         margin-top: 50px;
@@ -425,8 +452,11 @@
     .fluid-images-club img {     /*figure area containing 3 images side by side*/
         /*float: left; had to remove as when you put a link in around images it ruins any margins etc for some reason */ /*Lets them stack*/
         margin-left: 2%; /*this works for some reason, I can't use first-child as that removes all margins and padding between items somehow. Could have something to do with Perch, I have no idea.*/
-        max-width: 30.33%; /*-3% due to padding-left %*/
+        max-width: 27.33%; /*-3% due to padding-left % and another 3% for 10px border*/
     }
+    
+    
+    
     .form-buttons {
         height: 60px;
     }
@@ -662,7 +692,6 @@
     .fluid-images-club img {     /*figure area containing 3 images side by side*/
         /*float: left; had to remove as when you put a link in around images it ruins any margins etc for some reason */ /*Lets them stack*/
         margin-left: 2%; /*this works for some reason, I can't use first-child as that removes all margins and padding between items somehow. Could have something to do with Perch, I have no idea.*/
-        max-width: 30.33%; /*-3% due to padding-left %*/
     }
     
     .form-button {
@@ -729,14 +758,13 @@
         font-size: 3.5rem;
     }
     .perch-textblock img { /*targets images that are alone*/
-        margin: 0 0 0 25%;
-        padding: 2.5% 0 2.5% 0;
+        margin-left: 25%;
         width: 50%;
     }
     .perch-textblock p img { /*targets the images when they're two in a line as they're always in <p> tags*/
         margin: 0;
         padding: 0;
-        width: 45%; /*to compensate for 10% margin on first image below - 45+45=90 and then 10% margin*/
+        width: 42%; /*45% to compensate for 10% margin on first image below - 45+45=90 and then 10% margin AND THEN have to subtract 3% because I added a 10px border which throws things off*/
     }
     .perch-textblock p img:first-child {
         margin-right: 10%; /*so there's some space between two images in a line*/
@@ -814,6 +842,11 @@
         float: left;
         height: 112px;
         width: 112px;
+    }
+    .footer-link-fb-text {
+        font-size: 2rem;
+        margin: 0;
+        padding: 35px 10px 5px 10px;
     }
     .footer-link-lions {
         background: left 0% / 100% 100% url(../img/logo-lions.png) no-repeat;

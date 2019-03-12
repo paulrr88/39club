@@ -28,7 +28,8 @@ figure {
     padding: 0;
 }
 h1 {
-    font: 4.5rem "Arial Black", serif;
+    font: 4.5rem "Arial Black", "Arial", serif;
+    font-weight: bold;
     margin: 0;
     padding: 0;
 }
@@ -378,6 +379,7 @@ ul {
   margin-left: -20%;
   height: 100%;
   overflow: hidden;
+    position: relative;
   transform: skew(15deg,15deg);
   width: 100%;
 }

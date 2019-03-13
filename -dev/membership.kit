@@ -1,5 +1,5 @@
 <!--$page-title Membership-->
-<!--$description nil-->
+<!--$description We’d love to have you join us at the 39 Club! On this page are details about how to become a member of our club.-->
 <!--$dir ../-->
 <!--$tablescript nil-->
 
@@ -8,16 +8,16 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-    <main class="container clear overflow-hidden" role="main"><!--Container for ALL content, everything inside this-->
-        <h1 class="content-title-top content-title-pagetop">Join Us at 39 Club</h1>
+    <main class="container clear overflow-hidden"><!--Container for ALL content, everything inside this-->
+        <h1 class="content-title-top content-title-pagetop" role="heading">Join Us at 39 Club</h1>
         
-        <article class="content textmid3 bold" role="article">
-            <div class="perch-textblock">
+        <article class="content textmid3 bold" role="main">
+            <div class="perch-textblock" role="complementary">
                 <?php perch_content('Membership blurb'); ?>
             </div>
             
             <a class="link-nostyle" href="<?php perch_content('Membership form'); ?>">
-                <div class="form-button">
+                <div aria-label="Download membership PDF" class="form-button" role="navigation">
                     <p class="italics form-button-text">Membership Form (PDF) &gt;&gt;</p>
                 </div>
             </a>

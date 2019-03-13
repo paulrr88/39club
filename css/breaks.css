@@ -51,13 +51,7 @@
         width: 284px;
     }
     .footer-link-scyp {
-        background: left 0% / 100% 100% url(../img/logo-scyp.png) no-repeat;
-        height: 97px;
-        position: absolute;
-            bottom: 1080px; /*Has to be adjusted if footer gets taller*/
-            right: 50px;
-        width: 575px;
-        z-index: 3;
+        
     }
     
     .form-buttons {
@@ -821,7 +815,7 @@
     .footer-link-bpc {
         background: left 0% / 100% 100% url(../img/logo-bpc.png) no-repeat;
         float: left;
-        height: 322px;
+        height: 295px;
         width: 212px;
     }
     .footer-link-brtc {
@@ -872,6 +866,9 @@
             right: 50px;
         width: 575px;
         z-index: 3;
+    }
+    .footer-link-scyp-box {
+        padding-top: 0;
     }
     .footer-link-wscc {
         background: left 0% / 100% 100% url(../img/logo-wscc.jpg) no-repeat;

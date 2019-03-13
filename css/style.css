@@ -333,12 +333,16 @@ ul {
 }
 .footer-link-scyp {
     background: left 0% / 100% 100% url(../img/logo-scyp.png) no-repeat;
-    height: 97px;
-    position: absolute;
-        bottom: 1080px; /*Has to be adjusted if footer gets taller*/
-        right: 50px;
-    width: 575px;
+    height: 49px;
+    margin: 0 auto;
+    position: relative;
+    width: 290px;
     z-index: 3;
+}
+.footer-link-scyp-box {
+    height: 49px; 
+    padding-top: 20px;
+    width: 100%;
 }
 .footer-link-wscc {
     background: left 0% / 100% 100% url(../img/logo-wscc.jpg) no-repeat;
@@ -599,6 +603,7 @@ ul {
 }
 .nav-top {
     background: #e6c96d;
+    line-height: 3.5rem;
     font-style: italic;
     font-variant: small-caps;
     font-weight: 900;

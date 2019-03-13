@@ -36,19 +36,21 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-    <main class="container clear overflow-hidden" role="main"><!--Container for ALL content, everything inside this-->
-        <h1 class="content-title-top content-title-pagetop">Sitemap</h1>
+    <main class="container clear overflow-hidden"><!--Container for ALL content, everything inside this-->
+        <h1 class="content-title-top content-title-pagetop" role="heading">Sitemap</h1>
         
-        <ul class="bold sitemap textmid3">
-            <li><a href="../">Home</a></li>
-            <li><a href="../about/">About Us</a></li>
-            <li><a href="../about/history/">History</a></li>
-            <li><a href="../about/policies/">Our Policies</a></li>
-            <li><a href="../events/">Events</a></li>
-            <li><a href="../events/archive/">Events Archive</a></li>
-            <li><a href="../diary/">Times &amp; Dates</a></li>
-            <li><a href="../join/">Join Us</a></li>
-            <li><a href="../volunteer/">Volunteer</a></li>
-            <li><a href="../contact/">Contact Us</a></li>
-        </ul>
+        <section role="main">
+            <ul class="bold sitemap textmid3">
+                <li><a href="../">Home</a></li>
+                <li><a href="../about/">About Us</a></li>
+                <li><a href="../about/history/">History</a></li>
+                <li><a href="../about/policies/">Our Policies</a></li>
+                <li><a href="../events/">Events</a></li>
+                <li><a href="../events/archive/">Events Archive</a></li>
+                <li><a href="../diary/">Times &amp; Dates</a></li>
+                <li><a href="../join/">Join Us</a></li>
+                <li><a href="../volunteer/">Volunteer</a></li>
+                <li><a href="../contact/">Contact Us</a></li>
+            </ul>
+        </section>
     </main>

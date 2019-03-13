@@ -26,12 +26,8 @@
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="<!--$dir-->images/favicon.png">
+  <link rel="icon" type="image/png" href="<!--$dir-->img/favicon.png">
 
-  <!-- Google fonts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-  <!--<link href="https://fonts.googleapis.com/css?family=BenchNine" rel="stylesheet"><!--Bench Nine Google Font for headers-->
 </head>
 
 <body>
@@ -41,12 +37,12 @@
         <nav class="nav-top z-1" role="navigation"><!--Start of top information area-->
             <ul>
                 <li><a href="<!--$dir-->sitemap/">Sitemap</a></li>
-                <li><img class="logo-fb-small" src="<!--$dir-->img/fb.png" /><a href="https://www.facebook.com/39clubbognorregis/">@39ClubBognorRegis</a></li>
-                <li><img class="logo-fb-small" src="<!--$dir-->img/fb.png" /><a href="https://www.facebook.com/39youthclub/">@39YouthClub</a></li>
+                <li><img alt="Facebook logo" class="logo-fb-small" src="<!--$dir-->img/fb.png" /><a href="https://www.facebook.com/39clubbognorregis/" title="Follow us on Facebook!">@39ClubBognorRegis</a></li>
+                <li><img alt="Facebook logo" class="logo-fb-small" src="<!--$dir-->img/fb.png" /><a href="https://www.facebook.com/39youthclub/" title="Follow us on Facebook!">@39YouthClub</a></li>
             </ul>
         </nav><!--End of top information area-->
         
-        <div class="overflow-killer"><!--Needed to stop absolutely positioned elements from exploding outside of the container area, specifically for this bit, also influences height-->
+        <div class="overflow-killer" role="banner"><!--Needed to stop absolutely positioned elements from exploding outside of the container area, specifically for this bit, also influences height-->
             <div aria-hidden="true" class="corner"></div><!--Covers up any gaps above the slanted header area-->
             
             <section class="address z-1" role="complementary">
@@ -55,8 +51,8 @@
                 </div>
             </section>
             
-            <header role="banner"><!--Start of header area containing website title, graphics and navigation etc-->
-                <img class="left logo" src="<!--$dir-->img/logo.png" />
+            <header><!--Start of header area containing website title, graphics and navigation etc-->
+                <img aria-hidden="true" alt="39 Club logo" class="left logo" src="<!--$dir-->img/logo.png" />
 
                 <h1 class="header-title smallcaps"><em>39 Youth Club</em></h1>
 
@@ -72,10 +68,7 @@
                   </ul>
                 </nav><!--Main navigation ends-->
             </header><!--Header area ends-->
-
             
         </div>
-        
-        
         
     </div>

@@ -1,5 +1,5 @@
 <!--$page-title Events Archive-->
-<!--$description nil-->
+<!--$description Archive of older events that 39 Club has run or been involved with over the years!-->
 <!--$dir ../../-->
 <!--$tablescript nil-->
 
@@ -8,17 +8,19 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-    <main class="container clear overflow-hidden" role="main"><!--Container for ALL content, everything inside this-->
-        <h1 class="content-title-top  content-title-pagetop">Events Archive</h1>
+    <main class="container clear overflow-hidden"><!--Container for ALL content, everything inside this-->
+        <h1 class="content-title-top  content-title-pagetop" role="heading">Events Archive</h1>
         
-        <article class="content" role="article">
+        <article class="content">
             <br />
             
-            <h2 class="centre"><a href="<!--$dir-->events/">&lt;&lt; Go back to Events</a></h2>
+            <h2 class="centre" role="navigation"><a href="<!--$dir-->events/">&lt;&lt; Go back to Events</a></h2>
             
             <br />
             
-            <?php perch_content('Events archive'); ?>
+            <section role="main">
+                <?php perch_content('Events archive'); ?>
+            </section>
         </article>
     </main>
 

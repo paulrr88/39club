@@ -89,6 +89,8 @@
                         <h3 class="content-subtitle" role="heading">Contact Details</h3>
 
                         <?php perch_content('Contact basic details'); ?>
+                        
+                        <?php perch_content('Message about phone'); ?>
                     </section>
 
                     <section class="twelve columns">

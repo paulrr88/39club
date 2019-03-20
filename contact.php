@@ -166,6 +166,11 @@
       
       <section class="footer-links-box" role="contentinfo">
           <div class="footer-links-box-inner">
+              <p class="bold centre smallcaps italics">Supported by:<br /> 
+                  <a href="<?php perch_content('WSCC logo link'); ?>">West Sussex County Council</a>,<br /> 
+                  <a href="<?php perch_content('Bognor Regis Town Council logo link'); ?>">Bognor Regis Town Council</a>,<br /> 
+                  <a href="<?php perch_content('Bersted logo link'); ?>">Bersted Parish Council</a>,<br /> 
+                  <a href="<?php perch_content('Lions Club logo link'); ?>">Bognor Regis Lions Club</a></p>
               <div class="row">
                   <a href="<?php perch_content('WSCC logo link'); ?>" title="West Sussex County Council" style="visibility: hidden;">
                       <div class="footer-link-wscc" role="img"></div>

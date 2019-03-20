@@ -862,7 +862,7 @@
         background: left 0% / 100% 100% url(../img/logo-scyp.png) no-repeat;
         height: 97px;
         position: absolute;
-            bottom: 1080px; /*Has to be adjusted if footer gets taller*/
+            bottom: 1280px; /*Has to be adjusted if footer gets taller*/
             right: 50px;
         width: 575px;
         z-index: 3;

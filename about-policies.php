@@ -154,7 +154,7 @@
       <section class="footer-links-box" role="contentinfo">
           <div class="footer-links-box-inner">
               <div class="row">
-                  <a href="<?php perch_content('WSCC logo link'); ?>" title="West Sussex County Council">
+                  <a href="<?php perch_content('WSCC logo link'); ?>" title="West Sussex County Council" style="visibility: hidden;">
                       <div class="footer-link-wscc" role="img"></div>
                   </a>
                   <a href="<?php perch_content('Bognor Regis Town Council logo link'); ?>" title="Bognor Regis Town Council">
@@ -163,7 +163,7 @@
                   <a href="<?php perch_content('Bersted logo link'); ?>" title="Bersted Parish Council">
                       <div class="footer-link-bpc" role="img"></div>
                   </a>
-                  <a href="<?php perch_content('Lions Club logo link'); ?>" title="Bognor Regis Lions Club">
+                  <a href="<?php perch_content('Lions Club logo link'); ?>" title="Bognor Regis Lions Club"  style="visibility: hidden;">
                       <div class="footer-link-lions" role="img"></div>
                   </a>
               </div>

@@ -49,6 +49,7 @@
                 <li><a href="../events/archive/">Events Archive</a></li>
                 <li><a href="../diary/">Times &amp; Dates</a></li>
                 <li><a href="../join/">Join Us</a></li>
+                <li><a href="../support/">Support Us</a></li>
                 <li><a href="../volunteer/">Volunteer</a></li>
                 <li><a href="../contact/">Contact Us</a></li>
             </ul>

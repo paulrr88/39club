@@ -64,6 +64,7 @@
                     <li><a href="../events/">Events</a></li>
                     <li><a href="../diary/">Times &amp; Dates</a></li>
                     <li><a href="../join/">Join Us</a></li>
+                    <li><a href="../support/">Support Us</a></li>
                     <li><a href="../volunteer/">Volunteer</a></li>
                     <li><a href="../contact/">Contact Us</a></li>
                   </ul>
@@ -116,6 +117,7 @@
               <li><a href="../events/">Events</a></li>
               <li><a href="../diary/">Times &amp; Dates</a></li>
               <li><a href="../join/">Join Us</a></li>
+              <li><a href="../support/">Support Us</a></li>
               <li><a href="../volunteer/">Volunteer</a></li>
               <li><a href="../contact/">Contact Us</a></li>
           </ul>
@@ -140,7 +142,7 @@
                   <a href="<?php perch_content('Bersted logo link'); ?>" title="Bersted Parish Council">
                       <div class="footer-link-bpc" role="img"></div>
                   </a>
-                  <a href="<?php perch_content('Lions Club logo link'); ?>" title="Bognor Regis Lions Club"  style="visibility: hidden;">
+                  <a href="<?php perch_content('Lions Club logo link'); ?>" title="Bognor Regis Lions Club">
                       <div class="footer-link-lions" role="img"></div>
                   </a>
               </div>

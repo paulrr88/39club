@@ -9,8 +9,8 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Contact Us &mdash; 39 Youth Club Bognor</title>
-  <meta name="description" content="Contact and location details for the 39 Club.">
+  <title>Membership &mdash; 39 Youth Club Bognor</title>
+  <meta name="description" content="We’d love to have you join us at the 39 Club! On this page are details about how to become a member of our club.">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -80,61 +80,20 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
     <main class="container clear overflow-hidden"><!--Container for ALL content, everything inside this-->
-        <h1 class="content-title-top content-title-pagetop" role="heading">Contact Us</h1>
-
-        <article class="content" role="main">
-            <div class="row content-row">
-            
-                <div class="four columns">
-                    <section class="textmid2 twelve columns">
-                        <h3 class="content-subtitle" role="heading">Contact Details</h3>
-
-                        <?php perch_content('Contact basic details'); ?>
-                        
-                        <?php perch_content('Message about phone'); ?>
-                    </section>
-
-                    <section class="twelve columns">
-                        <h3 class="content-subtitle">Our Address</h3>
-
-                        <h4 class="textmid2"><?php perch_content('Address'); ?></h4>
-                    </section>
-                </div>
-                
-                <div class="eight columns">
-                    <section class="twelve columns textmid3 bold">
-                        <h3 class="content-subtitle" role="heading">Contact Form</h3>
-                        
-                        <a class="link-nostyle" href="<?php perch_content('Contact form link'); ?>" role="navigation">
-                            <div class="form-button">
-                                <p class="italics form-button-text">Get in contact with us! &gt;&gt;</p>
-                            </div>
-                        </a>
-                    </section>
-                    <section class="twelve columns textmid3">
-                        <h3 class="content-subtitle" role="heading">Location Map</h3>
-                        
-                        <br />
-
-                        <div class="eight columns centre offset-by-two">
-                            <a aria-label="Clickable image that leads to Google Maps" class="link-nostyle" href="https://www.google.com/maps/place/39+Youth+Club/@50.7865505,-0.6727951,17z/data=!3m1!4b1!4m5!3m4!1s0x4875ac46ce88a697:0x5998d98a2480d2fe!8m2!3d50.7865505!4d-0.6706064" role="navigation">
-                                <img
-                                    alt="Image of a map to our location"
-                                    class="boxshadow-soft fluid-100 margin-4-top"
-                                    role="img"
-                                    src="../perch/resources/map.jpg"
-                                >
-                                <p class="centre">(Source: Google Maps)</p>
-                            </a>                    
-                        </div>
-                </section>
-                </div>
-                
+        <h1 class="content-title-top content-title-pagetop" role="heading">Support Us at 39 Club</h1>
+        
+        <article class="content textmid3 bold" role="main">
+            <div class="perch-textblock" role="complementary">
+                <?php perch_content('Support Us blurb'); ?>
             </div>
             
-            <div class="row content-row">
-                
-            </div>
+            <a class="link-nostyle" href="<?php perch_content('Support form link'); ?>">
+                <div aria-label="Link to support form" class="form-button" role="navigation">
+                    <p class="italics form-button-text">Support Form &gt;&gt;</p>
+                </div>
+            </a>
+            
+            <br />
         </article>
     </main>
 

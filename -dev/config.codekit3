@@ -100,6 +100,13 @@
 		"oAP": "\/Applications\/MAMP\/htdocs\/39club\/sitemap.php",
 		"oF": 6
 		},
+	"\/support.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/Applications\/MAMP\/htdocs\/39club\/support.php",
+		"oF": 6
+		},
 	"\/volunteer.kit": {
 		"cB": 0,
 		"ft": 2048,

@@ -134,6 +134,7 @@
         display: inline-block;
         *display: inline;                                       /* IE7 */
             *zoom: 1;
+        font-size: 1.4rem;
         padding-left: 1.5rem;
     }
     .nav-main ul li:last-child {
@@ -341,6 +342,9 @@
     }
     .nav-main ul {
         width: 250px;
+    }
+    .nav-main ul li {
+        font-size: 1.8rem;
     }
     .overflow-killer {
         height: 380px;
@@ -739,6 +743,9 @@
         text-align: left;
         width: 800px;
     }
+    .nav-main ul li {
+        font-size: 1.5rem;
+    }
     .nav-top ul li {
         font-size: 2.2rem;
     }
@@ -960,7 +967,7 @@
         width: 900px;
     }
     .nav-main ul li {
-        font-size: 2.1rem;
+        font-size: 1.8rem;
         padding-left: 2rem;
     }
     .overflow-killer {
@@ -1052,7 +1059,7 @@
         width: 1100px;
     }
     .nav-main ul li {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
         padding-left: 3rem;
     }
     .nav-main ul li:last-child {
@@ -1109,5 +1116,11 @@
     }
     .address-charity {
         font-size: 1.8rem;
+    }
+    .nav-main ul {
+        width: 1400px;
+    }
+    .nav-main ul li {
+        font-size: 2.2rem;
     }
 }

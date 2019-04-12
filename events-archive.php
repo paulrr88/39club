@@ -131,7 +131,7 @@
                   <a href="<?php perch_content('Bersted logo link'); ?>">Bersted Parish Council</a>,<br /> 
                   <a href="<?php perch_content('Lions Club logo link'); ?>">Bognor Regis Lions Club</a></p>
               <div class="row">
-                  <a href="<?php perch_content('WSCC logo link'); ?>" title="West Sussex County Council" style="visibility: hidden;">
+                  <a href="<?php perch_content('WSCC logo link'); ?>" title="West Sussex County Council">
                       <div class="footer-link-wscc" role="img"></div>
                   </a>
                   <a href="<?php perch_content('Bognor Regis Town Council logo link'); ?>" title="Bognor Regis Town Council">
